@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     {% include head-custom.html %}
+    <script>
+      if (localStorage.getItem('sidebar-collapsed') === 'true') {
+        document.documentElement.classList.add('sidebar-collapsed-pending');
+      }
+    </script>
   </head>
   <body class="review-page">
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -22,7 +27,7 @@
 
     {% include nav.html %}
 
-    <div class="review-wrapper">
+    <div class="review-wrapper" id="review-wrapper">
       <button class="sidebar-collapse" aria-label="Collapse sidebar">&#10094;</button>
       <aside class="review-sidebar">
         <ul class="sidebar-list">
@@ -91,9 +96,17 @@
         window.addEventListener('resize', updateHeaderOffset);
         window.addEventListener('scroll', updateHeaderOffset, { passive: true });
 
+        /* Apply collapsed state from <head> script to the wrapper */
+        if (document.documentElement.classList.contains('sidebar-collapsed-pending')) {
+          document.documentElement.classList.remove('sidebar-collapsed-pending');
+          wrapper.classList.add('sidebar-collapsed');
+          collapseBtn.setAttribute('aria-label', 'Expand sidebar');
+        }
+
         collapseBtn.addEventListener('click', function() {
           var collapsed = wrapper.classList.toggle('sidebar-collapsed');
           collapseBtn.setAttribute('aria-label', collapsed ? 'Expand sidebar' : 'Collapse sidebar');
+          localStorage.setItem('sidebar-collapsed', collapsed);
         });
 
         function closeMobileSidebar() {

@@ -226,6 +226,17 @@
   transform: rotate(180deg);
 }
 
+/* Pre-paint collapsed state (applied to <html> before wrapper renders) */
+html.sidebar-collapsed-pending .review-sidebar {
+  transform: translateX(calc(-1 * var(--sidebar-width)));
+  transition: none;
+}
+
+html.sidebar-collapsed-pending .sidebar-collapse {
+  left: 0.5rem;
+  transform: rotate(180deg);
+}
+
 .review-sidebar {
   transition: transform 0.25s ease;
 }
