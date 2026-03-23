@@ -23,7 +23,7 @@
           <button class="sidebar-collapse" aria-label="Collapse sidebar">&#10094;</button>
         </div>
         <ul class="sidebar-list">
-          {% assign sorted_reviews = site.reviews | sort: "date" | reverse %}
+          {% assign sorted_reviews = site.reviews | sort: "date" %}
           {% for review in sorted_reviews %}
           <li class="sidebar-item{% if page.url == review.url %} sidebar-item-active{% endif %}">
             <a href="{{ review.url | relative_url }}">
