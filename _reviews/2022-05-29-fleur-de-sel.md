@@ -5,7 +5,7 @@ restaurant: "鹽之華Fleur de Sel"
 date: 2022-05-29
 ---
 
-![](https://hackmd.io/_uploads/Bk-5sFSBah.jpg)
+![](./Bk-5sFSBah.jpg)
 
 
 **地址**：台中市西屯區市政路581-1號<br>
@@ -14,60 +14,60 @@ date: 2022-05-29
 
 星星+1，FS絕對可以說是目前吃過最高級的餐廳。桌距因為疫情多加了隔板所以看起來比網站上的照片舒服些，硬體部分各方面都很高級，不過裝潢比較不符合我個人偏好；食物的部分除了調味以外也極為注重食材選用與盤飾，好幾道菜都很夢幻；另外服務相當傑出，尤其侍酒師態度親切、解說專業，整體用餐的體驗是非常好的。
 
-![](https://hackmd.io/_uploads/By5stBrTh.jpg)
+![](./By5stBrTh.jpg)
 
 餐前麵包是芝麻跟藜麥麵包，榮登目前吃過最棒的麵包，內餡綿到不可思議的程度，搭配的西班牙冷壓橄欖油蠻有意思，不過侍者的介紹還蠻匆促帶過的，艾許奶油也不錯，但麵包本身就已經太出色。
 
 
-![](https://hackmd.io/_uploads/HyqoFSB63.jpg)
+![](./HyqoFSB63.jpg)
 
 開胃小點有兩品，第一品是枇杷、接骨木花與花蜜，再搭配香檳玫瑰泡泡，這道比較中看，香氣也算是多變，不過吃起來感覺還好，或許是不夠懂得欣賞泡泡的口感的關係。
 
-![](https://hackmd.io/_uploads/rJqjFHHTh.jpg)
+![](./rJqjFHHTh.jpg)
 
 第二品小點是生軟絲麵、馬斯卡彭起司、酥炸墨汁天婦羅、茴香花，軟絲的口感跟起司超搭，吃掉整個軟絲再吃茴香花的味道反差也很有趣，然後餐具是用一個很神祕的鑷子來夾著吃。
 
 
-![](https://hackmd.io/_uploads/Bk9iFrBan.jpg)
+![](./Bk9iFrBan.jpg)
 
 然後是沙拉，白蘆筍、紫蘆筍、百香果跟煙燻起司分子球、魚子醬、透明的是清湯凍、橘色是柳橙，底層是煙燻鰻魚醬，應該是當日最出乎意料的一道菜，沒想過可以把沙拉做成這樣，口感的變化很有趣，魚子醬搭配一些比較具甜味的蔬果也少見，和佐餐的香檳非常搭，另外還附上一根特別用來吃魚子醬的小湯匙。
 
 
-![](https://hackmd.io/_uploads/S1ZeTdP63.jpg)
+![](./S1ZeTdP63.jpg)
 
 接下來的前菜是用竹炭做成松露造型的鴨肝佐香菜和山蘿蔔，搭配芒果跟紅烏龍茶做的麵包，和下方的湯品只能二擇一，味道整體偏重，單吃的話會有一點膩口，搭上麵包跟香檳就很不錯。
 
-![](https://hackmd.io/_uploads/Bkg5sYSrp2.jpg)
+![](./Bkg5sYSrp2.jpg)
 
 湯品是牛骨燉成的洋蔥濃湯再吊回澄清湯，裡面是起司分子料理球和紅洋蔥，直接用炙燒過的洋蔥作為容器， 或許算是招牌菜。
 
-![](https://hackmd.io/_uploads/SyWqotHBp3.jpg)
+![](./SyWqotHBp3.jpg)
 
 海鮮前盤也有兩道，首先是蝦蛄、海瓜子、蘆筍搭配蘑菇醬，魚肉本身帶有一些蝦蟹的味道，配上第二杯Chardonnay白酒蠻酷的，今天的三杯wine pairing應該就這杯配的最好。此處有送上另一種佐餐麵包，玫瑰杏仁可頌，可以說是麵包的天花板，很難想像有比這個更傑出的麵包了。
 
-![](https://hackmd.io/_uploads/rkxcjYSBTh.jpg)
+![](./rkxcjYSBTh.jpg)
 
 第二道則是馬賽克龍蝦盤，兩種顏色的櫛瓜慕斯和甜菜荷蘭醬，這道比較偏美術系，吃起來普普，覺得切得稍微太薄，有點抹消了龍蝦本身肉質的口感。
 
-![](https://hackmd.io/_uploads/HJZcjFrrT2.jpg)
+![](./HJZcjFrrT2.jpg)
 
-![](https://hackmd.io/_uploads/B1b5iKSSTh.jpg)
+![](./B1b5iKSSTh.jpg)
 
 
 主餐有紐西蘭小羔羊跟伊比利豬千層兩種選擇，上方用不同的植物做了蝴蝶跟蜻蜓的造型，旁邊搭的都是水蜜桃跟胡蘿蔔，中間有芋泥跟甜菜泡泡還有黑蒜。個人的主餐是豬千層，肉質遠大於其他地方吃到的伊比利豬，配的紅酒就覺得還好，香氣很豐滿不過喝起來一般，還算是平衡。
 
 
 
-![](https://hackmd.io/_uploads/B1gcitBr62.jpg)
+![](./B1gcitBr62.jpg)
 
 
 前甜點是椰子sorbet、樹葡萄冰沙再襯上金蘭葉糖片，比較屬於主餐後讓人用來清口氣的一道，但椰子的部分好吃。
 
-![](https://hackmd.io/_uploads/SyGqjKrSTn.jpg)
+![](./SyGqjKrSTn.jpg)
 
-![](https://hackmd.io/_uploads/B1e5iYSBT2.jpg)
+![](./B1e5iYSBT2.jpg)
 
-![](https://hackmd.io/_uploads/rJeqsYrH6h.jpg)
+![](./rJeqsYrH6h.jpg)
 
 主甜點有兩種不同的內容，像壽司的是海苔脆餅跟米布丁，上面海膽和鮪魚都是木瓜做的，不過有用洛神染色，看起來是芥末的東西是青芒果；另一道是梔子花冰沙，中間有梅子凍，冰沙弄得很煙霧瀰漫還挺酷，最後的三種小茶點也很用心。
 

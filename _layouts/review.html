@@ -56,7 +56,9 @@
         </nav>
 
         <main id="content" class="review-content" role="main">
-          {{ content }}
+          {% capture _img_old %}src="./{% endcapture %}
+          {% capture _img_new %}src="{{ page.path | replace: '_reviews/', '/assets/fine-dining/' | replace: '.md', '' }}/{% endcapture %}
+          {{ content | replace: _img_old, _img_new }}
 
           {% if page.restaurant %}
           <nav class="review-back-nav" aria-label="Back to listing">

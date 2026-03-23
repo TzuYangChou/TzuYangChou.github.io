@@ -7,4 +7,4 @@ plugins:
 collections:
   reviews:
     output: true
-    permalink: /fine-dining/:title/
+    permalink: /fine-dining/:name/

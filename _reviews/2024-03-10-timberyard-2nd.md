@@ -11,59 +11,59 @@ date: 2024-03-10
 
 二訪[Timberyard](/g0GZZg2VTQes79U-MgUHog)，比預期的更快就再訪，這次已經換了新的春季菜單，平均而言個人覺得用餐體驗有更好，但以單道菜來說，上次的干貝料理更為突出，另外此次用餐沒有搭配佐餐酒。
 
-![1](https://hackmd.io/_uploads/rk6kY5106.jpg)
+![1](./rk6kY5106.jpg)
 
 開場送上熱湯暖胃，風味意外的近似滷過蘿蔔的湯汁，格外親切。
 
 
-![2](https://hackmd.io/_uploads/H16kYcy0p.jpg)
+![2](./H16kYcy0p.jpg)
 
-![3](https://hackmd.io/_uploads/Skp1tcJAp.jpg)
+![3](./Skp1tcJAp.jpg)
 
-![7](https://hackmd.io/_uploads/rkxT1F5yAT.jpg)
+![7](./rkxT1F5yAT.jpg)
 
 隨後也是一系列的迎賓小點，酸種麵包搭配奶油、乳酪醬與歐楂果醬，果醬稍微少見一點，口味上算甜，不過後續尾韻的甘比想像中更顯眼，覺得沒有很搭麵包，反而是酸鹹的乳酪醬更合拍，且和奶油也能契合，另外漬物和上次大同小異，以及烤羊肉串、生雞肝松果麥芽餅都是上次就有的。
 
-![4](https://hackmd.io/_uploads/rJ6JtqkAT.jpg)
+![4](./rJ6JtqkAT.jpg)
 
-![5](https://hackmd.io/_uploads/H1akK9kAT.jpg)
+![5](./H1akK9kAT.jpg)
 
-![6](https://hackmd.io/_uploads/B1aytq1Cp.jpg)
+![6](./B1aytq1Cp.jpg)
 
 小點中幾道新菜色也值得一提，松露康堤起司蛋風味醇厚濃郁，尾韻綿長帶點微微腥味，起初或許稍嫌濃烈，但嚥下後卻是相當引人食慾；炒蝦配上櫻花製成的一種奶油，意外的同樣充滿台式風情（不過不幸的是也跟櫻花蝦一樣扎牙齦）；另外淡菜薄餅佐刺山柑綴香菜籽也是新菜，食感稍微有點油酥感，風味直接且繽紛鮮明，整體來說這次的小點表現個人較喜歡。
 
 
-![8](https://hackmd.io/_uploads/SkZpJt51Cp.jpg)
+![8](./SkZpJt51Cp.jpg)
 
 接下來開始正式的菜色，首先是白蘆筍佐蛋黃與野蒜purée，另外點綴上烤野蒜花與葉及榛果。三月就上白蘆筍好像有些早，不過品質仍算不錯，榛果有點突兀，融合不進這道菜裡，但其他元素則都還行，雖然各別吃起來味道或有些過鹹或有些過淡，但將蛋液打散融合後卻成功將白蘆筍與野蒜的味道銜接成一種漸層，起初覺得很普通但到了尾聲會算喜歡的菜。
 
 
-![9](https://hackmd.io/_uploads/SJ6kYqyA6.jpg)
+![9](./SJ6kYqyA6.jpg)
 
 干貝料理依舊出色，本身品質上等，唯一可惜是中心的熟度掌握沒有上次驚艷但還是很不錯，羊肚菌和鱈魚卵醬汁的兩種鹹鮮特別嚴絲合縫，屬於光看菜色組成就會讓人期待的類型，其中morello酒漬櫻桃的酸甜醬汁點綴得當，所有元素都融合得非常好，是本日最佳。
 
 
-![10](https://hackmd.io/_uploads/BJxpyYqkR6.jpg)
+![10](./BJxpyYqkR6.jpg)
 
 海魴魚排，佐以海甜菜與海芥蘭點綴，魚排肉質尚可，若能再生一點會更好，另外搭配的燻奶油蒔蘿醬汁維持餐廳的一貫的鮮酸而明亮的風格很不錯，一旁辣根則略顯多餘，食感融合不佳。
 
-![11](https://hackmd.io/_uploads/Ske6Jt9k0p.jpg)
+![11](./Ske6Jt9k0p.jpg)
 
-![12](https://hackmd.io/_uploads/Byla1Y5k0p.jpg)
+![12](./Byla1Y5k0p.jpg)
 
 主餐是鵪鶉，搭配羅馬歐芹、榲桲泥與黃酒醬，算是中規中矩的主餐，黃酒醬特別出色，不僅腥甜濃醇，也能襯托鵪鶉肉質，至於歐芹比較辛口不是非常喜歡。隨餐附上兩塊肉腸與麵包，稍微有點怪但剛好拿來把黃酒醬光盤。
 
-![13](https://hackmd.io/_uploads/rke6yF9J0a.jpg)
+![13](./rke6yF9J0a.jpg)
 
 主餐後送上羊奶乳酪、搭配歐楂果醬與胡椒茴香薄餅，在現代料理中是比較少見的pattern，不過食物本身沒什麼特別的。
 
-![14](https://hackmd.io/_uploads/SJAJtqyC6.jpg)
+![14](./SJAJtqyC6.jpg)
 
-![15](https://hackmd.io/_uploads/BkgakK9y06.jpg)
+![15](./BkgakK9y06.jpg)
 
 前甜點是大黃配上ricotta乳酪冰淇淋，整體酸甜有致，尤其在有加點餐後起司的情況下更能轉換到甜點環節；主甜點是酵母冰淇淋，搭配葵花籽與奶油糖醬汁，甜點本身還蠻好，但卻會讓人有這是第二道前甜點的感覺，甚至當中帶鹹的風味還多過前一道，連續兩個冰淇淋也有點奇怪。
 
-![16](https://hackmd.io/_uploads/BkWaJK51Ap.jpg)
+![16](./BkWaJK51Ap.jpg)
 
 最後的小點三種，包括血橙茴香塔、佛手柑軟糖與肉桂焦糖可麗露，搭配加點的焦糖化蘋果利口酒，表現都好。
 

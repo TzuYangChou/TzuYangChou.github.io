@@ -11,32 +11,32 @@ date: 2024-06-04
 
 信義A9新開不久的居酒屋，由林泉的MMHG集團開設，簡短寫幾道菜色。
 
-![1](https://hackmd.io/_uploads/rksx_ifrkl.jpg)
+![1](./rksx_ifrkl.jpg)
 
-![2](https://hackmd.io/_uploads/ry9lOjMr1l.jpg)
+![2](./ry9lOjMr1l.jpg)
 
 干貝調味些微失當，某部分有點過苦；鰤魚尚可，不是專門賣魚料的日式餐廳就不要求。
 
-![3](https://hackmd.io/_uploads/BJiedsfBkg.jpg)
+![3](./BJiedsfBkg.jpg)
 
-![4](https://hackmd.io/_uploads/S1jl_iMHkg.jpg)
+![4](./S1jl_iMHkg.jpg)
 
-![5](https://hackmd.io/_uploads/B1jxdozHJl.jpg)
+![5](./B1jxdozHJl.jpg)
 
 胭脂蝦表現較佳，紹興酒漬味醇厚而帶有多種凜冽的辛香料風味，紫蘇點綴也好；煮物味噌牛肚與蟹肉茶碗蒸則相當普通，說不上壞但也沒什麼特色。
 
 
-![6](https://hackmd.io/_uploads/r1ilOifSye.jpg)
+![6](./r1ilOifSye.jpg)
 
-![7 (2)](https://hackmd.io/_uploads/BJ9xdifrke.jpg)
+![7 (2)](./BJ9xdifrke.jpg)
 
 櫛瓜香料豐富，尤以花椒味特別厚重，尾韻亦清亮而突出；酥炸小卷不差，搭配的墨魚美乃滋調味好，尤其搭上櫛瓜的辛香尾韻滿出色的。
 
-![8](https://hackmd.io/_uploads/r1ix_ofBye.jpg)
+![8](./r1ix_ofBye.jpg)
 
-![9](https://hackmd.io/_uploads/Sysl_jGSyl.jpg)
+![9](./Sysl_jGSyl.jpg)
 
-![10](https://hackmd.io/_uploads/SyjeOjzS1l.jpg)
+![10](./SyjeOjzS1l.jpg)
 
 主餐部分，海膽烏龍麵醬汁說得上溫潤，跟海膽的融合也還行，但以單價來看會有更高的預期，另外感覺冷麵的版本應該會更好；鱒魚茶泡飯，魚排使用低溫油封方式，口感算是細緻，另外原本傳統的煎茶改以鐵觀音茶高湯取代，意外的還不錯；甜點雖然是單純的香草冰淇淋最中而難以出錯，不過也不隨便。
 

@@ -9,29 +9,29 @@ date: 2024-05-27
 **造訪日期**：2024.5.27<br>
 **人數價位**：10560/3
 
-![1](https://hackmd.io/_uploads/By_9BiGHyg.jpg)
+![1](./By_9BiGHyg.jpg)
 
 
 
 再訪教父，隔了兩年菜單有些許改動，今天主要嘗試看看一兩道新的前菜。
 
-![2](https://hackmd.io/_uploads/SkOcBjMHJg.jpg)
+![2](./SkOcBjMHJg.jpg)
 
 麵包照舊就不上圖，前菜選擇的是加利西亞藍蟹肉餅，表皮香酥溫潤而結構稍微鬆散，柚子香氣足，適合搭配酸美乃滋，畫盤的雪莉油醋酸味多變但也有點太過明亮。
 
-![3](https://hackmd.io/_uploads/SJD5SsGSkl.jpg)
+![3](./SJD5SsGSkl.jpg)
 
 湯品則是上湯煨鮑魚海參，相比前兩天的餛飩上湯，湯品較為濃郁黏嘴，海參、鮑魚、野菇都有高品質，但食材之間的互動有些少，整體嘗起來卻有一點貌合神離，顯得每一樣食材非常的涇渭分明，頗為可惜。
 
-![4](https://hackmd.io/_uploads/ByO5BoGS1g.jpg)
+![4](./ByO5BoGS1g.jpg)
 
-![5](https://hackmd.io/_uploads/rkO9SsGHJl.jpg)
+![5](./rkO9SsGHJl.jpg)
 
 主餐今日沒有提供肋眼上蓋，夏多布利昂也消失在菜單上讓人小失望，最後選擇的是M9和牛紐約客，配菜部分則依然是烤馬鈴薯。
 
-![6](https://hackmd.io/_uploads/Bku9BiMHyx.jpg)
+![6](./Bku9BiMHyx.jpg)
 
-![7](https://hackmd.io/_uploads/B1K9HsfSkg.jpg)
+![7](./B1K9HsfSkg.jpg)
 
 蘋果塔變成晚餐限定的甜點，搭配的醬汁從之前帶點微辣的甜醬換成了太妃焦糖醬，不過塔皮足夠熱，還算能支撐起層次；茶點則完全一致。
 不得不說在把眾多星級餐廳差不多巡了一輪之後，變得比較像是一個穩定不會大錯的聚餐場所，卻也不能從中獲得太多的驚喜感。再訪機率非零，但可能會不斷的把造訪的間隔拉長。

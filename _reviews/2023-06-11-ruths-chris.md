@@ -11,27 +11,27 @@ date: 2023-06-11
 
 傳統的西餐牛排館，位於赫士盟總部三樓，RAW的正上方。訂位不困難，有小小的dress code要求，硬體設備中上，餐點都是經典的牛排館菜色。今天沒有吃經典套餐，自己從前菜、湯品、主餐、配菜、甜點各選一道，不過實際上吃起來價格也沒有比[教父牛排](/_VLmWUl-SMeN5KgF0BkUug)便宜多少，本來預期應該是一個相對中高檔次的餐廳，結果價位與品質增長的幅度不符。
 
-![](https://hackmd.io/_uploads/HyJvvZjwn.png)
+![](./HyJvvZjwn.png)
 
 餐前麵包搭配奶油沒什麼新意；
 
-![](https://hackmd.io/_uploads/BJqwPWsD2.png)
+![](./BJqwPWsD2.png)
 
 龍蝦湯還不錯，旨味和香氣算是圓潤，偶爾可以吃到蝦肉，考慮湯品本身的價格沒什麼可挑剔的；
 
-![](https://hackmd.io/_uploads/Hkpdwbivh.png)
+![](./Hkpdwbivh.png)
 
 前菜點了香煎鴨肝，底下襯的馬鈴薯泥還算可以，跟後續配菜的不知道為何吃起來稍微不同，但鴨肝本身蠻差的，表皮雖然煎至微焦形成一層脆皮，但卻把內裡肥肝的豐腴感破壞殆盡，只剩下些許的香氣，很可惜。
 
-![](https://hackmd.io/_uploads/B1FYDZiP2.png)
+![](./B1FYDZiP2.png)
 
 主餐本身點選12oz的肋眼，起初還不錯，是標準的三分熟高檔牛排，但缺點是瓷盤太燙了，吃到後半段越吃越熟，隔壁的菲力做成厚切的形式就沒這問題。
 
-![](https://hackmd.io/_uploads/HkJiPZiwh.png)
+![](./HkJiPZiwh.png)
 
 配菜部分除了點選的馬鈴薯泥和炒菇以外，因為送菜速度太慢的關係被招待了焗馬鈴薯跟烤蘆筍，蘆筍是今日最好的一道菜，食感清脆，帶點梅納反應的焦香氣且有把蘆筍的苦澀味去除，搭配的荷蘭醬也酸甜平衡相當明亮，現做的馬鈴薯泥老實說質地口感香氣都上乘，但就是比不上[AJR的版本](/jD5r27NmRKaJBPbarYMCUw)；
 
-![](https://hackmd.io/_uploads/SJk2PWjwh.png)
+![](./SJk2PWjwh.png)
 
 餐後甜點是巧克力熔岩蛋糕搭香草冰淇淋，各自都不錯吃，不過比例有點失衡。
 

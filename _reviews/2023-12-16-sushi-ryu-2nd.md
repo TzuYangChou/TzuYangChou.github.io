@@ -12,75 +12,75 @@ date: 2023-12-16
 二訪台北壽司天花板之一的鮨隆，與上次一樣選擇了午餐時段6000元的套餐，事實上有部分的菜品也是相同的，用餐整體的節奏安排也近乎一致，主要是根據季節性的食材做調整，因此這次只寫跟上次有差異的品項。值得提的是服務也是一樣的傑出。
 
 
-![1](https://hackmd.io/_uploads/HJ5EmwGiT.jpg)
+![1](./HJ5EmwGiT.jpg)
 
 首先開場先付是鱈魚白子佐果醋紫蘇，相比上次的生蠔來的更濃郁而溫暖，不過因為本來就喜歡白子多於生蠔，所以自然就容易得高分的一道。
 
 
-![2](https://hackmd.io/_uploads/Skq4mDfsT.jpg)
+![2](./Skq4mDfsT.jpg)
 
-![3](https://hackmd.io/_uploads/rkcN7DMoT.jpg)
+![3](./rkcN7DMoT.jpg)
 接下來的兩品前菜是章魚與尖梭魚壽司，前者燉煮過後的肉質驚人的鮮嫩，若是盲吃可能會誤會為滷至透徹的豬腳肉，醬汁香氣濃厚而柔軟，不過仍有海味的鮮甜，後者則是和上回一致的招牌菜色之一。
 
 
-![4](https://hackmd.io/_uploads/HJcN7wMoa.jpg)
+![4](./HJcN7wMoa.jpg)
 
 鰆魚刺身佐洋蔥與薑丁，和承的前菜一樣的配置，卻是完全的上位版，層次之分明與對比和肌理的呈現都更突出。
 
 
-![5](https://hackmd.io/_uploads/B1qVQwfja.jpg)
+![5](./B1qVQwfja.jpg)
 
 茶碗蒸，特點在於加入馬頭魚與百合花瓣，食感在綿密鬆軟緊緻之間來回變化， 算是蠻有創意。
 
-![6](https://hackmd.io/_uploads/HJcNmvfj6.jpg)
+![6](./HJcNmvfj6.jpg)
 
 壽司前的最後一道仍然是烤白鰻魚佐山椒鹽芥末，肉質比上次的鰻魚更好，外皮的香酥和皮肉之間的膠質都更為細膩。
 
 
-![7](https://hackmd.io/_uploads/ByqVmvGiT.jpg)
+![7](./ByqVmvGiT.jpg)
 
 握壽司從鰤魚開始，第一貫是標準範圍，個人喜歡的點在於魚生的厚度與醋飯的酸度融合得很好，因此風味變化的連續性也自然極佳。
 
-![8](https://hackmd.io/_uploads/HJ9EQPGjT.jpg)
+![8](./HJ9EQPGjT.jpg)
 
-![9](https://hackmd.io/_uploads/ryjVXwfj6.jpg)
+![9](./ryjVXwfj6.jpg)
 
 第二貫是鮪魚頭頂肉，是上次的遺珠，雖然鬆軟卻不鬆散，捏製的力道掌握的恰好，因為作法的緣故，鮪魚的旨味甜味更是無比奔放鮮明，中間夾入了一小片大根創造食感上的小跳躍也算有趣。下一貫生筋子壽司則是上回就有的內容。
 
 
-![10](https://hackmd.io/_uploads/BkjN7wfsa.jpg)
+![10](./BkjN7wfsa.jpg)
 
 第四貫是沙丁魚握佐薑泥，入口瞬間會先清晰的感受到魚皮的彈嫩，隨後是魚肉的微苦與更深層一些的旨味，和一般亮皮（竹莢、青花等）的苦味層次稍微不同。
 
 
 
-![11](https://hackmd.io/_uploads/B1jN7wzj6.jpg)
+![11](./B1jN7wzj6.jpg)
 
 紹興牡丹蝦，上次雖然也有這道菜，但這次調理的版本遠勝上次的，腥甜氣息更重，除了酒氣以外還有較為厚重的芥末，整體風味幾乎可以用猛烈來形容，作為握壽司中間的第五貫、承先啟後的從風味輕柔的菜品轉入後續深邃而豐滿的主食，表現相當傑出。
 
 
-![12](https://hackmd.io/_uploads/SkoV7wGj6.jpg)
+![12](./SkoV7wGj6.jpg)
 
-![13](https://hackmd.io/_uploads/Ski4XwMsp.jpg)
+![13](./Ski4XwMsp.jpg)
 
-![14](https://hackmd.io/_uploads/H1iNmDfiT.jpg)
+![14](./H1iNmDfiT.jpg)
 
-![15](https://hackmd.io/_uploads/S1sVQPMj6.jpg)
+![15](./S1sVQPMj6.jpg)
 
 後半的四貫都是經典的壽司品項，跟上次沒有太多歧異，包括馬糞海膽、鮪魚赤身、鮪魚大腹、星鰻等，除了大腹的刀工以外只有順序上的小調整。
 
 
-![16](https://hackmd.io/_uploads/BJoV7vMi6.jpg)
+![16](./BJoV7vMi6.jpg)
 
-![17](https://hackmd.io/_uploads/S1iVmPfs6.jpg)
+![17](./S1iVmPfs6.jpg)
 
 在進入收尾的玉子燒味噌湯前，本想加點上次大為驚豔的金目鯛握，但因季節關係沒有提供，在師傅建議下改點鮟鱇魚肝和蛤蜊握壽司。前者腥甜柔順帶點些微的粉感，搭配上以味噌醃過的哈密瓜，滋味豐厚馥郁且立體；後者則是以清酒醃漬加上額外的醬油調味，在吃過的貝類握壽司雖然稱不上最喜歡的但也已經是佳作。
 
-![18](https://hackmd.io/_uploads/ryiVmwfs6.jpg)
+![18](./ryiVmwfs6.jpg)
 
-![19](https://hackmd.io/_uploads/H1oNXDzs6.jpg)
+![19](./H1oNXDzs6.jpg)
 
-![20](https://hackmd.io/_uploads/r1jEXwfjT.jpg)
+![20](./r1jEXwfjT.jpg)
 
 雖然沒有吃到特定品項，但整體來說表現更佳，幾樣上次覺得比較沒那麼亮眼的菜式都有做出細微的調整，必然再訪，不過頻率可以低一些。
 

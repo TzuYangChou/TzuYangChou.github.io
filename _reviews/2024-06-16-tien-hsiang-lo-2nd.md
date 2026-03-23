@@ -11,34 +11,34 @@ date: 2024-06-16
 
 二訪亞都麗緻天香樓，改採單點菜色的方式，值得一提的是會另外附上一張書法（有些瘦金體的風格）寫的菜單。
 
-![1](https://hackmd.io/_uploads/B1lL5sGH1x.jpg)
+![1](./B1lL5sGH1x.jpg)
 
-![2](https://hackmd.io/_uploads/Sy-U5iGSJl.jpg)
+![2](./Sy-U5iGSJl.jpg)
 
 冷前菜部分選擇花雕醉雞與水晶肴肉，前者酒香圓滑清麗，皮肉之間的膠質感豐厚，肉質亦紮實緊緻；後者上次在迎賓小品中見過，不過單點時做的比較厚切，食感上肉和凍的層次會比較明顯，沁涼開胃，兩道都算不錯。
 
-![3](https://hackmd.io/_uploads/ByWLcjfHyg.jpg)
+![3](./ByWLcjfHyg.jpg)
 
-![4](https://hackmd.io/_uploads/HyfL5jMSJe.jpg)
+![4](./HyfL5jMSJe.jpg)
 
-![5](https://hackmd.io/_uploads/BkGL5sMBkx.jpg)
+![5](./BkGL5sMBkx.jpg)
 
 海鮮類料理點選了招牌的龍井蝦仁，以及大閘蟹粉豆腐。前者上次見過了就不再贅述；後者以大閘蟹的蟹黃及蟹肉煨煮豆腐，有種金沙感但更加細緻，且醬汁的海鮮旨味強烈的多；另外蔬菜料理的珠蔥調味不特別出彩，質地也略顯粗糙。
 
 
-![6](https://hackmd.io/_uploads/BJfL9izBJx.jpg)
+![6](./BJfL9izBJx.jpg)
     
-![7](https://hackmd.io/_uploads/HJGIqofBJg.jpg)
+![7](./HJGIqofBJg.jpg)
 
 
 肉類料理除了依然有點招牌的東坡肉以外，選擇了栗子雞球與盞蒸羊。栗子香鬆軟糯、甜味也足，雞球本身肉質鮮嫩彈性佳，調味上鎮江醋與紹興酒味等地融合也好；蒸羊肉比較可惜，在肉品的部位選擇上應該可以更佳，微微帶肥的部位燜軟之後還算鮮美豐腴，但瘦肉的部分卻有些乾柴，另外醬汁的風味上可能算是杭菜中較厚重的。
     
-![8](https://hackmd.io/_uploads/S1Z85sfSye.jpg)
+![8](./S1Z85sfSye.jpg)
 
 最後的湯品是醃篤鮮，選用數種豬肉部位與火腿、鮮竹筍細燉，湯頭融匯肉汁的旨味與蔬菜甘甜相當出色，風味清晰溫和也不過度濃郁，豬五花和豬腳肉都好，不過一小部分的豬腱肉處理上也稍有失誤。
 
 
-![9](https://hackmd.io/_uploads/H1MUqsMHkx.jpg)
+![9](./H1MUqsMHkx.jpg)
 
 最後依然是招牌的東坡肉。整體表現仍不差，有機會會再回訪。
 

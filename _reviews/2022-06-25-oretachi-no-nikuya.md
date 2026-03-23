@@ -5,7 +5,7 @@ restaurant: "俺達の肉屋"
 date: 2022-06-25
 ---
 
-![](https://hackmd.io/_uploads/Sy6A3AXan.jpg)
+![](./Sy6A3AXan.jpg)
 
 **地址**：台中市西區公益路194-1號<br>
 **造訪日期**：2022.6.25<br>
@@ -14,41 +14,41 @@ date: 2022-06-25
 星星+1，相當特別的高級燒肉店，店內座位不多且相當密集，位子稍嫌小，如果四個人同桌用餐可能不太舒適。整體呈現很常見的日式燒肉店的風格，另一方面餐食肉品水準極高，服務品質大致上也很不錯，雖然偶有人員會上錯餐，不過我這桌的燒烤服務人員很優秀，解說清楚、態度親切，也能流暢回答各種問題，燒烤的水準亦無可挑剔。點了招牌的主廚雙人套餐，另外有加點一份牛舌，唯一遺憾是這次用餐品項沒有夏多布里昂的部位，侍者宣稱會在訂位資訊上做註記，未來再訪的話會特別保留。
 
 
-![](https://hackmd.io/_uploads/S1eRCnCm6n.jpg)
+![](./S1eRCnCm6n.jpg)
 
-![](https://hackmd.io/_uploads/H1CAhCQpn.jpg)
+![](./H1CAhCQpn.jpg)
 
 非肉品的部分不會太特別就不給太多篇幅，雖然烤野菜以及開場的漬物品質都不錯。
 
-![](https://hackmd.io/_uploads/H1g0A3RXp2.jpg)
+![](./H1g0A3RXp2.jpg)
 
 第一道肉品是生蛋拌生牛肉，肉質吃得出來是和牛的，帶有豐富圓潤的油脂感，不過味道上就都是生蛋的氣味為主，需要搭配檸檬汁比較不致膩口。
 
 
-![](https://hackmd.io/_uploads/HkAAn0Q63.jpg)
+![](./HkAAn0Q63.jpg)
 
 隨後以燒烤的品項為主，首先是加點的薄切牛舌，搭配鹽之花食用，舌中段的口感相較一般的牛舌更爽脆而非彈韌，因此比較沒有油膩的感覺還不錯。
 
-![](https://hackmd.io/_uploads/ry0RnAmTh.jpg)
+![](./ry0RnAmTh.jpg)
 
-![](https://hackmd.io/_uploads/S1RCh0Qpn.jpg)
+![](./S1RCh0Qpn.jpg)
 
-![](https://hackmd.io/_uploads/Hyx0RnRQTn.jpg)
+![](./Hyx0RnRQTn.jpg)
 
-![](https://hackmd.io/_uploads/Bkx003AQp2.jpg)
+![](./Bkx003AQp2.jpg)
 
-![](https://hackmd.io/_uploads/S1CA3AXa3.jpg)
+![](./S1CA3AXa3.jpg)
 
-![](https://hackmd.io/_uploads/BybC02Cm6n.jpg)
+![](./BybC02Cm6n.jpg)
 
 社長盛和這次的五種肉品：肋眼上蓋、臀肉蓋、肋脊、老饕肉、芯芯（後腿），這裡的老饕肉定義比一般指稱整塊肋眼上蓋肉來得更狹窄些，只有肋眼芯上方一小塊能算，吃起來比以前吃到的USDA Prime老饕肉更加完美，油脂豐富而均勻、肉質柔軟、口感滑嫩，更帶有和牛獨有的香氣。上菜的順序依照味道強烈跟油脂豐富程度，輪流搭配橘醋醬、鹽之花、昆布鹽、山椒鹽，中間亦穿插一碗卵飯調劑；芯芯肉的醬汁調味似乎出了一些差錯，帶有一點苦味，有可能是醬汁燒烤過後產生的，不過主廚因此額外送了我們一盤有小菲力之稱的前腿肉。
 
 
-![](https://hackmd.io/_uploads/HkAChR7ph.jpg)
+![](./HkAChR7ph.jpg)
 
 白金牛肉湯，即用修掉的邊角料熬成的肉湯，沒有過多的調味很單純充滿和牛香氣的湯，簡單好喝。
 
-![](https://hackmd.io/_uploads/SybARnAXp2.jpg)
+![](./SybARnAXp2.jpg)
 
 蔥鹽橫膈膜，最後一樣燒烤肉品，肉味相當厚重所以放在套餐的最後，同時具有和牛的油花與軟嫩，又有橫膈膜咀嚼起來特有的勁道，是讓人滿足的收尾。
 
