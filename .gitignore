@@ -47,3 +47,6 @@ $RECYCLE.BIN/
 
 # Claude settings backups
 .claude/CLAUDE.md.backup.*
+
+# Utility scripts
+scripts/
