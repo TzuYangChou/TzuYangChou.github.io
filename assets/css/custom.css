@@ -14,8 +14,8 @@
   --font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-size-body: 1.5rem;
   --font-size-body-mobile: 1rem;
-  --font-size-nav: 0.95rem;
-  --font-size-nav-dropdown: 0.9rem;
+  --font-size-nav: 1.15rem;
+  --font-size-nav-dropdown: 1.05rem;
   --font-size-sidebar-item: 1.1rem;
   --font-size-sidebar-date: 0.95rem;
   --font-size-sidebar-heading: 0.9rem;
@@ -163,6 +163,11 @@
   overflow-y: auto;
 }
 
+/* Unify body text size across all layouts */
+.main-content {
+  font-size: var(--font-size-body);
+}
+
 /* Compact header for all pages */
 .page-header {
   padding: 1.5rem 2rem;
@@ -170,7 +175,7 @@
 }
 
 .page-header .project-name {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 .page-header .project-tagline {
