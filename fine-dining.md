@@ -1,6 +1,6 @@
 ---
 layout: review
-title: "子揚的Fine ∂ining小站"
+title: "子揚的 Fine ∂ining 小站"
 permalink: /fine-dining/
 ---
 
