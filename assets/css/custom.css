@@ -142,12 +142,12 @@
   font-size: 0.75rem;
 }
 
-/* Review Layout — sidebar + content below the header/nav */
+/* Review Layout — sidebar overlays, content always centered */
 .review-wrapper {
-  display: flex;
+  display: block;
 }
 
-/* Sidebar — sticky left panel */
+/* Sidebar — fixed overlay panel, below header+nav */
 .review-sidebar {
   width: var(--sidebar-width);
   min-width: var(--sidebar-width);
@@ -156,11 +156,13 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
-  max-height: 100vh;
+  position: fixed;
+  top: var(--header-offset, 0px);
+  left: 0;
+  height: calc(100vh - var(--header-offset, 0px));
   overflow-y: auto;
+  z-index: 100;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Unify body text size across all layouts */
@@ -182,19 +184,23 @@
   display: none;
 }
 
-/* Collapse button — small chevron at top of sidebar */
+/* Collapse/expand button — fixed, outside the sidebar */
 .sidebar-collapse {
-  background: none;
-  border: none;
-  border-bottom: 1px solid var(--color-border);
+  position: fixed;
+  top: calc(var(--header-offset, 0px) + 0.5rem);
+  left: calc(var(--sidebar-width) - 16px);
+  z-index: 101;
+  background-color: var(--color-bg-sidebar);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
   color: var(--color-text-muted);
-  font-size: var(--font-size-sidebar-item);
+  font-size: 0.85rem;
   cursor: pointer;
-  padding: 0.4rem 0;
-  width: 100%;
-  text-align: center;
-  transition: background-color 0.15s, color 0.15s;
-  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: left 0.25s ease, background-color 0.15s, color 0.15s;
 }
 
 .sidebar-collapse:hover {
@@ -210,24 +216,22 @@
   overflow-y: auto;
 }
 
-/* Collapsed sidebar state */
+/* Collapsed sidebar state — slides off-screen */
 .sidebar-collapsed .review-sidebar {
-  width: var(--sidebar-width-collapsed);
-  min-width: var(--sidebar-width-collapsed);
-}
-
-.sidebar-collapsed .sidebar-list {
-  opacity: 0;
-  visibility: hidden;
+  transform: translateX(calc(-1 * var(--sidebar-width)));
 }
 
 .sidebar-collapsed .sidebar-collapse {
+  left: 0.5rem;
   transform: rotate(180deg);
 }
 
-.review-sidebar,
+.review-sidebar {
+  transition: transform 0.25s ease;
+}
+
 .sidebar-list {
-  transition: width 0.25s ease, min-width 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 /* Sidebar year group heading */
@@ -317,11 +321,9 @@
   transform: translateX(-3px);
 }
 
-/* Content area in review layout */
+/* Content area in review layout — always centered in viewport */
 .review-content {
-  flex: 1;
   padding: 2rem 3rem;
-  min-width: 0;
   max-width: var(--content-max-width);
   margin: 0 auto;
   font-size: var(--font-size-body);
@@ -370,23 +372,16 @@
   color: #999;
 }
 
+/* Footer — prevent inheriting enlarged body text size */
+.site-footer {
+  font-size: 1rem;
+}
+
 /* Mobile responsive */
 @media screen and (max-width: 42em) {
-  .review-wrapper {
-    display: block;
-  }
-
   .review-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: var(--sidebar-width-mobile);
-    height: 100vh;
-    z-index: 1000;
-    transform: translateX(-100%);
-    transition: transform 0.25s ease;
-    box-shadow: none;
-    min-height: 100vh;
+    transform: translateX(calc(-1 * var(--sidebar-width-mobile)));
   }
 
   .review-sidebar.sidebar-open {
@@ -400,6 +395,10 @@
 
   .sidebar-backdrop.backdrop-visible {
     display: block;
+  }
+
+  .sidebar-collapse {
+    display: none;
   }
 
   .review-content {
