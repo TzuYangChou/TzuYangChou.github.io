@@ -55,7 +55,7 @@ date: YYYY-MM-DD
 
 - Path: `assets/fine-dining/YYYY-MM-DD-restaurant-name/`
 - One folder per visit, mirroring the review filename.
-- Reference in reviews as: `![caption]({{ '/assets/fine-dining/YYYY-MM-DD-restaurant-name/photo.jpg' | relative_url }})`
+- Reference in reviews as: `![caption](/assets/fine-dining/YYYY-MM-DD-restaurant-name/photo.jpg)`
 
 ### Layouts
 
