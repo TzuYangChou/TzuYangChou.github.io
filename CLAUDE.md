@@ -6,7 +6,9 @@ Jekyll-based GitHub Pages personal academic site using the Cayman theme.
 
 ## Language Policy
 
-All artifacts checked into the repo — content, comments, commit messages — must be in English. Conversations with the user may be in any language.
+Code comments, commit messages, and technical documentation must be in English. Conversations with the user may be in any language.
+
+**Exception:** Fine dining review content (`_reviews/*.md` body text) and the fine dining landing page (`fine-dining.md` body text) are written in Traditional Chinese.
 
 ## Site Structure
 
