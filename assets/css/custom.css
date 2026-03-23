@@ -251,6 +251,40 @@
   transition: width 0.25s ease, min-width 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
 }
 
+/* Back-to-listing link — bottom of individual review pages */
+.review-back-nav {
+  margin: 3rem 0 1.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.review-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #155b6b;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.review-back-link:hover {
+  color: #0e3d4a;
+  border-bottom-color: #155b6b;
+}
+
+.review-back-arrow {
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform 0.15s;
+}
+
+.review-back-link:hover .review-back-arrow {
+  transform: translateX(-3px);
+}
+
 /* Content area in review layout */
 .review-content {
   flex: 1;
