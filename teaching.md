@@ -3,10 +3,6 @@ layout: default
 title: Tzu-Yang Chou
 ---
 
-[Home](index.md) | [Research](research.md) | [Teaching](teaching.md)
-
----
-
 
 2022-2023 Semester 2 Proof and Problem Solving [(MATH08059)](http://www-test.drps.ed.ac.uk/22-23/dpt/cxmath08059.htm)
 
