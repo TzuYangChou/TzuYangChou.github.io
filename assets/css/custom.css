@@ -11,7 +11,6 @@
   max-width: 64rem;
   display: flex;
   justify-content: center;
-  gap: 0;
 }
 
 .nav-item {
@@ -28,6 +27,8 @@
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: color 0.2s, background-color 0.2s;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .nav-item > a:hover,
@@ -63,14 +64,18 @@
   z-index: 1000;
 }
 
-/* Hover expand */
-.nav-dropdown:hover .nav-dropdown-menu {
+/* Hover, focus-within, and JS-toggled expand */
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu,
+.nav-dropdown.nav-dropdown-open .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.nav-dropdown:hover .nav-arrow {
+.nav-dropdown:hover .nav-arrow,
+.nav-dropdown:focus-within .nav-arrow,
+.nav-dropdown.nav-dropdown-open .nav-arrow {
   transform: rotate(180deg);
 }
 
@@ -188,6 +193,24 @@
   overflow-y: auto;
 }
 
+/* Sidebar year group heading */
+.sidebar-year-heading {
+  padding: 0.6rem 1.25rem 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #155b6b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 0.25rem;
+}
+
+.sidebar-year-heading:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
 .sidebar-item a {
   display: block;
   padding: 0.5rem 1.25rem;
@@ -212,13 +235,15 @@
 }
 
 .sidebar-date {
-  display: block;
+  display: inline-block;
   font-size: 0.75rem;
   color: #888;
+  min-width: 3em;
+  margin-right: 0.35em;
 }
 
 .sidebar-restaurant {
-  display: block;
+  display: inline;
 }
 
 /* Collapsed sidebar state */
@@ -296,6 +321,7 @@
   flex: 1;
   padding: 2rem 3rem;
   min-width: 0;
+  max-width: 780px;
 }
 
 .review-content img {
@@ -323,6 +349,24 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Mobile sidebar backdrop */
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Landing page — upcoming/unlinked review entries */
+.review-upcoming {
+  color: #999;
+  font-style: italic;
+}
+
 /* Mobile responsive */
 @media screen and (max-width: 42em) {
   .review-wrapper {
@@ -348,6 +392,10 @@
   }
 
   .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar-backdrop.backdrop-visible {
     display: block;
   }
 

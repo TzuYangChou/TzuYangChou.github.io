@@ -43,8 +43,8 @@ permalink: /fine-dining/
 - [謙安和](2022-12-27-ken-anhe/)
 - [de nuit](2022-12-31-de-nuit/)
 - [巴黎廳1930 x 高山英紀](2023-01-01-paris-1930-de-hideki-takayama/)
-- 米香台菜餐廳
-- 雅閣
+- <span class="review-upcoming">米香台菜餐廳</span>
+- <span class="review-upcoming">雅閣</span>
 
 ## 2023 夏
 
@@ -111,15 +111,15 @@ permalink: /fine-dining/
 
 ## 2024 冬
 
-- Timberyard(三訪)
-- I-France愛法餐廳(五訪)
-- A
-- JL Studio(四訪)
-- WOK by O'Bond
-- L'Atelier de Joel Robuchon(四訪)
-- Circum-
-- Lawrys
-- SENS
+- <span class="review-upcoming">Timberyard(三訪)</span>
+- <span class="review-upcoming">I-France愛法餐廳(五訪)</span>
+- <span class="review-upcoming">A</span>
+- <span class="review-upcoming">JL Studio(四訪)</span>
+- <span class="review-upcoming">WOK by O'Bond</span>
+- <span class="review-upcoming">L'Atelier de Joel Robuchon(四訪)</span>
+- <span class="review-upcoming">Circum-</span>
+- <span class="review-upcoming">Lawrys</span>
+- <span class="review-upcoming">SENS</span>
 
 ## 食記短評
 
@@ -129,8 +129,8 @@ permalink: /fine-dining/
 - [茹絲葵](2023-06-11-ruths-chris/)
 - [毓鮨 割烹](2023-07-18-yu-kappo-sushi/)
 - [Inari izakaya](2024-06-04-inari-izakaya/)
-- 頤宮(二訪)
+- <span class="review-upcoming">頤宮(二訪)</span>
 
 ## Google地圖
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1ET0m3Yje79Xew1J5b1iGzVAsmG5NQ5E&ehbc=2E312F" width="100%" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=1ET0m3Yje79Xew1J5b1iGzVAsmG5NQ5E&ehbc=2E312F" width="100%" height="480" title="Fine dining restaurant locations on Google Maps"></iframe>

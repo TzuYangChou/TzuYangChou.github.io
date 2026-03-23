@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tzu-Yang Chou
+title: Teaching
 ---
 
 
