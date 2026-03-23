@@ -7,8 +7,15 @@
   --color-primary-dark: #0e3d4a;
   --color-text: #333;
   --color-text-muted: #888;
+  --color-text-disabled: #999;
   --color-bg-sidebar: #fafafa;
   --color-border: #e0e0e0;
+  --color-border-light: #e8e8e8;
+
+  /* Sidebar interactive states */
+  --color-sidebar-hover-bg: #eef6f8;
+  --color-sidebar-hover-border: #159957;
+  --color-sidebar-active-bg: #e6f2f5;
 
   /* Typography */
   --font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,7 +27,7 @@
 
   /* Layout */
   --content-max-width: 1100px;
-  --sidebar-width: 320px;
+  --sidebar-width: 360px;
 
   /* Images */
   --img-max-width: 70%;
@@ -54,6 +61,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-top: none;
   min-width: auto;
+  z-index: 1050;
 }
 
 .site-nav .dropdown-item {
@@ -147,7 +155,7 @@
   color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--color-border-light);
   margin-top: 0.25rem;
 }
 
@@ -168,12 +176,12 @@
 }
 
 .sidebar-item a:hover {
-  background-color: #eef6f8;
-  border-left-color: #159957;
+  background-color: var(--color-sidebar-hover-bg);
+  border-left-color: var(--color-sidebar-hover-border);
 }
 
 .sidebar-item-active a {
-  background-color: #e6f2f5;
+  background-color: var(--color-sidebar-active-bg);
   border-left-color: var(--color-primary);
   color: var(--color-primary);
   font-weight: 600;
@@ -253,7 +261,7 @@
 
 /* Landing page — upcoming/unlinked review entries */
 .review-upcoming {
-  color: #999;
+  color: var(--color-text-disabled);
 }
 
 /* Footer */
@@ -270,6 +278,12 @@ html.sidebar-show-initial .review-sidebar {
 /* ==============================
    Mobile responsive
    ============================== */
+@media screen and (max-width: 576px) {
+  .review-sidebar {
+    width: 100vw !important;
+  }
+}
+
 @media screen and (max-width: 42em) {
   .review-content {
     padding: 1.5rem 1rem;
