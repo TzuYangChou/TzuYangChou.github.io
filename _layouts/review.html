@@ -75,17 +75,21 @@
         var sidebar = document.querySelector('.review-sidebar');
         var backdrop = document.querySelector('.sidebar-backdrop');
 
-        /* Calculate header+nav height and set CSS variable */
+        /* Calculate visible header+nav height and set CSS variable */
+        var header = document.querySelector('.page-header');
+        var nav = document.querySelector('.site-nav');
+
         function updateHeaderOffset() {
-          var header = document.querySelector('.page-header');
-          var nav = document.querySelector('.site-nav');
-          var offset = 0;
-          if (header) offset += header.offsetHeight;
-          if (nav) offset += nav.offsetHeight;
-          document.documentElement.style.setProperty('--header-offset', offset + 'px');
+          var headerH = header ? header.offsetHeight : 0;
+          var navH = nav ? nav.offsetHeight : 0;
+          var total = headerH + navH;
+          var scrollY = window.scrollY || window.pageYOffset;
+          var visible = Math.max(0, total - scrollY);
+          document.documentElement.style.setProperty('--header-offset', visible + 'px');
         }
         updateHeaderOffset();
         window.addEventListener('resize', updateHeaderOffset);
+        window.addEventListener('scroll', updateHeaderOffset, { passive: true });
 
         collapseBtn.addEventListener('click', function() {
           var collapsed = wrapper.classList.toggle('sidebar-collapsed');
