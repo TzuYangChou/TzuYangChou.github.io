@@ -102,3 +102,216 @@
 .nav-wip em {
   font-size: 0.75rem;
 }
+
+/* Review Layout — Full-height sidebar + right column */
+.review-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar — full height left panel */
+.review-sidebar {
+  width: 240px;
+  min-width: 240px;
+  background-color: #fafafa;
+  border-right: 1px solid #e0e0e0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+/* Right column: header + nav + content stacked */
+.review-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Compact header for review pages */
+.review-page .page-header {
+  padding: 1.5rem 2rem;
+  margin: 0;
+}
+
+.review-page .page-header .project-name {
+  font-size: 1.75rem;
+}
+
+.sidebar-header {
+  height: 3rem;
+  padding: 0 1.25rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Collapse button */
+.sidebar-collapse {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.sidebar-collapse:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.sidebar-header a {
+  color: #155b6b;
+  text-decoration: none;
+}
+
+.sidebar-header a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.sidebar-item a {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.85rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-left: 3px solid transparent;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.sidebar-item a:hover {
+  background-color: #eef6f8;
+  border-left-color: #159957;
+}
+
+.sidebar-item-active a {
+  background-color: #e6f2f5;
+  border-left-color: #155b6b;
+  color: #155b6b;
+  font-weight: 600;
+}
+
+.sidebar-date {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.sidebar-restaurant {
+  display: block;
+}
+
+/* Collapsed sidebar state */
+.sidebar-collapsed .review-sidebar {
+  width: 40px;
+  min-width: 40px;
+  overflow: hidden;
+}
+
+.sidebar-collapsed .sidebar-header a {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar-collapsed .sidebar-list {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-collapsed .sidebar-header {
+  justify-content: center;
+  padding: 0;
+}
+
+.sidebar-collapsed .sidebar-collapse {
+  transform: rotate(180deg);
+  position: relative;
+  z-index: 10;
+}
+
+.review-sidebar,
+.sidebar-header a,
+.sidebar-list {
+  transition: width 0.25s ease, min-width 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Content area in review layout */
+.review-content {
+  flex: 1;
+  padding: 2rem 3rem;
+  min-width: 0;
+}
+
+.review-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+/* Sidebar toggle button (mobile) */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1001;
+  background-color: #155b6b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 42em) {
+  .review-wrapper {
+    display: block;
+  }
+
+  .review-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    box-shadow: none;
+    min-height: 100vh;
+  }
+
+  .review-sidebar.sidebar-open {
+    transform: translateX(0);
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .review-content {
+    padding: 1.5rem 1rem;
+  }
+}

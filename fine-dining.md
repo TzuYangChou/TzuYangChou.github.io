@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: review
 title: Fine Dining Reviews
 ---
 
@@ -7,7 +7,7 @@ title: Fine Dining Reviews
 
 {% assign sorted_reviews = site.reviews | sort: "date" | reverse %}
 {% for review in sorted_reviews %}
-- [{{ review.title }}]({{ review.url | relative_url }}) — {{ review.restaurant }}, {{ review.location }}
+- {{ review.date | date: "%Y-%m-%d" }} — [{{ review.restaurant }}]({{ review.url | relative_url }}), {{ review.location }}
 {% endfor %}
 
 {% if site.reviews.size == 0 %}
