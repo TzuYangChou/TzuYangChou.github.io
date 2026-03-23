@@ -16,12 +16,15 @@
   <body class="review-page">
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    </header>
+
+    {% include nav.html %}
+
     <div class="review-wrapper">
       <aside class="review-sidebar">
-        <div class="sidebar-header">
-          <a href="{{ '/fine-dining' | relative_url }}">Fine Dining Reviews</a>
-          <button class="sidebar-collapse" aria-label="Collapse sidebar">&#10094;</button>
-        </div>
+        <button class="sidebar-collapse" aria-label="Collapse sidebar">&#10094;</button>
         <ul class="sidebar-list">
           {% assign sorted_reviews = site.reviews | sort: "date" %}
           {% assign grouped_reviews = sorted_reviews | group_by_exp: "review", "review.date | date: '%Y'" %}
@@ -39,27 +42,19 @@
         </ul>
       </aside>
 
-      <div class="review-main">
-        <header class="page-header" role="banner">
-          <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        </header>
+      <main id="content" class="review-content" role="main">
+        {% capture _img_old %}src="./{% endcapture %}
+        {% capture _img_new %}src="{{ page.path | replace: '_reviews/', '/assets/fine-dining/' | replace: '.md', '' }}/{% endcapture %}
+        {{ content | replace: _img_old, _img_new }}
 
-        {% include nav.html %}
-
-        <main id="content" class="review-content" role="main">
-          {% capture _img_old %}src="./{% endcapture %}
-          {% capture _img_new %}src="{{ page.path | replace: '_reviews/', '/assets/fine-dining/' | replace: '.md', '' }}/{% endcapture %}
-          {{ content | replace: _img_old, _img_new }}
-
-          {% if page.restaurant %}
-          <nav class="review-back-nav" aria-label="Back to listing">
-            <a href="{{ '/fine-dining/' | relative_url }}" class="review-back-link">
-              <span class="review-back-arrow" aria-hidden="true">&#8592;</span> Back to Fine Dining
-            </a>
-          </nav>
-          {% endif %}
-        </main>
-      </div>
+        {% if page.restaurant %}
+        <nav class="review-back-nav" aria-label="Back to listing">
+          <a href="{{ '/fine-dining/' | relative_url }}" class="review-back-link">
+            <span class="review-back-arrow" aria-hidden="true">&#8592;</span> Back to Fine Dining
+          </a>
+        </nav>
+        {% endif %}
+      </main>
     </div>
 
     <div class="sidebar-backdrop" aria-hidden="true"></div>

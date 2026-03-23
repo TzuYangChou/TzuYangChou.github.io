@@ -108,13 +108,12 @@
   font-size: 0.75rem;
 }
 
-/* Review Layout — Full-height sidebar + right column */
+/* Review Layout — sidebar + content below the header/nav */
 .review-wrapper {
   display: flex;
-  min-height: 100vh;
 }
 
-/* Sidebar — full height left panel */
+/* Sidebar — sticky left panel */
 .review-sidebar {
   width: 240px;
   min-width: 240px;
@@ -123,50 +122,38 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: sticky;
   top: 0;
+  align-self: flex-start;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
-/* Right column: header + nav + content stacked */
-.review-main {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Compact header for review pages */
-.review-page .page-header {
+/* Compact header for all pages */
+.page-header {
   padding: 1.5rem 2rem;
   margin: 0;
 }
 
-.review-page .page-header .project-name {
+.page-header .project-name {
   font-size: 1.75rem;
 }
 
-.sidebar-header {
-  height: 3rem;
-  padding: 0 1.25rem;
-  border-bottom: 1px solid #e0e0e0;
-  font-weight: 700;
-  font-size: 0.95rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.page-header .project-tagline {
+  display: none;
 }
 
-/* Collapse button */
+/* Collapse button — small chevron at top of sidebar */
 .sidebar-collapse {
   background: none;
   border: none;
+  border-bottom: 1px solid #e0e0e0;
   color: #888;
   font-size: 0.85rem;
   cursor: pointer;
-  padding: 0.25rem 0.4rem;
-  border-radius: 4px;
+  padding: 0.4rem 0;
+  width: 100%;
+  text-align: center;
   transition: background-color 0.15s, color 0.15s;
   flex-shrink: 0;
 }
@@ -176,21 +163,32 @@
   color: #333;
 }
 
-.sidebar-header a {
-  color: #155b6b;
-  text-decoration: none;
-}
-
-.sidebar-header a:hover {
-  text-decoration: underline;
-}
-
 .sidebar-list {
   list-style: none;
   margin: 0;
   padding: 0.5rem 0;
   flex: 1;
   overflow-y: auto;
+}
+
+/* Collapsed sidebar state */
+.sidebar-collapsed .review-sidebar {
+  width: 40px;
+  min-width: 40px;
+}
+
+.sidebar-collapsed .sidebar-list {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-collapsed .sidebar-collapse {
+  transform: rotate(180deg);
+}
+
+.review-sidebar,
+.sidebar-list {
+  transition: width 0.25s ease, min-width 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
 }
 
 /* Sidebar year group heading */
@@ -244,42 +242,6 @@
 
 .sidebar-restaurant {
   display: inline;
-}
-
-/* Collapsed sidebar state */
-.sidebar-collapsed .review-sidebar {
-  width: 40px;
-  min-width: 40px;
-  overflow: hidden;
-}
-
-.sidebar-collapsed .sidebar-header a {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  overflow: hidden;
-}
-
-.sidebar-collapsed .sidebar-list {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.sidebar-collapsed .sidebar-header {
-  justify-content: center;
-  padding: 0;
-}
-
-.sidebar-collapsed .sidebar-collapse {
-  transform: rotate(180deg);
-  position: relative;
-  z-index: 10;
-}
-
-.review-sidebar,
-.sidebar-header a,
-.sidebar-list {
-  transition: width 0.25s ease, min-width 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
 }
 
 /* Back-to-listing link — bottom of individual review pages */
