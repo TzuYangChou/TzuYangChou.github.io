@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     {% include head-custom.html %}
     <script>
-      if (localStorage.getItem('sidebar-collapsed') === 'true') {
-        document.documentElement.classList.add('sidebar-collapsed-pending');
-      }
+      (function() {
+        var isNarrow = window.innerWidth < 1740;
+        if (isNarrow || localStorage.getItem('sidebar-collapsed') === 'true') {
+          document.documentElement.classList.add('sidebar-collapsed-pending');
+        }
+      })();
     </script>
   </head>
   <body class="review-page">
@@ -96,12 +99,28 @@
         window.addEventListener('resize', updateHeaderOffset);
         window.addEventListener('scroll', updateHeaderOffset, { passive: true });
 
+        var COLLAPSE_THRESHOLD = 1740;
+
         /* Apply collapsed state from <head> script to the wrapper */
         if (document.documentElement.classList.contains('sidebar-collapsed-pending')) {
           document.documentElement.classList.remove('sidebar-collapsed-pending');
           wrapper.classList.add('sidebar-collapsed');
           collapseBtn.setAttribute('aria-label', 'Expand sidebar');
         }
+
+        /* Auto-collapse on narrow, expand on wide only if user hasn't explicitly collapsed */
+        function handleSidebarResize() {
+          var isNarrow = window.innerWidth < COLLAPSE_THRESHOLD;
+          var isCollapsed = wrapper.classList.contains('sidebar-collapsed');
+          if (isNarrow && !isCollapsed) {
+            wrapper.classList.add('sidebar-collapsed');
+            collapseBtn.setAttribute('aria-label', 'Expand sidebar');
+          } else if (!isNarrow && isCollapsed && localStorage.getItem('sidebar-collapsed') !== 'true') {
+            wrapper.classList.remove('sidebar-collapsed');
+            collapseBtn.setAttribute('aria-label', 'Collapse sidebar');
+          }
+        }
+        window.addEventListener('resize', handleSidebarResize);
 
         collapseBtn.addEventListener('click', function() {
           var collapsed = wrapper.classList.toggle('sidebar-collapsed');
