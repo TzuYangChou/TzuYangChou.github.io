@@ -1,0 +1,73 @@
+---
+layout: review
+title: "教父牛排Danny's Steakhouse"
+restaurant: "教父牛排Danny's Steakhouse"
+date: 2022-05-22
+---
+
+![](https://hackmd.io/_uploads/Bk3hFSSan.jpg)
+
+**地址**：台北市中山區樂群三路58號<br>
+**造訪日期**：2022.5.22<br>
+**人數價位**：8782/3
+
+
+星星+1，有人請客似乎會讓人感覺更好吃，裝潢很有高級餐廳的風格，不過還不會到讓人有肅穆的感覺，服務還蠻好，但略遜昨天的[Forchetta](/-PbZmMjrRGqWwd0SOQVWQA)一點。因為是中午的第二個餐期的關係，有一些品項賣完了稍微可惜，下次再來會想嘗試，另外大概沒有點酒類的關係所以稍微便宜一點。上菜速度極快，而且似乎不是餐期的緣故，從進門到結帳離開只有不到一小時而已。
+
+
+![](https://hackmd.io/_uploads/Sk33FHHan.jpg)
+
+餐前麵包：外皮烤的很酥脆，稍微偏厚一點，整顆烤完了才切開所以內部很燙又很鬆軟，搭配無鹽奶油，抹上去之後用麵包本身的溫度融化搭起來吃很不錯。
+
+
+![](https://hackmd.io/_uploads/B12hFBrT2.jpg)
+
+![](https://hackmd.io/_uploads/r1hixFPan.jpg)
+
+
+前菜是生削黑松露干貝，下面佐玉米的醬忘了是什麼，干貝跟松露都不錯吃，但更喜歡另外一道嫩煎鮪魚，只有外面一小層是熟的，配上下層的燉菜很驚艷。
+
+
+![](https://hackmd.io/_uploads/B1e23KHBan.jpg)
+
+牛肝菌卡布奇諾：據說是招牌湯品，上方的奶泡比較濃郁而帶著蕈香，不好描述但很好喝，除了單喝以外用麵包沾著吃也不錯。
+
+
+![](https://hackmd.io/_uploads/Hklh2KHH63.jpg)
+
+![](https://hackmd.io/_uploads/BJZ22YHrp2.jpg)
+
+主餐的部分：今天點選的三道分別是澳洲羊排、澳洲和牛、夏多布利昂，兩道牛排都做三分熟但沒什麼血水，羊排則是五分熟，三樣吃下來果然還是夏多布利昂的最佳，來牛排館看來不該點不是牛排的東西吧？雖然一般來說是不愛吃熟的大蒜，但烤大蒜的部分意外的好吃，也可以追加。
+
+
+![](https://hackmd.io/_uploads/Bkxn3trrT3.jpg)
+
+佐料的部分提供三種，鹽之花、法式芥末、紅酒醬，另外紅酒醬裡面有蔥蒜跟豬骨牛骨的成分。
+
+
+![](https://hackmd.io/_uploads/BkhhtHHa2.jpg)
+
+![](https://hackmd.io/_uploads/SynntBrp3.jpg)
+
+配菜：奶油玉米、羅勒炒磨菇，這部分就中規中矩，跟會在其他地方吃到的沒有太大差異。
+
+
+![](https://hackmd.io/_uploads/ByW3htrH6n.jpg)
+
+![](https://hackmd.io/_uploads/rJhhtSB6n.jpg)
+
+![](https://hackmd.io/_uploads/Byx22FrSTh.jpg)
+
+三款甜點都很讓人驚豔，個人的是還很燙的半熟乳酪塔配上覆盆子雪酪跟紅心芭樂醬意外的搭調，另外幾樣甜點似乎也是用類似的一冷一熱的方式搭配。
+
+
+![](https://hackmd.io/_uploads/BJxnnFHST2.jpg)
+
+最後的小茶點中核桃酥很好吃，不過其他的棉花糖跟軟糖就一般。
+
+可能是吃過的高級餐廳裡面最標準化且商業化的，食材選用自不必提，烹調上除了湯品較特別以外都是傳統保守而精緻的路線，可以說是想放鬆大吃而不想花心思腦力理解任何菜色時的優質去處，再訪可能高，也很推薦缺乏經驗的人造訪。
+
+**環境裝潢**：70/100 <br>
+**餐點水準**：75/100 <br>
+**服務品質**：75/100 <br>
+**整體用餐體驗評價**：74/100

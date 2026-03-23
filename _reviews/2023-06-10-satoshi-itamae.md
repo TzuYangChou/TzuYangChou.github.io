@@ -1,0 +1,82 @@
+---
+layout: review
+title: "智 板前料理"
+restaurant: "智 板前料理"
+date: 2023-06-10
+---
+
+![](https://hackmd.io/_uploads/S1gqkfjDh.png)
+
+**地址**：台北市中山區建國北路二段32號<br>
+**造訪日期**：2023.6.10<br>
+**人數價位**：17000/5
+
+![](https://hackmd.io/_uploads/r1I2yMiwh.png)
+
+氣氛輕鬆的板前日式料理，今天吃特殊的客製化菜單，主要品酒，再根據喝的酒款設計適合搭配的餐點，品項高達20品，價格每人只要3000出頭，經濟實惠，喝的酒款也好，是讓人暢快的一餐，不過和一般的日式料理套餐出菜的順序稍有不同。
+
+![](https://hackmd.io/_uploads/HJqayMoP2.png)
+
+![](https://hackmd.io/_uploads/HJPBlfsDh.png)
+
+![](https://hackmd.io/_uploads/H1AOeGoDn.png)
+
+![](https://hackmd.io/_uploads/rkudefsw2.png)
+
+![](https://hackmd.io/_uploads/Bk4Fezsvh.png)
+
+![](https://hackmd.io/_uploads/rJ13QGoDh.png)
+
+![](https://hackmd.io/_uploads/rkM_gMjP3.png)
+
+食材選用亦相當好，配合開場香檳的先付是松葉蟹跟生花枝，第二支Blanc de Noirs白酒則是佐以胭脂蝦、鮪魚中腹、時不知鮭和川燙的石狗公，大體來說食材新鮮程度都非常高，胭脂蝦與鮭魚的品質特別出眾。
+
+![](https://hackmd.io/_uploads/HJbEbGjv2.png)
+
+![](https://hackmd.io/_uploads/HJhmGGsv3.png)
+
+![](https://hackmd.io/_uploads/SylB-ziP2.png)
+
+今日最傑出的酒款應該是Petrolo的Toscana Torrione紅酒，除了搭配鮟鱇魚肝與柿餅這道菜的融合精妙以外，單喝也非常出色，果香、酸味、甜味、單寧都只有些許，彼此尚算平衡以外，嚥下去後的尾韻則是異常溫暖，配上後面的黑鮑魚也亮眼。
+
+![](https://hackmd.io/_uploads/SyIN8MiDn.png)
+
+
+![](https://hackmd.io/_uploads/BkO0rMsDh.png)
+
+![](https://hackmd.io/_uploads/BkAYZGsw3.png)
+
+![](https://hackmd.io/_uploads/HyVK-Gsv2.png)
+
+![](https://hackmd.io/_uploads/H1V5Zfjvh.png)
+
+![](https://hackmd.io/_uploads/H1i9bfiDh.png)
+
+![](https://hackmd.io/_uploads/BJEXVGiv2.png)
+
+![](https://hackmd.io/_uploads/S1JVVMoPn.png)
+
+另一支紅酒是Masi的amarone classico，先是搭配鮪魚胸、白鰻和海膽兩貫，不過後續跟鯖魚或青花魚的搭配上就還需要紫蘇生薑之類的來調和才行，不然會放大銀皮的苦澀味不太討喜。值得一提的是白鰻本身非常好，口感的勁道層次相當豐富，酥脆彈韌柔軟兼具，和[logy的鰻魚](/R09i5WRmS1WyLdAOTyqlKg)是兩種好的極端。
+
+![](https://hackmd.io/_uploads/HJrHzzjv2.png)
+
+![](https://hackmd.io/_uploads/HyBbEMsP2.png)
+
+![](https://hackmd.io/_uploads/B1r-Mzow3.png)
+
+其他如轉場的半天筍茶碗蒸或是綠竹筍算是水準之上不到讓人驚豔的地步，還有胭脂蝦頭中填入醋飯烘烤到可以連殼吃算是出人意表的料理，醋飯吸收蝦膏之後滋味豐腴厚實，不過蝦頭還是食用上不太方便，偶爾會有點扎口的感覺。
+
+![](https://hackmd.io/_uploads/BJ2nWziDh.png)
+
+![](https://hackmd.io/_uploads/ryBuQzjv2.png)
+
+![](https://hackmd.io/_uploads/S16dmfiPn.png)
+
+![](https://hackmd.io/_uploads/ryEt7fjvn.png)
+
+尾聲部分的玉子燒，比起目前流行的像是蜂蜜蛋糕的口感更喜歡這次的版本，味噌湯或是甜品都是標準範圍，餐後消化用的兩杯分別是波特酒跟無憂枇杷酒，前者充斥濃郁的黑糖香氣，不過嚥下去之後是可可的味道，是很棒的甜點酒，不過無憂濃度有一些太高，雖然喝的時候溫潤不嗆，帶點蜜地瓜的尾韻也很不錯，但是會讓人醉意飆升，還是須斟酌控制喝的量。
+
+**環境裝潢**：50/100 普通的板前料理店裝潢<br>
+**餐點水準**：85/100 主要是酒款都非常好的分數，料理方面以食材跟分量取勝，調味或手法上是標準水準<br>
+**服務品質**：50/100 不是一般方式來用餐的評價這個有點奇怪所以給個公定的標準分數 <br>
+**整體用餐體驗評價**：71/100

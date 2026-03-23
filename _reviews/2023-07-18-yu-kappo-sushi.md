@@ -1,0 +1,61 @@
+---
+layout: review
+title: "毓鮨 割烹"
+restaurant: "毓鮨 割烹"
+date: 2023-07-18
+---
+
+![](https://hackmd.io/_uploads/H1JwN6xa2.jpg)
+
+**地址**：台北市萬華區貴陽街二段39號<br>
+**造訪日期**：2023.7.18<br>
+**人數價位**：2560/2
+
+台北少見的平價樸實日式壽司割烹，各方面都壓在及格邊緣。食材選用考慮到價格的部分是可以接受的，所以評論會著重在烹調的技法與味道的組合；用餐環境有點昏暗，不如其他的日式料亭來的明亮舒適，板前座位本身亦相當普通；服務部分沒有額外收服務費，因此也沒必要要求什麼內容。餐食如前所述食材的等級必然相對平價，不過道數與分量都不錯，也有數道小食的調味是成功的，掩蓋了食材的不足。
+
+![](https://hackmd.io/_uploads/H1GP4Tgah.jpg)
+
+![](https://hackmd.io/_uploads/B1fvETgan.jpg)
+
+![](https://hackmd.io/_uploads/rJxv46eT2.jpg)
+
+![](https://hackmd.io/_uploads/B1fPETxT2.jpg)
+
+![](https://hackmd.io/_uploads/SyZwE6l6n.jpg)
+
+![](https://hackmd.io/_uploads/HJGvV6l63.jpg)
+
+![](https://hackmd.io/_uploads/S1-vEaean.jpg)
+
+![](https://hackmd.io/_uploads/SyxwV6xp2.jpg)
+
+握壽司部分整體都偏弱，幾乎可以說是有人現場捏製表演的壽司郎，醋飯過於黏糯，酸味不明亮，與魚料的融合很隨便，魚料的調味亦普通，個人只有比較喜歡白甘與的甜蝦，其他如紅甘或鮪魚算是中等。
+
+![](https://hackmd.io/_uploads/rkQDVpgan.jpg)
+
+![](https://hackmd.io/_uploads/B1-vETxT2.jpg)
+
+![](https://hackmd.io/_uploads/rkfwN6g6n.jpg)
+
+![](https://hackmd.io/_uploads/SkxwN6xph.jpg)
+
+![](https://hackmd.io/_uploads/S1fwV6xT3.jpg)
+
+![](https://hackmd.io/_uploads/Sya8ETg62.jpg)
+
+![](https://hackmd.io/_uploads/rkMwEpgp2.jpg)
+
+![](https://hackmd.io/_uploads/ByfwN6lpn.jpg)
+
+![](https://hackmd.io/_uploads/HJyvV6gah.jpg)
+
+![](https://hackmd.io/_uploads/ryGw46lTh.jpg)
+
+割烹部分普遍較佳，開場第三道的花枝海膽透過紫蘇葉絲的融合還算是開胃且讓人有些期待，水雲醋表現也還行，再來就到後半段的煮鮑魚與炸櫛瓜、紫蘇生蠔等為佳，值得一提的是味噌湯頗有水準。不過也有幾道缺點不少，茶碗蒸表現就相當差勁，結構鬆散、香氣薄弱，當中的蛤蜊更是一塌糊塗；另外如干貝燒，調味過甜，絲狀感太明顯，搭配的海苔也很隨便，讓人感覺它的功能跟衛生紙毫無二致。
+
+可能是目前吃到的日式料亭的價格下界，表現似乎也理所當然的是下界，也許不該在吃了好幾家高級壽司餐廳之後才造訪。但又考慮到隔壁吃一人2000的菜單，只多了兩三道看起來也不是特別傑出的料理如紅甘白子等，那實在不如升級去吃中價位的板前料理(如[智](/MhCkpRpBR6K4pE5ram_Sgw))，個人不會推薦這家餐廳。
+
+**環境裝潢**：50/100 <br>
+**餐點水準**：40/100 <br>
+**服務品質**：40/100 <br>
+**整體用餐體驗評價**：42/100
