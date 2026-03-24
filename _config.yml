@@ -10,6 +10,9 @@ exclude:
   - .claude/
   - vendor
 
+kramdown:
+  hard_wrap: true
+
 collections:
   reviews:
     output: true
