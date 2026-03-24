@@ -48,6 +48,7 @@ GEM
       net-http (~> 0.5)
     ffi (1.17.3-x64-mingw-ucrt)
     ffi (1.17.3-x86_64-linux-gnu)
+    fiddle (1.1.6)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     github-pages (232)
@@ -276,6 +277,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     uri (1.1.1)
+    wdm (0.2.0)
     webrick (1.9.2)
 
 PLATFORMS
@@ -283,7 +285,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  fiddle (= 1.1.6)
   github-pages
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.6.9
