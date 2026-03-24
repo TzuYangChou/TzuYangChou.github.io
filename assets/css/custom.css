@@ -143,7 +143,7 @@
 
 .review-sidebar .offcanvas-title a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .sidebar-list {
