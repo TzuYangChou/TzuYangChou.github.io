@@ -121,6 +121,9 @@ permalink: /fine-dining/
 - <span class="review-upcoming">Lawrys</span>
 - <span class="review-upcoming">SENS</span>
 
+<!-- AUTO-FINE-DINING-REVIEWS:START -->
+<!-- AUTO-FINE-DINING-REVIEWS:END -->
+
 ## 食記短評
 
 - [暮藏](2022-05-29-mucang/)

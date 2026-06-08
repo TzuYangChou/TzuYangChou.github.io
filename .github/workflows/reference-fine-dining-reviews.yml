@@ -1,0 +1,51 @@
+name: Reference fine dining reviews
+
+on:
+  push:
+    branches:
+      - "**"
+    paths:
+      - "_reviews/**/*.md"
+      - "fine-dining.md"
+      - ".github/tools/update_fine_dining_references.py"
+      - ".github/workflows/reference-fine-dining-reviews.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reference-fine-dining-reviews-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update-reference:
+    if: github.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Update fine dining review references
+        run: python .github/tools/update_fine_dining_references.py
+
+      - name: Commit generated reference update
+        run: |
+          if git diff --quiet -- fine-dining.md; then
+            echo "fine-dining.md already references every review."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fine-dining.md
+          git commit \
+            -m "chore: keep fine dining review index complete" \
+            -m "Constraint: Update is generated from unreferenced _reviews files only" \
+            -m "Confidence: high" \
+            -m "Scope-risk: narrow" \
+            -m "Tested: python .github/tools/update_fine_dining_references.py" \
+            -m "Not-tested: Full Jekyll build in this automation workflow"
+          git push origin "HEAD:${{ github.ref_name }}"
