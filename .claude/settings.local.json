@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)",
+      "Bash(git stash list:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git remote -v:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git switch:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(bundle exec jekyll:*)",
+      "Bash(bundle install:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(pwd:*)",
+      "mcp__ide__getDiagnostics",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+      "Bash(git checkout -- .:*)",
+      "Bash(git restore .:*)",
+      "Bash(git branch -D:*)",
+      "Bash(git rebase -i:*)",
+      "Bash(git stash drop:*)",
+      "Bash(git stash clear:*)"
+    ]
+  },
+  "model": "opus",
+  "effortLevel": "high"
+}
