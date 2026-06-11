@@ -2,7 +2,6 @@
   "use strict";
 
   const VENUES_URL = "/assets/data/fine-dining-venues.json";
-  const BOUNDARY_URL = "/assets/maps/taipei.geojson";
   const TAIWAN_BOUNDS = {
     minLat: 21.8,
     maxLat: 25.4,
@@ -27,30 +26,23 @@
 
     const map = L.map(mapElement, {
       zoomControl: true,
-      attributionControl: false,
+      attributionControl: true,
       scrollWheelZoom: false,
     });
 
-    const [venues, boundary] = await Promise.all([
-      fetchJson(VENUES_URL),
-      fetchJson(BOUNDARY_URL),
-    ]);
-
-    L.geoJSON(boundary, {
-      interactive: false,
-      style: {
-        color: "#155b6b",
-        weight: 1.4,
-        opacity: 0.7,
-        fillColor: "#159957",
-        fillOpacity: 0.08,
-      },
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      subdomains: "abcd",
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     }).addTo(map);
 
+    const venues = await fetchJson(VENUES_URL);
     const markers = L.featureGroup();
     const allBounds = L.latLngBounds([]);
     const taiwanBounds = L.latLngBounds([]);
     let validVenueCount = 0;
+    let visitLinkCount = 0;
 
     for (const venue of venues) {
       if (!isValidVenue(venue)) {
@@ -59,12 +51,13 @@
       }
 
       const latLng = L.latLng(venue.lat, venue.lng);
+      const hasVisits = venue.visits.length > 0;
       const marker = L.circleMarker(latLng, {
-        radius: venue.visits.length > 0 ? 7 : 5,
-        color: "#0e3d4a",
-        weight: 2,
-        fillColor: venue.visits.length > 0 ? "#159957" : "#9bb8bf",
-        fillOpacity: venue.visits.length > 0 ? 0.88 : 0.72,
+        radius: hasVisits ? 6.5 : 5,
+        color: hasVisits ? "#7b4a08" : "#4e6f78",
+        weight: 1.6,
+        fillColor: hasVisits ? "#d9992b" : "#9bb8bf",
+        fillOpacity: hasVisits ? 0.92 : 0.72,
       });
 
       marker.bindPopup(renderVenuePopup(venue));
@@ -74,21 +67,21 @@
         taiwanBounds.extend(latLng);
       }
       validVenueCount += 1;
+      visitLinkCount += venue.visits.length;
     }
 
     markers.addTo(map);
 
-    if (validVenueCount > 0) {
-      const defaultBounds = taiwanBounds.isValid() ? taiwanBounds : allBounds;
-      map.fitBounds(defaultBounds.pad(0.18));
-      if (taiwanBounds.isValid() && allBounds.isValid() && !boundsAreClose(taiwanBounds, allBounds)) {
-        addBoundsControl(map, taiwanBounds, allBounds);
-      }
+    if (taiwanBounds.isValid()) {
+      map.fitBounds(taiwanBounds.pad(0.18));
+    } else if (allBounds.isValid()) {
+      map.fitBounds(allBounds.pad(0.18));
     } else {
       map.setView([25.0478, 121.5319], 11);
     }
 
-    addMapNote(map, `${validVenueCount} 個靜態地點，無 Google Maps API`);
+    addBoundsControl(map, taiwanBounds, allBounds);
+    addMapLegend(map, validVenueCount, visitLinkCount);
   }
 
   async function fetchJson(url) {
@@ -165,8 +158,12 @@
       options: { position: "topright" },
       onAdd() {
         const container = L.DomUtil.create("div", "fine-dining-map-control");
-        const taiwanButton = createBoundsButton("台灣", () => map.fitBounds(taiwanBounds.pad(0.18)));
-        const allButton = createBoundsButton("全部", () => map.fitBounds(allBounds.pad(0.18)));
+        const taiwanButton = createBoundsButton("台灣", () => {
+          if (taiwanBounds.isValid()) map.fitBounds(taiwanBounds.pad(0.18));
+        });
+        const allButton = createBoundsButton("全部", () => {
+          if (allBounds.isValid()) map.fitBounds(allBounds.pad(0.18));
+        });
 
         container.appendChild(taiwanButton);
         container.appendChild(allButton);
@@ -190,32 +187,22 @@
     return button;
   }
 
-  function addMapNote(map, label) {
-    const NoteControl = L.Control.extend({
+  function addMapLegend(map, venueCount, visitLinkCount) {
+    const LegendControl = L.Control.extend({
       options: { position: "bottomleft" },
       onAdd() {
-        const container = L.DomUtil.create("div", "fine-dining-map-note");
-        container.textContent = label;
+        const container = L.DomUtil.create("div", "fine-dining-map-legend");
+        container.innerHTML = `
+          <div><span class="fine-dining-map-dot fine-dining-map-dot-reviewed"></span>有食記</div>
+          <div><span class="fine-dining-map-dot fine-dining-map-dot-unreviewed"></span>待補食記</div>
+          <strong>${venueCount} 個靜態地點 · ${visitLinkCount} 篇食記 · 無 Google Maps API</strong>
+        `;
         L.DomEvent.disableClickPropagation(container);
         return container;
       },
     });
 
-    map.addControl(new NoteControl());
-  }
-
-  function boundsAreClose(firstBounds, secondBounds) {
-    const firstSouthWest = firstBounds.getSouthWest();
-    const firstNorthEast = firstBounds.getNorthEast();
-    const secondSouthWest = secondBounds.getSouthWest();
-    const secondNorthEast = secondBounds.getNorthEast();
-
-    return (
-      Math.abs(firstSouthWest.lat - secondSouthWest.lat) < 0.01 &&
-      Math.abs(firstSouthWest.lng - secondSouthWest.lng) < 0.01 &&
-      Math.abs(firstNorthEast.lat - secondNorthEast.lat) < 0.01 &&
-      Math.abs(firstNorthEast.lng - secondNorthEast.lng) < 0.01
-    );
+    map.addControl(new LegendControl());
   }
 
   function renderMapFailure(error) {
