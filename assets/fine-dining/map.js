@@ -5,7 +5,7 @@
 
   /**
    * @typedef {"fork-knife" | "star" | "x" | "none"} PinIconType
-   * @typedef {"blue" | "red" | "yellow" | "purple" | "violet" | "lemon"} PinColorType
+   * @typedef {"blue" | "red" | "yellow" | "purple" | "royal-purple" | "gold"} PinColorType
    * @typedef {{ iconId?: string, dot?: true }} PinSymbol
    * @typedef {{ date?: string, title?: string, url?: string }} VenueVisit
    * @typedef {{
@@ -39,15 +39,15 @@
   // from .kml, map those icon IDs to this site's pinIcon values:
   // 1502 -> star, 1577 -> fork-knife, 1898 -> x, 1899 -> none.
   const PIN_ICON_TYPES = new Set(["fork-knife", "star", "x", "none"]);
-  const PIN_COLOR_TYPES = new Set(["blue", "red", "yellow", "purple", "violet", "lemon"]);
+  const PIN_COLOR_TYPES = new Set(["blue", "red", "yellow", "purple", "royal-purple", "gold"]);
   /** @type {PinIconType} */
   const DEFAULT_PIN_ICON = "none";
   /** @type {PinColorType} */
   const DEFAULT_PIN_COLOR = "blue";
   /** @type {Record<PinColorType, number>} */
   const PIN_COLOR_Z_INDEX_OFFSET = {
-    violet: 50_000,
-    lemon: 50_000,
+    "royal-purple": 50_000,
+    gold: 50_000,
     purple: 40_000,
     yellow: 30_000,
     red: 20_000,

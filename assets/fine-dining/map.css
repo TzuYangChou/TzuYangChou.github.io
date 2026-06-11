@@ -1,12 +1,12 @@
 :root {
   --fine-dining-map-control-blue: #155b6b;
   --fine-dining-map-control-blue-dark: #0e3d4a;
-  --fine-dining-map-pin-blue: #155b6b;
-  --fine-dining-map-pin-red: #a8464f;
-  --fine-dining-map-pin-yellow: #d9992b;
-  --fine-dining-map-pin-purple: #7563a8;
-  --fine-dining-map-pin-violet: #9c27b0;
-  --fine-dining-map-pin-lemon: #ffea00;
+  --fine-dining-map-pin-blue: #2563eb;
+  --fine-dining-map-pin-red: #dc2626;
+  --fine-dining-map-pin-yellow: #facc15;
+  --fine-dining-map-pin-purple: #7c3aed;
+  --fine-dining-map-pin-royal-purple: #4c1d95;
+  --fine-dining-map-pin-gold: #f59e0b;
 }
 
 .fine-dining-map {
@@ -88,12 +88,12 @@
   fill: var(--fine-dining-map-pin-purple);
 }
 
-.fine-dining-pin-color-violet .fine-dining-pin-shape {
-  fill: var(--fine-dining-map-pin-violet);
+.fine-dining-pin-color-royal-purple .fine-dining-pin-shape {
+  fill: var(--fine-dining-map-pin-royal-purple);
 }
 
-.fine-dining-pin-color-lemon .fine-dining-pin-shape {
-  fill: var(--fine-dining-map-pin-lemon);
+.fine-dining-pin-color-gold .fine-dining-pin-shape {
+  fill: var(--fine-dining-map-pin-gold);
 }
 
 .fine-dining-pin-glyph {
