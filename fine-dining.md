@@ -112,9 +112,9 @@ permalink: /fine-dining/
 ## 2024 冬
 
 - [Timberyard(三訪)](2024-10-27-timberyard-3rd/)
-- <span class="review-upcoming">I-France愛法餐廳(五訪)</span>
-- <span class="review-upcoming">A</span>
-- <span class="review-upcoming">JL Studio(四訪)</span>
+- [I-France愛法餐廳(五訪)](2024-12-05-i-france-5th/)
+- [A](2024-12-12-a/)
+- [JL Studio(四訪)](2024-12-14-jl-studio-4th/)
 - <span class="review-upcoming">WOK by O'Bond</span>
 - <span class="review-upcoming">L'Atelier de Joel Robuchon(四訪)</span>
 - <span class="review-upcoming">Circum-</span>
@@ -122,11 +122,6 @@ permalink: /fine-dining/
 - <span class="review-upcoming">SENS</span>
 
 <!-- AUTO-FINE-DINING-REVIEWS:START -->
-- [I-France愛法餐廳(五訪)](2024-12-05-i-france-5th/)
-- [頤宮Le Palais(二訪)](2024-12-08-le-palais-2nd/)
-- [A](2024-12-12-a/)
-- [JL Studio(四訪)](2024-12-14-jl-studio-4th/)
-
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
 ## 食記短評
@@ -137,7 +132,7 @@ permalink: /fine-dining/
 - [茹絲葵](2023-06-11-ruths-chris/)
 - [毓鮨 割烹](2023-07-18-yu-kappo-sushi/)
 - [Inari izakaya](2024-06-04-inari-izakaya/)
-- <span class="review-upcoming">頤宮(二訪)</span>
+- [頤宮Le Palais(二訪)](2024-12-08-le-palais-2nd/)
 
 ## 餐廳地圖
 
