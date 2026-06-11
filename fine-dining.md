@@ -126,6 +126,7 @@ permalink: /fine-dining/
 - [頤宮Le Palais(二訪)](2024-12-08-le-palais-2nd/)
 - [A](2024-12-12-a/)
 - [JL Studio(四訪)](2024-12-14-jl-studio-4th/)
+- [巴黎廳1930 x 高山英紀(二訪)](2024-12-18-paris-1930-de-hideki-takayama-2nd/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
