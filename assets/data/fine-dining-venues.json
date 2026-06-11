@@ -6,6 +6,8 @@
     "lng": 121.5334694,
     "googleMapsQuery": "霞飛驛歐法西餐",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -15,6 +17,8 @@
     "lng": 121.5462668,
     "googleMapsQuery": "橘色涮涮屋一館",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -24,6 +28,8 @@
     "lng": 121.5362962,
     "googleMapsQuery": "青花驕麻辣鍋 新店民權店",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -33,6 +39,8 @@
     "lng": 121.5679632,
     "googleMapsQuery": "SALON DE THE de Joël Robuchon 侯布雄法式茶點沙龍",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -42,6 +50,8 @@
     "lng": 121.5307121,
     "googleMapsQuery": "開飯川食堂 小碧潭店",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -51,6 +61,8 @@
     "lng": 121.5567221,
     "googleMapsQuery": "El Marques",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-12",
@@ -66,6 +78,8 @@
     "lng": 121.5501115,
     "googleMapsQuery": "Muzeo Gastronomy&Draft",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -75,6 +89,8 @@
     "lng": 121.5397025,
     "googleMapsQuery": "ANTICO FORNO 老烤箱義式披薩餐酒",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-19",
@@ -95,6 +111,8 @@
     "lng": 121.5483578,
     "googleMapsQuery": "Longtail",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-20",
@@ -110,6 +128,8 @@
     "lng": 120.6421895,
     "googleMapsQuery": "forchetta 餐廳",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-21",
@@ -125,6 +145,8 @@
     "lng": 121.5529216,
     "googleMapsQuery": "教父牛排 Danny's Steak House",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-22",
@@ -145,6 +167,8 @@
     "lng": 120.6349772,
     "googleMapsQuery": "鹽之華法國餐廳Fleur de Sel French Restaurant",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-29",
@@ -165,6 +189,8 @@
     "lng": 120.6590447,
     "googleMapsQuery": "暮藏和牛鍋物",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-29",
@@ -180,6 +206,8 @@
     "lng": 121.5671637,
     "googleMapsQuery": "INPARADISE饗饗 微風信義店",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -189,6 +217,8 @@
     "lng": 121.5431659,
     "googleMapsQuery": "老乾杯 SOGO復興店",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-06-11",
@@ -204,6 +234,8 @@
     "lng": 121.5527738,
     "googleMapsQuery": "富錦樹台菜香檳",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-05-19",
@@ -219,6 +251,8 @@
     "lng": 121.567918,
     "googleMapsQuery": "醐同燒肉夜食-胡同燒肉5號店",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-06-13",
@@ -234,6 +268,8 @@
     "lng": 121.549837,
     "googleMapsQuery": "La Locanda",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-06-13",
@@ -249,6 +285,8 @@
     "lng": 121.5507135,
     "googleMapsQuery": "T+T",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-06-17",
@@ -264,6 +302,8 @@
     "lng": 120.6285429,
     "googleMapsQuery": "JL Studio 現代新加坡料理",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2022-06-18",
@@ -289,6 +329,8 @@
     "lng": 121.5069595,
     "googleMapsQuery": "台北花園酒店-PRIME ONE牛排館",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-06-20",
@@ -304,6 +346,8 @@
     "lng": 120.6564165,
     "googleMapsQuery": "俺達の肉屋 日本和牛燒肉店",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-06-25",
@@ -319,6 +363,8 @@
     "lng": 121.7539171,
     "googleMapsQuery": "愛法餐廳 iFrance-宜蘭餐廳 法式料理 人氣聚餐美食",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-07",
@@ -349,6 +395,8 @@
     "lng": 121.5427645,
     "googleMapsQuery": "11PASTA Trattoria 食義_大安店",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-08",
@@ -364,6 +412,8 @@
     "lng": 121.5546595,
     "googleMapsQuery": "野村壽司",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-10",
@@ -379,6 +429,8 @@
     "lng": 121.5248401,
     "googleMapsQuery": "Impromptu by Paul Lee",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-14",
@@ -394,6 +446,8 @@
     "lng": 121.5455647,
     "googleMapsQuery": "Holt",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-15",
@@ -409,6 +463,8 @@
     "lng": 121.5521719,
     "googleMapsQuery": "Orchid Restaurant 蘭",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-23",
@@ -424,6 +480,8 @@
     "lng": 121.5676195,
     "googleMapsQuery": "L’ATELIER de Joël Robuchon侯布雄法式餐廳",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2022-12-25",
@@ -449,6 +507,8 @@
     "lng": 121.5528682,
     "googleMapsQuery": "謙安和 Ken Anho",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-27",
@@ -464,6 +524,8 @@
     "lng": 121.5527508,
     "googleMapsQuery": "de nuit",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2022-12-31",
@@ -479,6 +541,8 @@
     "lng": 121.530066,
     "googleMapsQuery": "Paris 1930 de Hideki Takayama",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-01-01",
@@ -494,6 +558,8 @@
     "lng": 121.5538967,
     "googleMapsQuery": "米香台菜餐廳",
     "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "purple",
     "visits": []
   },
   {
@@ -503,6 +569,8 @@
     "lng": 121.548328,
     "googleMapsQuery": "雅閣",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-07-01",
@@ -518,6 +586,8 @@
     "lng": 120.6664536,
     "googleMapsQuery": "屋馬燒肉 園邸店",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -527,6 +597,8 @@
     "lng": 121.7523579,
     "googleMapsQuery": "紅樓中餐廳",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-05-23",
@@ -542,6 +614,8 @@
     "lng": 121.5593386,
     "googleMapsQuery": "RAW",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2023-05-27",
@@ -557,6 +631,8 @@
     "lng": 121.5507693,
     "googleMapsQuery": "吉兆割烹壽司KITCHO",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-03",
@@ -572,6 +648,8 @@
     "lng": 121.5168698,
     "googleMapsQuery": "君品酒店 - 頤宮中餐廳 Le Palais",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2023-06-06",
@@ -587,6 +665,8 @@
     "lng": 121.5532338,
     "googleMapsQuery": "logy",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2023-06-07",
@@ -602,6 +682,8 @@
     "lng": 121.5482328,
     "googleMapsQuery": "牡丹．極上 天ぷら．本店",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-08",
@@ -617,6 +699,8 @@
     "lng": 121.5364515,
     "googleMapsQuery": "智 板前料理",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-10",
@@ -632,6 +716,8 @@
     "lng": 121.5593325,
     "googleMapsQuery": "茹絲葵 大直店",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-11",
@@ -647,6 +733,8 @@
     "lng": 121.5271717,
     "googleMapsQuery": "鮨 隆",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-13",
@@ -672,6 +760,8 @@
     "lng": 121.5632858,
     "googleMapsQuery": "彧 割烹",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-15",
@@ -687,6 +777,8 @@
     "lng": 121.5591771,
     "googleMapsQuery": "Taïrroir 態芮",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2023-06-17",
@@ -702,6 +794,8 @@
     "lng": 121.524265,
     "googleMapsQuery": "明福台菜海產",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-19",
@@ -717,6 +811,8 @@
     "lng": 120.6512223,
     "googleMapsQuery": "PI RESTAURANT",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-06-27",
@@ -732,6 +828,8 @@
     "lng": 121.5217022,
     "googleMapsQuery": "台北喜來登大飯店 請客樓",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-07-02",
@@ -747,6 +845,8 @@
     "lng": 121.5622754,
     "googleMapsQuery": "chateau zoe 酒窖餐廳",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-07-06",
@@ -762,6 +862,8 @@
     "lng": 120.6832629,
     "googleMapsQuery": "澀 Sur-",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-07-08",
@@ -777,6 +879,8 @@
     "lng": 121.5314068,
     "googleMapsQuery": "山海樓",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-07-11",
@@ -792,6 +896,8 @@
     "lng": 121.5048343,
     "googleMapsQuery": "毓鮨割烹料理",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-07-18",
@@ -807,6 +913,8 @@
     "lng": 121.5560491,
     "googleMapsQuery": "JE Kitchen",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-07-20",
@@ -822,6 +930,8 @@
     "lng": 121.5269461,
     "googleMapsQuery": "溫咖哩 Wen Curry",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -831,6 +941,8 @@
     "lng": 120.3052001,
     "googleMapsQuery": "Liberte",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-08-05",
@@ -846,6 +958,8 @@
     "lng": 120.3055649,
     "googleMapsQuery": "承 Sho",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-08-06",
@@ -861,6 +975,8 @@
     "lng": -3.2017224,
     "googleMapsQuery": "TIMBERYARD",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-11-09",
@@ -886,6 +1002,8 @@
     "lng": 121.5421809,
     "googleMapsQuery": "(台北國賓大飯店)A CUT牛排館",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-12-19",
@@ -901,6 +1019,8 @@
     "lng": 121.5583304,
     "googleMapsQuery": "麻神麻辣火鍋",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -910,6 +1030,8 @@
     "lng": 121.5541046,
     "googleMapsQuery": "ZEA",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-12-15",
@@ -925,6 +1047,8 @@
     "lng": 121.559396,
     "googleMapsQuery": "欣葉・鐘菜",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-12-17",
@@ -940,6 +1064,8 @@
     "lng": 121.567641,
     "googleMapsQuery": "CLOVER BELLAVITA",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-12-20",
@@ -955,6 +1081,8 @@
     "lng": 121.5299911,
     "googleMapsQuery": "天香樓 Tien Hsiang Lo",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-12-26",
@@ -975,6 +1103,8 @@
     "lng": 121.5298826,
     "googleMapsQuery": "巴賽麗廳 La Brasserie",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2023-12-31",
@@ -995,6 +1125,8 @@
     "lng": 121.5371253,
     "googleMapsQuery": "Molino de Urdániz 渥達尼斯磨坊",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2024-01-01",
@@ -1010,6 +1142,8 @@
     "lng": 121.5505852,
     "googleMapsQuery": "INITA",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-01-05",
@@ -1025,6 +1159,8 @@
     "lng": 121.5633087,
     "googleMapsQuery": "嘶咔炸雞",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1034,6 +1170,8 @@
     "lng": 121.5230276,
     "googleMapsQuery": "Buttermilk 摩登美式餐廳",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1043,6 +1181,8 @@
     "lng": 121.5240999,
     "googleMapsQuery": "Ad Astra",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-05-24",
@@ -1058,6 +1198,8 @@
     "lng": 121.5387299,
     "googleMapsQuery": "猓玀苑",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1067,6 +1209,8 @@
     "lng": 121.5604306,
     "googleMapsQuery": "斑泊",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2024-05-31",
@@ -1082,6 +1226,8 @@
     "lng": 121.566685,
     "googleMapsQuery": "inari Izakaya 現代居酒屋",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-06-04",
@@ -1097,6 +1243,8 @@
     "lng": 121.5591591,
     "googleMapsQuery": "FRASSI",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-06-07",
@@ -1112,6 +1260,8 @@
     "lng": 121.5490842,
     "googleMapsQuery": "詹記麻辣火鍋 敦南店",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1121,6 +1271,8 @@
     "lng": 121.524874,
     "googleMapsQuery": "明壽司",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-06-27",
@@ -1136,6 +1288,8 @@
     "lng": 121.5279626,
     "googleMapsQuery": "NOBUO",
     "googlePlaceId": "",
+    "pinIcon": "star",
+    "pinColor": "yellow",
     "visits": [
       {
         "date": "2024-07-05",
@@ -1151,6 +1305,8 @@
     "lng": 121.5536916,
     "googleMapsQuery": "壽司芳 台北 Sushiyoshi Taipei",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-07-11",
@@ -1166,6 +1322,8 @@
     "lng": 120.6543767,
     "googleMapsQuery": "茶六燒肉堂 公益店",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1175,6 +1333,8 @@
     "lng": 120.6494113,
     "googleMapsQuery": "文公館La Maison de Win",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-07-26",
@@ -1190,6 +1350,8 @@
     "lng": 120.2961017,
     "googleMapsQuery": "Haili",
     "googlePlaceId": "",
+    "pinIcon": "fork-knife",
+    "pinColor": "blue",
     "visits": [
       {
         "date": "2024-08-02",
@@ -1205,6 +1367,8 @@
     "lng": 121.5676943,
     "googleMapsQuery": "山口小鼎膾",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1214,6 +1378,8 @@
     "lng": 121.5419006,
     "googleMapsQuery": "Restaurant A",
     "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "purple",
     "visits": []
   },
   {
@@ -1223,6 +1389,8 @@
     "lng": 120.6623404,
     "googleMapsQuery": "MINIMAL",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1232,6 +1400,8 @@
     "lng": 121.5402615,
     "googleMapsQuery": "WOK by OBOND",
     "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "purple",
     "visits": []
   },
   {
@@ -1241,6 +1411,8 @@
     "lng": 121.550201,
     "googleMapsQuery": "baan Taipei 正宗泰式家常料理",
     "googlePlaceId": "",
+    "pinIcon": "x",
+    "pinColor": "red",
     "visits": []
   },
   {
@@ -1250,6 +1422,8 @@
     "lng": 121.5240728,
     "googleMapsQuery": "Circum-",
     "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "purple",
     "visits": []
   },
   {
@@ -1259,6 +1433,8 @@
     "lng": 121.5678702,
     "googleMapsQuery": "勞瑞斯牛肋排餐廳",
     "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "purple",
     "visits": []
   },
   {
@@ -1268,6 +1444,8 @@
     "lng": 121.5473552,
     "googleMapsQuery": "SENS",
     "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "purple",
     "visits": []
   }
 ]
