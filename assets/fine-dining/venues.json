@@ -319,6 +319,11 @@
         "date": "2023-12-23",
         "title": "JL Studio(三訪)",
         "url": "/fine-dining/2023-12-23-jl-studio-3rd/"
+      },
+      {
+        "date": "2024-12-14",
+        "title": "JL Studio(四訪)",
+        "url": "/fine-dining/2024-12-14-jl-studio-4th/"
       }
     ]
   },
@@ -385,6 +390,11 @@
         "date": "2024-05-22",
         "title": "I-France愛法餐廳(四訪)",
         "url": "/fine-dining/2024-05-22-i-france-4th/"
+      },
+      {
+        "date": "2024-12-05",
+        "title": "I-France愛法餐廳(五訪)",
+        "url": "/fine-dining/2024-12-05-i-france-5th/"
       }
     ]
   },
@@ -548,6 +558,11 @@
         "date": "2023-01-01",
         "title": "巴黎廳1930 x 高山英紀",
         "url": "/fine-dining/2023-01-01-paris-1930-de-hideki-takayama/"
+      },
+      {
+        "date": "2024-12-18",
+        "title": "巴黎廳1930 x 高山英紀(二訪)",
+        "url": "/fine-dining/2024-12-18-paris-1930-de-hideki-takayama-2nd/"
       }
     ]
   },
@@ -655,6 +670,11 @@
         "date": "2023-06-06",
         "title": "幽靜富麗的華美畫舫，台灣唯一三星食肆——頤宮Le Palais",
         "url": "/fine-dining/2023-06-06-le-palais/"
+      },
+      {
+        "date": "2024-12-08",
+        "title": "頤宮Le Palais(二訪)",
+        "url": "/fine-dining/2024-12-08-le-palais-2nd/"
       }
     ]
   },
@@ -1361,6 +1381,23 @@
     ]
   },
   {
+    "venueId": "yuan",
+    "title": "元 YUAN",
+    "lat": 24.149808,
+    "lng": 120.653995,
+    "googleMapsQuery": "元 YUAN 元餐廳",
+    "googlePlaceId": "ChIJ2cXnmEQ9aTQRMPmfBR9gw4o",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": [
+      {
+        "date": "2024-08-11",
+        "title": "元YUAN",
+        "url": "/fine-dining/2024-08-11-yuan/"
+      }
+    ]
+  },
+  {
     "venueId": "yamaguchi-dingkuai",
     "title": "山口小鼎膾",
     "lat": 25.039439,
@@ -1372,7 +1409,7 @@
     "visits": []
   },
   {
-    "venueId": "restaurant-a",
+    "venueId": "a",
     "title": "Restaurant A",
     "lat": 25.0414301,
     "lng": 121.5419006,
@@ -1380,7 +1417,13 @@
     "googlePlaceId": "ChIJt2exNxurQjQROcDnwKLeXA4",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2024-12-12",
+        "title": "A",
+        "url": "/fine-dining/2024-12-12-a/"
+      }
+    ]
   },
   {
     "venueId": "minimal",
