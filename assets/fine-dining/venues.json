@@ -1471,7 +1471,7 @@
   },
   {
     "venueId": "lawrys-prime-rib-taipei",
-    "title": "Lawry's 勞瑞斯牛肋排餐廳",
+    "title": "Lawry's Prime Rib",
     "lat": 25.039633,
     "lng": 121.5678702,
     "googleMapsQuery": "勞瑞斯牛肋排餐廳",
@@ -1487,6 +1487,94 @@
     "lng": 121.5473552,
     "googleMapsQuery": "SENS",
     "googlePlaceId": "ChIJvbzheu-rQjQRksOAOpGWk9M",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "aleisha",
+    "title": "Aleisha",
+    "lat": 25.042739,
+    "lng": 121.540611,
+    "googleMapsQuery": "Aleisha",
+    "googlePlaceId": "ChIJC3S4YF-rQjQRrG8PJnWC68w",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "ephernite",
+    "title": "Ephernité",
+    "lat": 25.0251019,
+    "lng": 121.5504146,
+    "googleMapsQuery": "Ephernité",
+    "googlePlaceId": "ChIJcRrEWsjWDRQRqtl-xgdjQ1M",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "yuen-ji",
+    "title": "元紀",
+    "lat": 24.1744284,
+    "lng": 120.6236145,
+    "googleMapsQuery": "元紀 • 台灣菜",
+    "googlePlaceId": "ChIJgajel8c9aTQRRSnCtlKnp4Y",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "afterglo",
+    "title": "Afterglo",
+    "lat": 25.0539518,
+    "lng": 121.5240946,
+    "googleMapsQuery": "Afterglo&Golden 10491臺北市中山區康樂里中山北路二段39巷3號B2",
+    "googlePlaceId": "",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "la-vie-by-thomas-buhner",
+    "title": "La Vie by Thomas Bühner",
+    "lat": 25.0821475,
+    "lng": 121.5569981,
+    "googleMapsQuery": "La Vie by Thomas Bühner",
+    "googlePlaceId": "ChIJ4d2s5PetQjQRpRzOcM6Djrg",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "salt-and-stone",
+    "title": "Salt & Stone",
+    "lat": 25.033976,
+    "lng": 121.564538,
+    "googleMapsQuery": "SALT&STONE 台北101餐廳",
+    "googlePlaceId": "ChIJc_6fMzerQjQRHcqXwpPVxFo",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "sushi-kajin",
+    "title": "鮨 嘉仁",
+    "lat": 25.0520584,
+    "lng": 121.5300913,
+    "googleMapsQuery": "鮨 嘉仁",
+    "googlePlaceId": "ChIJF9ZCfACpQjQRcUsfeBx3B9M",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "yuan-yi",
+    "title": "元一",
+    "lat": 25.0398606,
+    "lng": 121.5535161,
+    "googleMapsQuery": "元一 天婦羅",
+    "googlePlaceId": "ChIJQ0dAbbSrQjQRJOopCcOGS04",
     "pinIcon": "none",
     "pinColor": "blue",
     "visits": []
