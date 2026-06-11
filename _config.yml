@@ -8,6 +8,7 @@ plugins:
 exclude:
   - CLAUDE.md
   - .claude/
+  - .omx/
   - vendor
 
 kramdown:
