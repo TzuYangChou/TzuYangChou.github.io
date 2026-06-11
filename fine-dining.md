@@ -122,6 +122,8 @@ permalink: /fine-dining/
 - <span class="review-upcoming">SENS</span>
 
 <!-- AUTO-FINE-DINING-REVIEWS:START -->
+- [I-France愛法餐廳(五訪)](2024-12-05-i-france-5th/)
+
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
 ## 食記短評
