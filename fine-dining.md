@@ -115,6 +115,7 @@ permalink: /fine-dining/
 - [I-France愛法餐廳(五訪)](2024-12-05-i-france-5th/)
 - [A](2024-12-12-a/)
 - [JL Studio(四訪)](2024-12-14-jl-studio-4th/)
+- [巴黎廳1930 x 高山英紀(二訪)](2024-12-18-paris-1930-de-hideki-takayama-2nd/)
 - <span class="review-upcoming">WOK by O'Bond</span>
 - <span class="review-upcoming">L'Atelier de Joel Robuchon(四訪)</span>
 - <span class="review-upcoming">Circum-</span>
