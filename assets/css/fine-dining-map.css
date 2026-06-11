@@ -1,0 +1,116 @@
+.fine-dining-map {
+  width: 100%;
+  height: 520px;
+  border: 1px solid rgba(21, 91, 107, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, #f6fbfc 0%, #eef6f8 100%);
+  box-shadow: 0 8px 22px rgba(14, 61, 74, 0.08);
+}
+
+.fine-dining-map .leaflet-container,
+.fine-dining-map.leaflet-container {
+  font-family: var(--font-family, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  background: transparent;
+}
+
+.fine-dining-map .leaflet-popup-content-wrapper {
+  border-radius: 10px;
+}
+
+.fine-dining-popup {
+  max-width: 320px;
+  color: var(--color-text, #333);
+}
+
+.fine-dining-popup-title {
+  color: var(--color-primary-dark, #0e3d4a);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.fine-dining-popup ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.fine-dining-popup li + li {
+  margin-top: 0.35rem;
+}
+
+.fine-dining-popup a {
+  color: var(--color-primary, #155b6b);
+  text-decoration: underline;
+}
+
+.fine-dining-popup-muted {
+  color: var(--color-text-muted, #888);
+  margin: 0.5rem 0;
+}
+
+.fine-dining-google-link {
+  margin: 0.75rem 0 0;
+}
+
+.fine-dining-map-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.35rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(21, 91, 107, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(14, 61, 74, 0.15);
+}
+
+.fine-dining-map-control button {
+  display: block;
+  min-width: 5rem;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.35rem 0.55rem;
+  color: #fff;
+  background: var(--color-primary, #155b6b);
+  font-size: 0.85rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.fine-dining-map-control button:hover,
+.fine-dining-map-control button:focus {
+  background: var(--color-primary-dark, #0e3d4a);
+}
+
+.fine-dining-map-note {
+  padding: 0.35rem 0.6rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(21, 91, 107, 0.16);
+  border-radius: 999px;
+  color: var(--color-primary-dark, #0e3d4a);
+  font-size: 0.8rem;
+  box-shadow: 0 2px 8px rgba(14, 61, 74, 0.12);
+}
+
+.fine-dining-map-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12rem;
+  padding: 1rem;
+  color: #8a3a3a;
+  background: #fff7f7;
+  border: 1px solid #f0c2c2;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 42em) {
+  .fine-dining-map {
+    height: 420px;
+  }
+
+  .fine-dining-map-control button {
+    min-width: 4.5rem;
+    font-size: 0.78rem;
+  }
+}

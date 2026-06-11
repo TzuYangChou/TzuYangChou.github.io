@@ -134,6 +134,12 @@ permalink: /fine-dining/
 - [Inari izakaya](2024-06-04-inari-izakaya/)
 - <span class="review-upcoming">頤宮(二訪)</span>
 
-## Google地圖
+## 餐廳地圖
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1ET0m3Yje79Xew1J5b1iGzVAsmG5NQ5E&ehbc=2E312F" width="100%" height="480" title="Fine dining restaurant locations on Google Maps"></iframe>
+<div id="fine-dining-map" class="fine-dining-map" aria-label="Fine dining restaurant locations"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/assets/css/fine-dining-map.css">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/assets/js/fine-dining-map.js" defer></script>
