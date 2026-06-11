@@ -77,6 +77,14 @@
   fill: #7563a8;
 }
 
+.fine-dining-pin-color-violet .fine-dining-pin-shape {
+  fill: #9c27b0;
+}
+
+.fine-dining-pin-color-lemon .fine-dining-pin-shape {
+  fill: #ffea00;
+}
+
 .fine-dining-pin-glyph {
   position: absolute;
   top: 40%;

@@ -8,8 +8,11 @@
     minLng: 121.35,
     maxLng: 121.72,
   };
+  // Google My Maps KML exports icon styles as icon-<id>-<color>. When syncing
+  // from 子揚餐廳地圖.kml, map those icon IDs to this site's pinIcon values:
+  // 1502 -> star, 1577 -> fork-knife, 1898 -> x, 1899 -> none.
   const PIN_ICON_TYPES = new Set(["fork-knife", "star", "x", "none"]);
-  const PIN_COLOR_TYPES = new Set(["blue", "red", "yellow", "purple"]);
+  const PIN_COLOR_TYPES = new Set(["blue", "red", "yellow", "purple", "violet", "lemon"]);
   const DEFAULT_PIN_ICON = "none";
   const DEFAULT_PIN_COLOR = "blue";
   const PIN_SHELL_PATH =
@@ -187,7 +190,7 @@
     const googleMapsUrl = buildGoogleMapsUrl(venue);
     const visitsHtml = venue.visits.length > 0
       ? `<ul>${venue.visits.map(renderVisitLink).join("")}</ul>`
-      : `<p class="fine-dining-popup-muted">尚無站內食記</p>`;
+      : "";
 
     return `
       <div class="fine-dining-popup">
