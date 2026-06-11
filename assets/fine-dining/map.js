@@ -9,27 +9,28 @@
     maxLng: 121.72,
   };
   // Google My Maps KML exports icon styles as icon-<id>-<color>. When syncing
-  // from 子揚餐廳地圖.kml, map those icon IDs to this site's pinIcon values:
+  // from .kml, map those icon IDs to this site's pinIcon values:
   // 1502 -> star, 1577 -> fork-knife, 1898 -> x, 1899 -> none.
   const PIN_ICON_TYPES = new Set(["fork-knife", "star", "x", "none"]);
   const PIN_COLOR_TYPES = new Set(["blue", "red", "yellow", "purple", "violet", "lemon"]);
   const DEFAULT_PIN_ICON = "none";
   const DEFAULT_PIN_COLOR = "blue";
+  const BOOTSTRAP_ICONS_SPRITE = "/assets/third-party/bootstrap-icons/bootstrap-icons.svg";
   const PIN_SHELL_PATH =
     "M17 1.6C9 1.6 2.7 7.9 2.7 15.8 2.7 26.4 17 40.4 17 40.4s14.3-14 14.3-24.6C31.3 7.9 25 1.6 17 1.6z";
-  // Inner glyph paths are from Bootstrap Icons v1.13.1, MIT licensed.
+  // Inner glyphs reference the local Bootstrap Icons v1.13.1 SVG sprite.
   const PIN_SYMBOLS = {
     "fork-knife": {
       label: "餐廳",
-      path: "M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z",
+      iconId: "fork-knife",
     },
     star: {
       label: "星級",
-      path: "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z",
+      iconId: "star-fill",
     },
     x: {
       label: "排除",
-      path: "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z",
+      iconId: "x-lg",
     },
     none: {
       label: "一般地點",
@@ -164,10 +165,13 @@
 
   function renderPinHtml(iconType) {
     const symbol = PIN_SYMBOLS[iconType] || PIN_SYMBOLS[DEFAULT_PIN_ICON];
-    const glyph = symbol.path
+    const iconHref = symbol.iconId
+      ? `${BOOTSTRAP_ICONS_SPRITE}#${symbol.iconId}`
+      : "";
+    const glyph = iconHref
       ? `
-        <svg class="fine-dining-pin-glyph" viewBox="0 0 16 16" aria-hidden="true">
-          <path d="${escapeAttribute(symbol.path)}"></path>
+        <svg class="fine-dining-pin-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <use href="${escapeAttribute(iconHref)}" xlink:href="${escapeAttribute(iconHref)}"></use>
         </svg>
       `
       : "";
