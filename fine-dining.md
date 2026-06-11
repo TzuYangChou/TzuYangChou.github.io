@@ -40,7 +40,7 @@ permalink: /fine-dining/
 - [Holt](2022-12-15-holt/)
 - [蘭Orchid by Nobu Lee](2022-12-23-orchid/)
 - [L'Atelier de Joël Robuchon](2022-12-25-latelier-de-joel-robuchon/)
-- [謙安和](2022-12-27-ken-anhe/)
+- [謙安和](2022-12-27-ken-anho/)
 - [de nuit](2022-12-31-de-nuit/)
 - [巴黎廳1930 x 高山英紀](2023-01-01-paris-1930-de-hideki-takayama/)
 - <span class="review-upcoming">米香台菜餐廳</span>

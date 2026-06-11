@@ -1,6 +1,6 @@
 ---
 layout: review
-title: "L’Atelier de Joël Robuchon(三訪)"
+title: "L'Atelier de Joël Robuchon(三訪)"
 restaurant: "L'Atelier de Joël Robuchon"
 date: 2024-05-29
 ---
