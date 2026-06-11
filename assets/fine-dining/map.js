@@ -21,19 +21,15 @@
   // Inner glyphs reference the local Bootstrap Icons v1.13.1 SVG sprite.
   const PIN_SYMBOLS = {
     "fork-knife": {
-      label: "餐廳",
       iconId: "fork-knife",
     },
     star: {
-      label: "星級",
       iconId: "star-fill",
     },
     x: {
-      label: "排除",
       iconId: "x-lg",
     },
     none: {
-      label: "一般地點",
       dot: true,
     },
   };
@@ -180,7 +176,7 @@
       : "";
 
     return `
-      <span class="fine-dining-pin-shell" role="img" aria-label="${escapeAttribute(symbol.label)} pin">
+      <span class="fine-dining-pin-shell">
         <svg class="fine-dining-pin-svg" viewBox="0 0 34 42" aria-hidden="true">
           <path class="fine-dining-pin-shape" d="${PIN_SHELL_PATH}"></path>
           ${shellSymbol}
