@@ -1,5 +1,27 @@
+// @ts-check
+
 (() => {
   "use strict";
+
+  /**
+   * @typedef {"fork-knife" | "star" | "x" | "none"} PinIconType
+   * @typedef {"blue" | "red" | "yellow" | "purple" | "violet" | "lemon"} PinColorType
+   * @typedef {{ iconId?: string, dot?: true }} PinSymbol
+   * @typedef {{ date?: string, title?: string, url?: string }} VenueVisit
+   * @typedef {{
+   *   venueId: string,
+   *   title: string,
+   *   lat: number,
+   *   lng: number,
+   *   googleMapsQuery?: string,
+   *   googlePlaceId?: string,
+   *   pinIcon?: string,
+   *   pinColor?: string,
+   *   visits: VenueVisit[],
+   * }} Venue
+   * @typedef {{ iconType: PinIconType, colorType: PinColorType }} VenuePinStyle
+   * @typedef {any} LeafletApi
+   */
 
   const VENUES_URL = "/assets/fine-dining/venues.json";
   const TAIPEI_AREA_BOUNDS = {
@@ -13,12 +35,15 @@
   // 1502 -> star, 1577 -> fork-knife, 1898 -> x, 1899 -> none.
   const PIN_ICON_TYPES = new Set(["fork-knife", "star", "x", "none"]);
   const PIN_COLOR_TYPES = new Set(["blue", "red", "yellow", "purple", "violet", "lemon"]);
+  /** @type {PinIconType} */
   const DEFAULT_PIN_ICON = "none";
+  /** @type {PinColorType} */
   const DEFAULT_PIN_COLOR = "blue";
   const BOOTSTRAP_ICONS_SPRITE = "/assets/third-party/bootstrap-icons/bootstrap-icons.svg";
   const PIN_SHELL_PATH =
     "M17 1.6C9 1.6 2.7 7.9 2.7 15.8 2.7 26.4 17 40.4 17 40.4s14.3-14 14.3-24.6C31.3 7.9 25 1.6 17 1.6z";
   // Inner glyphs reference the local Bootstrap Icons v1.13.1 SVG sprite.
+  /** @type {Record<PinIconType, PinSymbol>} */
   const PIN_SYMBOLS = {
     "fork-knife": {
       iconId: "fork-knife",
@@ -41,21 +66,19 @@
     });
   });
 
+  /** @returns {Promise<void>} */
   async function initFineDiningMap() {
     const mapElement = document.getElementById("fine-dining-map");
     if (!mapElement) return;
 
-    if (!window.L) {
-      throw new Error("Leaflet is not loaded.");
-    }
-
-    const map = L.map(mapElement, {
+    const leaflet = getLeaflet();
+    const map = leaflet.map(mapElement, {
       zoomControl: true,
       attributionControl: true,
       scrollWheelZoom: true,
     });
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    leaflet.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       subdomains: "abcd",
       maxZoom: 19,
       attribution:
@@ -63,9 +86,13 @@
     }).addTo(map);
 
     const venues = await fetchJson(VENUES_URL);
-    const markers = L.featureGroup();
-    const allBounds = L.latLngBounds([]);
-    const taipeiBounds = L.latLngBounds([]);
+    if (!Array.isArray(venues)) {
+      throw new Error(`Expected ${VENUES_URL} to contain an array of venues.`);
+    }
+
+    const markers = leaflet.featureGroup();
+    const allBounds = leaflet.latLngBounds([]);
+    const taipeiBounds = leaflet.latLngBounds([]);
 
     for (const venue of venues) {
       if (!isValidVenue(venue)) {
@@ -73,10 +100,10 @@
         continue;
       }
 
-      const latLng = L.latLng(venue.lat, venue.lng);
+      const latLng = leaflet.latLng(venue.lat, venue.lng);
       const pinStyle = getVenuePinStyle(venue);
-      const marker = L.marker(latLng, {
-        icon: createPinIcon(pinStyle),
+      const marker = leaflet.marker(latLng, {
+        icon: createPinIcon(leaflet, pinStyle),
         title: venue.title,
         zIndexOffset: pinStyle.iconType === "none" ? 400 : 0,
       });
@@ -99,9 +126,23 @@
       map.setView([25.0478, 121.5319], 11);
     }
 
-    addBoundsControl(map, taipeiBounds, allBounds);
+    addBoundsControl(leaflet, map, taipeiBounds, allBounds);
   }
 
+  /** @returns {LeafletApi} */
+  function getLeaflet() {
+    const leaflet = /** @type {Window & { L?: LeafletApi }} */ (window).L;
+    if (!leaflet) {
+      throw new Error("Leaflet is not loaded.");
+    }
+
+    return leaflet;
+  }
+
+  /**
+   * @param {string} url
+   * @returns {Promise<unknown>}
+   */
   async function fetchJson(url) {
     const response = await fetch(url, { cache: "no-cache" });
     if (!response.ok) {
@@ -110,17 +151,65 @@
     return response.json();
   }
 
-  function isValidVenue(venue) {
+  /**
+   * @param {unknown} value
+   * @returns {value is Venue}
+   */
+  function isValidVenue(value) {
+    if (!isRecord(value)) {
+      return false;
+    }
+
+    const visits = value.visits;
     return (
-      venue &&
-      typeof venue.venueId === "string" &&
-      typeof venue.title === "string" &&
-      Number.isFinite(venue.lat) &&
-      Number.isFinite(venue.lng) &&
-      Array.isArray(venue.visits)
+      typeof value.venueId === "string" &&
+      typeof value.title === "string" &&
+      typeof value.lat === "number" &&
+      Number.isFinite(value.lat) &&
+      typeof value.lng === "number" &&
+      Number.isFinite(value.lng) &&
+      isOptionalString(value.googleMapsQuery) &&
+      isOptionalString(value.googlePlaceId) &&
+      isOptionalString(value.pinIcon) &&
+      isOptionalString(value.pinColor) &&
+      Array.isArray(visits) &&
+      visits.every(isVenueVisit)
     );
   }
 
+  /**
+   * @param {unknown} value
+   * @returns {value is VenueVisit}
+   */
+  function isVenueVisit(value) {
+    return (
+      isRecord(value) &&
+      isOptionalString(value.date) &&
+      isOptionalString(value.title) &&
+      isOptionalString(value.url)
+    );
+  }
+
+  /**
+   * @param {unknown} value
+   * @returns {value is Record<string, unknown>}
+   */
+  function isRecord(value) {
+    return typeof value === "object" && value !== null;
+  }
+
+  /**
+   * @param {unknown} value
+   * @returns {value is string | undefined}
+   */
+  function isOptionalString(value) {
+    return value === undefined || typeof value === "string";
+  }
+
+  /**
+   * @param {Venue} venue
+   * @returns {boolean}
+   */
   function isTaipeiAreaVenue(venue) {
     return (
       venue.lat >= TAIPEI_AREA_BOUNDS.minLat &&
@@ -130,6 +219,10 @@
     );
   }
 
+  /**
+   * @param {Venue} venue
+   * @returns {VenuePinStyle}
+   */
   function getVenuePinStyle(venue) {
     return {
       iconType: normalizePinIcon(venue.pinIcon),
@@ -137,16 +230,33 @@
     };
   }
 
+  /**
+   * @param {unknown} iconType
+   * @returns {PinIconType}
+   */
   function normalizePinIcon(iconType) {
-    return PIN_ICON_TYPES.has(iconType) ? iconType : DEFAULT_PIN_ICON;
+    return typeof iconType === "string" && PIN_ICON_TYPES.has(iconType)
+      ? /** @type {PinIconType} */ (iconType)
+      : DEFAULT_PIN_ICON;
   }
 
+  /**
+   * @param {unknown} colorType
+   * @returns {PinColorType}
+   */
   function normalizePinColor(colorType) {
-    return PIN_COLOR_TYPES.has(colorType) ? colorType : DEFAULT_PIN_COLOR;
+    return typeof colorType === "string" && PIN_COLOR_TYPES.has(colorType)
+      ? /** @type {PinColorType} */ (colorType)
+      : DEFAULT_PIN_COLOR;
   }
 
-  function createPinIcon(pinStyle) {
-    return L.divIcon({
+  /**
+   * @param {LeafletApi} leaflet
+   * @param {VenuePinStyle} pinStyle
+   * @returns {unknown}
+   */
+  function createPinIcon(leaflet, pinStyle) {
+    return leaflet.divIcon({
       className: [
         "fine-dining-pin-icon",
         `fine-dining-pin-icon-${pinStyle.iconType}`,
@@ -159,6 +269,10 @@
     });
   }
 
+  /**
+   * @param {PinIconType} iconType
+   * @returns {string}
+   */
   function renderPinHtml(iconType) {
     const symbol = PIN_SYMBOLS[iconType] || PIN_SYMBOLS[DEFAULT_PIN_ICON];
     const iconHref = symbol.iconId
@@ -186,6 +300,10 @@
     `;
   }
 
+  /**
+   * @param {Venue} venue
+   * @returns {string}
+   */
   function renderVenuePopup(venue) {
     const googleMapsUrl = buildGoogleMapsUrl(venue);
     const visitsHtml = venue.visits.length > 0
@@ -205,6 +323,10 @@
     `;
   }
 
+  /**
+   * @param {VenueVisit} visit
+   * @returns {string}
+   */
   function renderVisitLink(visit) {
     const date = escapeHtml(visit.date || "");
     const title = escapeHtml(visit.title || visit.url || "食記");
@@ -218,6 +340,10 @@
     `;
   }
 
+  /**
+   * @param {Venue} venue
+   * @returns {string}
+   */
   function buildGoogleMapsUrl(venue) {
     const query = encodeURIComponent(venue.googleMapsQuery || venue.title);
     const placeIdPart = venue.googlePlaceId
@@ -227,22 +353,29 @@
     return `https://www.google.com/maps/search/?api=1&query=${query}${placeIdPart}`;
   }
 
-  function addBoundsControl(map, taipeiBounds, allBounds) {
-    const BoundsControl = L.Control.extend({
+  /**
+   * @param {LeafletApi} leaflet
+   * @param {any} map
+   * @param {any} taipeiBounds
+   * @param {any} allBounds
+   * @returns {void}
+   */
+  function addBoundsControl(leaflet, map, taipeiBounds, allBounds) {
+    const BoundsControl = leaflet.Control.extend({
       options: { position: "topright" },
       onAdd() {
-        const container = L.DomUtil.create("div", "fine-dining-map-control");
-        const taipeiButton = createBoundsButton("台北", () => {
+        const container = leaflet.DomUtil.create("div", "fine-dining-map-control");
+        const taipeiButton = createBoundsButton(leaflet, "台北", () => {
           if (taipeiBounds.isValid()) map.fitBounds(taipeiBounds.pad(0.18));
         });
-        const allButton = createBoundsButton("全部", () => {
+        const allButton = createBoundsButton(leaflet, "全部", () => {
           if (allBounds.isValid()) map.fitBounds(allBounds.pad(0.18));
         });
 
         container.appendChild(taipeiButton);
         container.appendChild(allButton);
-        L.DomEvent.disableClickPropagation(container);
-        L.DomEvent.disableScrollPropagation(container);
+        leaflet.DomEvent.disableClickPropagation(container);
+        leaflet.DomEvent.disableScrollPropagation(container);
         return container;
       },
     });
@@ -250,25 +383,49 @@
     map.addControl(new BoundsControl());
   }
 
-  function createBoundsButton(label, onClick) {
-    const button = L.DomUtil.create("button", "");
+  /**
+   * @param {LeafletApi} leaflet
+   * @param {string} label
+   * @param {() => void} onClick
+   * @returns {HTMLButtonElement}
+   */
+  function createBoundsButton(leaflet, label, onClick) {
+    const button = leaflet.DomUtil.create("button", "");
     button.type = "button";
     button.textContent = label;
-    L.DomEvent.on(button, "click", (event) => {
-      L.DomEvent.stop(event);
+    /** @param {Event} event */
+    const handleClick = (event) => {
+      leaflet.DomEvent.stop(event);
       onClick();
-    });
+    };
+    leaflet.DomEvent.on(button, "click", handleClick);
     return button;
   }
 
+  /**
+   * @param {unknown} error
+   * @returns {void}
+   */
   function renderMapFailure(error) {
     const mapElement = document.getElementById("fine-dining-map");
     if (!mapElement) return;
 
     mapElement.classList.add("fine-dining-map-error");
-    mapElement.textContent = `餐廳地圖載入失敗：${error.message}`;
+    mapElement.textContent = `餐廳地圖載入失敗：${getErrorMessage(error)}`;
   }
 
+  /**
+   * @param {unknown} error
+   * @returns {string}
+   */
+  function getErrorMessage(error) {
+    return error instanceof Error ? error.message : String(error);
+  }
+
+  /**
+   * @param {string} value
+   * @returns {string}
+   */
   function escapeHtml(value) {
     return String(value)
       .replaceAll("&", "&amp;")
@@ -278,6 +435,10 @@
       .replaceAll("'", "&#039;");
   }
 
+  /**
+   * @param {string} value
+   * @returns {string}
+   */
   function escapeAttribute(value) {
     return escapeHtml(value);
   }
