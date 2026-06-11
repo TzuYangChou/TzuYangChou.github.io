@@ -139,7 +139,7 @@ permalink: /fine-dining/
 <div id="fine-dining-map" class="fine-dining-map" aria-label="Fine dining restaurant locations"></div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="/assets/css/fine-dining-map.css">
+<link rel="stylesheet" href="/assets/fine-dining/map/fine-dining-map.css">
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="/assets/js/fine-dining-map.js" defer></script>
+<script src="/assets/fine-dining/map/fine-dining-map.js" defer></script>

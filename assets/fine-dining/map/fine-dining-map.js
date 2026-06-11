@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VENUES_URL = "/assets/data/fine-dining-venues.json";
+  const VENUES_URL = "/assets/fine-dining/data/venues.json";
   const TAIPEI_AREA_BOUNDS = {
     minLat: 24.93,
     maxLat: 25.22,

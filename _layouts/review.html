@@ -58,7 +58,7 @@
 
     <main id="content" class="review-content" role="main">
       {% capture _img_old %}src="./{% endcapture %}
-      {% capture _img_new %}src="{{ page.path | replace: '_reviews/', '/assets/fine-dining/' | replace: '.md', '' }}/{% endcapture %}
+      {% capture _img_new %}src="{{ page.path | replace: '_reviews/', '/assets/fine-dining/reviews/' | replace: '.md', '' }}/{% endcapture %}
       {{ content | replace: _img_old, _img_new }}
 
       {% if page.restaurant %}
