@@ -29,11 +29,13 @@
   const DEFAULT_ICONS_SPRITE_URL = resolveScriptRelativeUrl(
     "../third-party/bootstrap-icons/bootstrap-icons.svg",
   );
+  // The default Taipei view focuses on the central cluster. Southern New Taipei
+  // outliers remain available through the "全部" control.
   const TAIPEI_AREA_BOUNDS = {
-    minLat: 24.93,
-    maxLat: 25.22,
-    minLng: 121.35,
-    maxLng: 121.72,
+    minLat: 25.0,
+    maxLat: 25.095,
+    minLng: 121.48,
+    maxLng: 121.595,
   };
   // Google My Maps KML exports icon styles as icon-<id>-<color>. When syncing
   // from .kml, map those icon IDs to this site's pinIcon values:
