@@ -1,6 +1,6 @@
 ---
 layout: review
-title: Timberyard (三訪)
+title: Timberyard(三訪)
 restaurant: Timberyard
 date: 2024-10-27
 ---

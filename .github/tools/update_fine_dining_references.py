@@ -161,7 +161,7 @@ def render_generated_block(reviews: list[Review], curated_slugs: set[str]) -> tu
         return [], 0
 
     links = [f"- [{review.label}]({review.slug}/)" for review in missing_reviews]
-    return ["## 待整理食記", "", *links, ""], len(missing_reviews)
+    return [*links, ""], len(missing_reviews)
 
 
 def update_landing_page(

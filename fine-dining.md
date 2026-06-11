@@ -111,7 +111,7 @@ permalink: /fine-dining/
 
 ## 2024 冬
 
-- <span class="review-upcoming">Timberyard(三訪)</span>
+- [Timberyard(三訪)](2024-10-27-timberyard-3rd/)
 - <span class="review-upcoming">I-France愛法餐廳(五訪)</span>
 - <span class="review-upcoming">A</span>
 - <span class="review-upcoming">JL Studio(四訪)</span>
@@ -122,10 +122,6 @@ permalink: /fine-dining/
 - <span class="review-upcoming">SENS</span>
 
 <!-- AUTO-FINE-DINING-REVIEWS:START -->
-## 待整理食記
-
-- [Timberyard (三訪)](2024-10-27-timberyard-3rd/)
-
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
 ## 食記短評
