@@ -125,6 +125,7 @@ permalink: /fine-dining/
 - [I-France愛法餐廳(五訪)](2024-12-05-i-france-5th/)
 - [頤宮Le Palais(二訪)](2024-12-08-le-palais-2nd/)
 - [A](2024-12-12-a/)
+- [JL Studio(四訪)](2024-12-14-jl-studio-4th/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
