@@ -136,10 +136,16 @@ permalink: /fine-dining/
 
 ## 餐廳地圖
 
-<div id="fine-dining-map" class="fine-dining-map" aria-label="Fine dining restaurant locations"></div>
+<div
+  id="fine-dining-map"
+  class="fine-dining-map"
+  aria-label="Fine dining restaurant locations"
+  data-venues-url="{{ '/assets/fine-dining/venues.json' | relative_url }}"
+  data-icons-sprite-url="{{ '/assets/third-party/bootstrap-icons/bootstrap-icons.svg' | relative_url }}"
+></div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="/assets/fine-dining/map.css">
+<link rel="stylesheet" href="{{ '/assets/fine-dining/map.css' | relative_url }}">
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="/assets/fine-dining/map.js" defer></script>
+<script src="{{ '/assets/fine-dining/map.js' | relative_url }}" defer></script>

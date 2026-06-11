@@ -20,10 +20,15 @@
    *   visits: VenueVisit[],
    * }} Venue
    * @typedef {{ iconType: PinIconType, colorType: PinColorType }} VenuePinStyle
+   * @typedef {{ venuesUrl: string, iconsSpriteUrl: string }} MapAssetConfig
    * @typedef {any} LeafletApi
    */
 
-  const VENUES_URL = "/assets/fine-dining/venues.json";
+  const CURRENT_SCRIPT_URL = getCurrentScriptUrl();
+  const DEFAULT_VENUES_URL = resolveScriptRelativeUrl("venues.json");
+  const DEFAULT_ICONS_SPRITE_URL = resolveScriptRelativeUrl(
+    "../third-party/bootstrap-icons/bootstrap-icons.svg",
+  );
   const TAIPEI_AREA_BOUNDS = {
     minLat: 24.93,
     maxLat: 25.22,
@@ -39,7 +44,22 @@
   const DEFAULT_PIN_ICON = "none";
   /** @type {PinColorType} */
   const DEFAULT_PIN_COLOR = "blue";
-  const BOOTSTRAP_ICONS_SPRITE = "/assets/third-party/bootstrap-icons/bootstrap-icons.svg";
+  /** @type {Record<PinColorType, number>} */
+  const PIN_COLOR_Z_INDEX_OFFSET = {
+    violet: 50_000,
+    lemon: 50_000,
+    purple: 40_000,
+    yellow: 30_000,
+    red: 20_000,
+    blue: 10_000,
+  };
+  /** @type {Record<PinIconType, number>} */
+  const PIN_ICON_Z_INDEX_OFFSET = {
+    star: 400,
+    "fork-knife": 300,
+    x: 200,
+    none: 0,
+  };
   const PIN_SHELL_PATH =
     "M17 1.6C9 1.6 2.7 7.9 2.7 15.8 2.7 26.4 17 40.4 17 40.4s14.3-14 14.3-24.6C31.3 7.9 25 1.6 17 1.6z";
   // Inner glyphs reference the local Bootstrap Icons v1.13.1 SVG sprite.
@@ -71,6 +91,7 @@
     const mapElement = document.getElementById("fine-dining-map");
     if (!mapElement) return;
 
+    const assets = getMapAssetConfig(mapElement);
     const leaflet = getLeaflet();
     const map = leaflet.map(mapElement, {
       zoomControl: true,
@@ -85,9 +106,9 @@
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     }).addTo(map);
 
-    const venues = await fetchJson(VENUES_URL);
+    const venues = await fetchJson(assets.venuesUrl);
     if (!Array.isArray(venues)) {
-      throw new Error(`Expected ${VENUES_URL} to contain an array of venues.`);
+      throw new Error(`Expected ${assets.venuesUrl} to contain an array of venues.`);
     }
 
     const markers = leaflet.featureGroup();
@@ -103,9 +124,9 @@
       const latLng = leaflet.latLng(venue.lat, venue.lng);
       const pinStyle = getVenuePinStyle(venue);
       const marker = leaflet.marker(latLng, {
-        icon: createPinIcon(leaflet, pinStyle),
+        icon: createPinIcon(leaflet, pinStyle, assets.iconsSpriteUrl),
         title: venue.title,
-        zIndexOffset: pinStyle.iconType === "none" ? 400 : 0,
+        zIndexOffset: getPinZIndexOffset(pinStyle),
       });
 
       marker.bindPopup(renderVenuePopup(venue));
@@ -137,6 +158,33 @@
     }
 
     return leaflet;
+  }
+
+  /** @returns {string} */
+  function getCurrentScriptUrl() {
+    const script = document.currentScript;
+    return script instanceof HTMLScriptElement ? script.src : "";
+  }
+
+  /**
+   * @param {string} relativePath
+   * @returns {string}
+   */
+  function resolveScriptRelativeUrl(relativePath) {
+    return CURRENT_SCRIPT_URL
+      ? new URL(relativePath, CURRENT_SCRIPT_URL).toString()
+      : relativePath;
+  }
+
+  /**
+   * @param {HTMLElement} mapElement
+   * @returns {MapAssetConfig}
+   */
+  function getMapAssetConfig(mapElement) {
+    return {
+      venuesUrl: mapElement.dataset.venuesUrl || DEFAULT_VENUES_URL,
+      iconsSpriteUrl: mapElement.dataset.iconsSpriteUrl || DEFAULT_ICONS_SPRITE_URL,
+    };
   }
 
   /**
@@ -231,6 +279,17 @@
   }
 
   /**
+   * @param {VenuePinStyle} pinStyle
+   * @returns {number}
+   */
+  function getPinZIndexOffset(pinStyle) {
+    return (
+      PIN_COLOR_Z_INDEX_OFFSET[pinStyle.colorType] +
+      PIN_ICON_Z_INDEX_OFFSET[pinStyle.iconType]
+    );
+  }
+
+  /**
    * @param {unknown} iconType
    * @returns {PinIconType}
    */
@@ -253,16 +312,17 @@
   /**
    * @param {LeafletApi} leaflet
    * @param {VenuePinStyle} pinStyle
+   * @param {string} iconsSpriteUrl
    * @returns {unknown}
    */
-  function createPinIcon(leaflet, pinStyle) {
+  function createPinIcon(leaflet, pinStyle, iconsSpriteUrl) {
     return leaflet.divIcon({
       className: [
         "fine-dining-pin-icon",
         `fine-dining-pin-icon-${pinStyle.iconType}`,
         `fine-dining-pin-color-${pinStyle.colorType}`,
       ].join(" "),
-      html: renderPinHtml(pinStyle.iconType),
+      html: renderPinHtml(pinStyle.iconType, iconsSpriteUrl),
       iconSize: [34, 42],
       iconAnchor: [17, 40],
       popupAnchor: [0, -34],
@@ -271,12 +331,13 @@
 
   /**
    * @param {PinIconType} iconType
+   * @param {string} iconsSpriteUrl
    * @returns {string}
    */
-  function renderPinHtml(iconType) {
+  function renderPinHtml(iconType, iconsSpriteUrl) {
     const symbol = PIN_SYMBOLS[iconType] || PIN_SYMBOLS[DEFAULT_PIN_ICON];
     const iconHref = symbol.iconId
-      ? `${BOOTSTRAP_ICONS_SPRITE}#${symbol.iconId}`
+      ? `${iconsSpriteUrl}#${symbol.iconId}`
       : "";
     const glyph = iconHref
       ? `

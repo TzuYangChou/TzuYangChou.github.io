@@ -1,3 +1,14 @@
+:root {
+  --fine-dining-map-control-blue: #155b6b;
+  --fine-dining-map-control-blue-dark: #0e3d4a;
+  --fine-dining-map-pin-blue: #155b6b;
+  --fine-dining-map-pin-red: #a8464f;
+  --fine-dining-map-pin-yellow: #d9992b;
+  --fine-dining-map-pin-purple: #7563a8;
+  --fine-dining-map-pin-violet: #9c27b0;
+  --fine-dining-map-pin-lemon: #ffea00;
+}
+
 .fine-dining-map {
   width: 100%;
   height: 560px;
@@ -28,7 +39,7 @@
   width: 34px;
   height: 34px;
   border: 0;
-  color: #0e3d4a;
+  color: var(--fine-dining-map-control-blue-dark);
   line-height: 34px;
 }
 
@@ -56,33 +67,33 @@
 }
 
 .fine-dining-pin-shape {
-  fill: #155b6b;
+  fill: var(--fine-dining-map-pin-blue);
   stroke: rgba(255, 255, 255, 0.95);
   stroke-width: 2;
 }
 
 .fine-dining-pin-color-blue .fine-dining-pin-shape {
-  fill: #155b6b;
+  fill: var(--fine-dining-map-pin-blue);
 }
 
 .fine-dining-pin-color-red .fine-dining-pin-shape {
-  fill: #a8464f;
+  fill: var(--fine-dining-map-pin-red);
 }
 
 .fine-dining-pin-color-yellow .fine-dining-pin-shape {
-  fill: #d9992b;
+  fill: var(--fine-dining-map-pin-yellow);
 }
 
 .fine-dining-pin-color-purple .fine-dining-pin-shape {
-  fill: #7563a8;
+  fill: var(--fine-dining-map-pin-purple);
 }
 
 .fine-dining-pin-color-violet .fine-dining-pin-shape {
-  fill: #9c27b0;
+  fill: var(--fine-dining-map-pin-violet);
 }
 
 .fine-dining-pin-color-lemon .fine-dining-pin-shape {
-  fill: #ffea00;
+  fill: var(--fine-dining-map-pin-lemon);
 }
 
 .fine-dining-pin-glyph {
@@ -185,7 +196,7 @@
   border-radius: 9px;
   padding: 0.45rem 0.7rem;
   color: #fff;
-  background: #155b6b;
+  background: var(--fine-dining-map-control-blue);
   font-size: 0.85rem;
   font-weight: 700;
   line-height: 1.2;
@@ -194,7 +205,7 @@
 
 .fine-dining-map-control button:hover,
 .fine-dining-map-control button:focus {
-  background: #0e3d4a;
+  background: var(--fine-dining-map-control-blue-dark);
 }
 
 .fine-dining-map .leaflet-control-attribution {
