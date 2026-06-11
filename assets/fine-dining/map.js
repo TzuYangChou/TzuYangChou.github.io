@@ -283,6 +283,10 @@
    * @returns {number}
    */
   function getPinZIndexOffset(pinStyle) {
+    if (pinStyle.colorType === "red" && pinStyle.iconType === "x") {
+      return 0;
+    }
+
     return (
       PIN_COLOR_Z_INDEX_OFFSET[pinStyle.colorType] +
       PIN_ICON_Z_INDEX_OFFSET[pinStyle.iconType]
