@@ -507,6 +507,11 @@
         "date": "2024-05-29",
         "title": "L'Atelier de Joël Robuchon(三訪)",
         "url": "/fine-dining/2024-05-29-latelier-de-joel-robuchon-3rd/"
+      },
+      {
+        "date": "2024-12-25",
+        "title": "L'Atelier de Joël Robuchon(四訪)",
+        "url": "/fine-dining/2024-12-25-latelier-de-joel-robuchon-4th/"
       }
     ]
   },
@@ -770,6 +775,11 @@
         "date": "2024-06-01",
         "title": "鮨 隆(三訪)",
         "url": "/fine-dining/2024-06-01-sushi-ryu-3rd/"
+      },
+      {
+        "date": "2025-05-30",
+        "title": "鮨 隆(四訪)",
+        "url": "/fine-dining/2025-05-30-sushi-ryu-4th/"
       }
     ]
   },
@@ -1236,6 +1246,11 @@
         "date": "2024-05-31",
         "title": "沉穩復古的在地情懷，台灣印象的唯美Montage——斑泊",
         "url": "/fine-dining/2024-05-31-ban-bo/"
+      },
+      {
+        "date": "2025-05-29",
+        "title": "斑泊(二訪)",
+        "url": "/fine-dining/2025-05-29-ban-bo-2nd/"
       }
     ]
   },
@@ -1315,6 +1330,11 @@
         "date": "2024-07-05",
         "title": "洗淨鉛華的精鍊純粹，大道至簡的料理哲學——NOBUO",
         "url": "/fine-dining/2024-07-05-nobuo/"
+      },
+      {
+        "date": "2025-05-15",
+        "title": "NOBUO(二訪)",
+        "url": "/fine-dining/2025-05-15-nobuo-2nd/"
       }
     ]
   },
@@ -1467,7 +1487,13 @@
     "googlePlaceId": "ChIJSR-A2kCpQjQRurjUm98-Rac",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2024-12-28",
+        "title": "Circum-",
+        "url": "/fine-dining/2024-12-28-circum/"
+      }
+    ]
   },
   {
     "venueId": "lawrys-prime-rib-taipei",
@@ -1478,7 +1504,13 @@
     "googlePlaceId": "ChIJjwfWf7CrQjQR8HEILkaBigk",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2024-12-30",
+        "title": "Lawry's Prime Rib",
+        "url": "/fine-dining/2024-12-30-lawrys-prime-rib/"
+      }
+    ]
   },
   {
     "venueId": "sens",
@@ -1489,7 +1521,13 @@
     "googlePlaceId": "ChIJvbzheu-rQjQRksOAOpGWk9M",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2025-01-10",
+        "title": "SENS",
+        "url": "/fine-dining/2025-01-10-sens/"
+      }
+    ]
   },
   {
     "venueId": "aleisha",
@@ -1500,7 +1538,13 @@
     "googlePlaceId": "ChIJC3S4YF-rQjQRrG8PJnWC68w",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2025-05-16",
+        "title": "Aleisha’",
+        "url": "/fine-dining/2025-05-16-aleisha/"
+      }
+    ]
   },
   {
     "venueId": "ephernite",
@@ -1511,7 +1555,13 @@
     "googlePlaceId": "ChIJcRrEWsjWDRQRqtl-xgdjQ1M",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2025-05-23",
+        "title": "Ephernité",
+        "url": "/fine-dining/2025-05-23-ephernite/"
+      }
+    ]
   },
   {
     "venueId": "yuen-ji",
@@ -1522,7 +1572,13 @@
     "googlePlaceId": "ChIJgajel8c9aTQRRSnCtlKnp4Y",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2025-05-27",
+        "title": "元紀",
+        "url": "/fine-dining/2025-05-27-yuen-ji/"
+      }
+    ]
   },
   {
     "venueId": "afterglo",
@@ -1533,7 +1589,13 @@
     "googlePlaceId": "",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2025-06-11",
+        "title": "Afterglo",
+        "url": "/fine-dining/2025-06-11-afterglo/"
+      }
+    ]
   },
   {
     "venueId": "la-vie-by-thomas-buhner",
@@ -1544,7 +1606,13 @@
     "googlePlaceId": "ChIJ4d2s5PetQjQRpRzOcM6Djrg",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2025-12-25",
+        "title": "精工細作的風味賦格，德系嚴謹的匠心美學——La Vie by Thomas Bühner",
+        "url": "/fine-dining/2025-12-25-la-vie-by-thomas-buhner/"
+      }
+    ]
   },
   {
     "venueId": "salt-and-stone",
@@ -1555,7 +1623,13 @@
     "googlePlaceId": "ChIJc_6fMzerQjQRHcqXwpPVxFo",
     "pinIcon": "none",
     "pinColor": "blue",
-    "visits": []
+    "visits": [
+      {
+        "date": "2026-02-10",
+        "title": "Salt & Stone",
+        "url": "/fine-dining/2026-02-10-salt-and-stone/"
+      }
+    ]
   },
   {
     "venueId": "sushi-kajin",
