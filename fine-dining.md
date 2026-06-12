@@ -16,6 +16,7 @@ permalink: /fine-dining/
 - [清新空靈的山海繪卷，臻於圓熟的分子廚藝——Molino de Urdániz](2024-01-01-molino-de-urdaniz/)
 - [沉穩復古的在地情懷，台灣印象的唯美Montage——斑泊](2024-05-31-ban-bo/)
 - [洗淨鉛華的精鍊純粹，大道至簡的料理哲學——NOBUO](2024-07-05-nobuo/)
+- [精工細作的風味賦格，德系嚴謹的匠心美學——La Vie by Thomas Bühner](2025-12-25-la-vie-by-thomas-buhner/)
 
 ## 2022 夏
 
@@ -117,26 +118,21 @@ permalink: /fine-dining/
 - [JL Studio(四訪)](2024-12-14-jl-studio-4th/)
 - [巴黎廳1930 x 高山英紀(二訪)](2024-12-18-paris-1930-de-hideki-takayama-2nd/)
 - <span class="review-upcoming">WOK by O'Bond</span>
-- <span class="review-upcoming">L'Atelier de Joel Robuchon(四訪)</span>
-- <span class="review-upcoming">Circum-</span>
-- <span class="review-upcoming">Lawrys</span>
-- <span class="review-upcoming">SENS</span>
-
-<!-- AUTO-FINE-DINING-REVIEWS:START -->
 - [L'Atelier de Joël Robuchon(四訪)](2024-12-25-latelier-de-joel-robuchon-4th/)
 - [Circum-](2024-12-28-circum/)
-- [Lawry's Prime Rib](2024-12-30-lawrys-prime-rib/)
 - [SENS](2025-01-10-sens/)
+
+## 2025
+
 - [NOBUO(二訪)](2025-05-15-nobuo-2nd/)
 - [Aleisha’](2025-05-16-aleisha/)
 - [Ephernité](2025-05-23-ephernite/)
 - [元紀](2025-05-27-yuen-ji/)
 - [斑泊(二訪)](2025-05-29-ban-bo-2nd/)
-- [鮨 隆(四訪)](2025-05-30-sushi-ryu-4th/)
-- [Afterglo](2025-06-11-afterglo/)
-- [精工細作的風味賦格，德系嚴謹的匠心美學——La Vie by Thomas Bühner](2025-12-25-la-vie-by-thomas-buhner/)
-- [Salt & Stone](2026-02-10-salt-and-stone/)
+- [La Vie by Thomas Bühner](2025-12-25-la-vie-by-thomas-buhner/)
 
+## 2026
+<!-- AUTO-FINE-DINING-REVIEWS:START -->
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
 ## 食記短評
@@ -148,6 +144,10 @@ permalink: /fine-dining/
 - [毓鮨 割烹](2023-07-18-yu-kappo-sushi/)
 - [Inari izakaya](2024-06-04-inari-izakaya/)
 - [頤宮Le Palais(二訪)](2024-12-08-le-palais-2nd/)
+- [Lawry's Prime Rib](2024-12-30-lawrys-prime-rib/)
+- [鮨 隆(四訪)](2025-05-30-sushi-ryu-4th/)
+- [Afterglo](2025-06-11-afterglo/)
+- [Salt & Stone](2026-02-10-salt-and-stone/)
 
 ## 餐廳地圖
 
