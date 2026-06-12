@@ -134,6 +134,7 @@ permalink: /fine-dining/
 - [斑泊(二訪)](2025-05-29-ban-bo-2nd/)
 - [鮨 隆(四訪)](2025-05-30-sushi-ryu-4th/)
 - [Afterglo](2025-06-11-afterglo/)
+- [精工細作的風味賦格，德系嚴謹的匠心美學——La Vie by Thomas Bühner](2025-12-25-la-vie-by-thomas-buhner/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
