@@ -131,6 +131,7 @@ permalink: /fine-dining/
 - [Aleisha’](2025-05-16-aleisha/)
 - [Ephernité](2025-05-23-ephernite/)
 - [元紀](2025-05-27-yuen-ji/)
+- [斑泊(二訪)](2025-05-29-ban-bo-2nd/)
 - [鮨 隆(四訪)](2025-05-30-sushi-ryu-4th/)
 - [Afterglo](2025-06-11-afterglo/)
 
