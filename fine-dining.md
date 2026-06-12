@@ -103,7 +103,7 @@ permalink: /fine-dining/
 - [天香樓(二訪)](2024-06-16-tien-hsiang-lo-2nd/)
 - [巴賽麗廳La Brasseries(二訪)](2024-06-24-la-brasseries-2nd/)
 - [明壽司](2024-06-27-sushi-akira/)
-- [雅閣](2024-07-01-ya-ge/)
+- [雅閣(二訪)](2024-07-01-ya-ge-2nd/)
 - [NOBUO](2024-07-05-nobuo/)
 - [壽司芳](2024-07-11-sushiyoshi/)
 - [文公館La Maison de Win](2024-07-26-la-maison-de-win/)
