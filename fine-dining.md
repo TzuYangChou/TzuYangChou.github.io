@@ -124,6 +124,7 @@ permalink: /fine-dining/
 
 <!-- AUTO-FINE-DINING-REVIEWS:START -->
 - [L'Atelier de Joël Robuchon(四訪)](2024-12-25-latelier-de-joel-robuchon-4th/)
+- [Circum-](2024-12-28-circum/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
