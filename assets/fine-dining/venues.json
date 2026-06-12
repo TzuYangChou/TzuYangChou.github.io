@@ -1652,5 +1652,16 @@
     "pinIcon": "none",
     "pinColor": "blue",
     "visits": []
+  },
+  {
+    "venueId": "latelier-par-yao",
+    "title": "L'Atelier par Yao",
+    "lat": 24.152857,
+    "lng": 120.705139,
+    "googleMapsQuery": "L'Atelier par Yao 台中市太平區新福十六街68號2樓",
+    "googlePlaceId": "ChIJMVxaewM9aTQRYMBGjlOwKBE",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
   }
 ]
