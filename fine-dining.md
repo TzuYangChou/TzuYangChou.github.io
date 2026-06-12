@@ -127,6 +127,7 @@ permalink: /fine-dining/
 - [Circum-](2024-12-28-circum/)
 - [Lawry's Prime Rib](2024-12-30-lawrys-prime-rib/)
 - [SENS](2025-01-10-sens/)
+- [NOBUO(二訪)](2025-05-15-nobuo-2nd/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
