@@ -129,6 +129,7 @@ permalink: /fine-dining/
 - [SENS](2025-01-10-sens/)
 - [NOBUO(二訪)](2025-05-15-nobuo-2nd/)
 - [Aleisha’](2025-05-16-aleisha/)
+- [Ephernité](2025-05-23-ephernite/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
