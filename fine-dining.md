@@ -126,6 +126,7 @@ permalink: /fine-dining/
 - [L'Atelier de Joël Robuchon(四訪)](2024-12-25-latelier-de-joel-robuchon-4th/)
 - [Circum-](2024-12-28-circum/)
 - [Lawry's Prime Rib](2024-12-30-lawrys-prime-rib/)
+- [SENS](2025-01-10-sens/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
