@@ -210,6 +210,40 @@
   background: var(--fine-dining-map-control-blue-dark);
 }
 
+.fine-dining-map-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.55rem 0.7rem;
+  color: rgba(14, 61, 74, 0.92);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(21, 91, 107, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(14, 61, 74, 0.16);
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.fine-dining-map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+}
+
+.fine-dining-map-legend-swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 2px solid rgba(255, 255, 255, 0.96);
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(8, 39, 48, 0.32);
+}
+
+.fine-dining-map-legend-swatch-purple {
+  background: var(--fine-dining-map-pin-purple);
+}
+
 .fine-dining-map .leaflet-control-attribution {
   color: rgba(14, 61, 74, 0.72);
   font-size: 0.68rem;
@@ -237,4 +271,7 @@
     font-size: 0.78rem;
   }
 
+  .fine-dining-map-legend {
+    font-size: 0.78rem;
+  }
 }

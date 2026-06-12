@@ -150,6 +150,7 @@
     }
 
     addBoundsControl(leaflet, map, taipeiBounds, allBounds);
+    addLegendControl(leaflet, map);
   }
 
   /** @returns {LeafletApi} */
@@ -448,6 +449,38 @@
     });
 
     map.addControl(new BoundsControl());
+  }
+
+  /**
+   * @param {LeafletApi} leaflet
+   * @param {any} map
+   * @returns {void}
+   */
+  function addLegendControl(leaflet, map) {
+    const LegendControl = leaflet.Control.extend({
+      options: { position: "bottomleft" },
+      onAdd() {
+        const container = leaflet.DomUtil.create("div", "fine-dining-map-legend");
+        container.setAttribute("aria-label", "餐廳地圖名人堂標示");
+
+        const item = leaflet.DomUtil.create("div", "fine-dining-map-legend-item", container);
+        const swatch = leaflet.DomUtil.create(
+          "span",
+          "fine-dining-map-legend-swatch fine-dining-map-legend-swatch-purple",
+          item,
+        );
+        swatch.setAttribute("aria-hidden", "true");
+
+        const label = leaflet.DomUtil.create("span", "fine-dining-map-legend-label", item);
+        label.textContent = "名人堂";
+
+        leaflet.DomEvent.disableClickPropagation(container);
+        leaflet.DomEvent.disableScrollPropagation(container);
+        return container;
+      },
+    });
+
+    map.addControl(new LegendControl());
   }
 
   /**
