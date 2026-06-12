@@ -123,6 +123,8 @@ permalink: /fine-dining/
 - <span class="review-upcoming">SENS</span>
 
 <!-- AUTO-FINE-DINING-REVIEWS:START -->
+- [L'Atelier de Joël Robuchon(四訪)](2024-12-25-latelier-de-joel-robuchon-4th/)
+
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
 ## 食記短評
