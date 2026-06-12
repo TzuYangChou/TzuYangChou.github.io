@@ -132,6 +132,7 @@ permalink: /fine-dining/
 - [Ephernité](2025-05-23-ephernite/)
 - [元紀](2025-05-27-yuen-ji/)
 - [鮨 隆(四訪)](2025-05-30-sushi-ryu-4th/)
+- [Afterglo](2025-06-11-afterglo/)
 
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 
