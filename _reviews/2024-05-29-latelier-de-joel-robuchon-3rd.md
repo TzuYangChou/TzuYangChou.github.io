@@ -11,7 +11,7 @@ date: 2024-05-29
 
 ![](./rJw1UjMSJe.jpg)
 
-第一次中午來AJR，簡單吃簡單寫。首先是跟初訪時一樣的開胃小點。
+第一次中午來[AJR](/fine-dining/2023-12-25-latelier-de-joel-robuchon-2nd/)，簡單吃簡單寫。首先是跟初訪時一樣的開胃小點。
 
 
 ![](./Hy81UiMHye.jpg)
