@@ -59,8 +59,9 @@ such as `# Heading`, `- list item`, and `[link text](url)`.
 | `teaching.md` | Teaching page. |
 | `fine-dining.md` | Fine-dining landing page and curated review list. |
 | `_reviews/` | Individual fine-dining review Markdown files. |
-| `_layouts/default.html` | Site-wide page layout and navigation menu. |
+| `_layouts/default.html` | Default site-wide page layout. |
 | `_layouts/review.html` | Layout for fine-dining review pages. |
+| `_includes/nav.html` | Site-wide navigation menu used by layouts. |
 | `assets/` | PDFs, images, CSS, review photos, and other static files. |
 | `assets/css/custom.css` | Site-specific styling. |
 | `.github/workflows/jekyll-gh-pages.yml` | GitHub Actions deployment workflow. |
@@ -308,11 +309,11 @@ is a specific reason to change that.
 Edit:
 
 ```text
-_layouts/default.html
+_includes/nav.html
 ```
 
-This file controls the site-wide navigation. Individual pages do not own the
-navigation menu.
+This include controls the site-wide navigation. The default and review layouts
+load it; individual pages do not own the navigation menu.
 
 ### Change Styling
 
