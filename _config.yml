@@ -2,8 +2,12 @@ title: "Tzu-Yang Chou"
 description: "Personal academic site — algebraic geometry, derived categories, and fine dining reviews."
 repository: TzuYangChou/TzuYangChou.github.io
 remote_theme: pages-themes/cayman@v0.2.0
+url: "https://tzuyangchou.github.io"
+
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - README.md

@@ -59,7 +59,7 @@ date: 2025-12-25
 
 最後是加購的生日蛋糕（香草白巧克力榛果口味）跟櫻桃咖啡果茶。
 
-體驗良好，在台北的歐系fine dining算是前幾喜歡的了（尤其在AJR換主廚Orchid也收了的情況下），大概跟[巴黎廳](/fine-dining/2024-12-18-paris-1930-de-hideki-takayama-2nd/)（如果不用吃四個小時的話…）差不多水準、略勝[Ad Astra](/fine-dining/2024-05-24-ad-astra/)，幾乎必然再訪，尤其想嘗試更完整的長套餐，下次也許挑春夏季的菜單再來。
+體驗良好，在台北的歐系fine dining算是前幾喜歡的了（尤其在AJR換主廚[Orchid](/fine-dining/2022-12-23-orchid/)也收了的情況下），大概跟[巴黎廳](/fine-dining/2024-12-18-paris-1930-de-hideki-takayama-2nd/)（如果不用吃四個小時的話…）差不多水準、略勝[Ad Astra](/fine-dining/2024-05-24-ad-astra/)，幾乎必然再訪，尤其想嘗試更完整的長套餐，下次也許挑春夏季的菜單再來。
 
 **環境裝潢**：80/100
 **餐點水準**：90/100

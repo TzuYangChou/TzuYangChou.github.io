@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tzuyangchou.github.io/sitemap.xml
