@@ -1663,5 +1663,60 @@
     "pinIcon": "none",
     "pinColor": "blue",
     "visits": []
+  },
+  {
+    "venueId": "ecru",
+    "title": "Écru",
+    "lat": 25.0431424,
+    "lng": 121.5503662,
+    "googleMapsQuery": "ÉCRU 台北市大安區敦化南路一段177巷19號",
+    "googlePlaceId": "ChIJpfZabJqrQjQR2bzES-1a1ow",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "nabo-ulv",
+    "title": "Nabo ulv",
+    "lat": 25.0434408,
+    "lng": 121.5476453,
+    "googleMapsQuery": "nabo ulv 台北市大安區敦化南路一段160巷18號",
+    "googlePlaceId": "ChIJiS4o2myrQjQRhPILcYg-vtg",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "eika",
+    "title": "EIKA",
+    "lat": 25.0574787,
+    "lng": 121.5105154,
+    "googleMapsQuery": "盈科 EIKA 台北市大同區民樂街58號",
+    "googlePlaceId": "ChIJnaykAxWpQjQRnSZt6p0IkUU",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "gen-by-matt-chen",
+    "title": "GEN by Matt Chen",
+    "lat": 22.6043254,
+    "lng": 120.2992897,
+    "googleMapsQuery": "雋 GEN by Matt Chen 高雄市前鎮區復興四路8號",
+    "googlePlaceId": "ChIJkR6GIAADbjQRlQjRUqtZbz8",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
+  },
+  {
+    "venueId": "pastaio-guangfu",
+    "title": "PASTAIO 手工義大利麵 光復店",
+    "lat": 25.0394533,
+    "lng": 121.5562714,
+    "googleMapsQuery": "PASTAIO 手工義大利麵 光復店 台北市大安區光復南路290巷32號",
+    "googlePlaceId": "ChIJoWstbC6rQjQRS5JYXUqAzAU",
+    "pinIcon": "none",
+    "pinColor": "blue",
+    "visits": []
   }
 ]
