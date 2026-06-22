@@ -17,5 +17,5 @@ At the moment, I'm working on stability conditions on singular varieties.
    [pdf](assets/papers/Stability_condition_on_a_singular_surface_and_its_resolution.pdf).
 
 2. **Stability condition on a singular quadric threefold**   
-   [pdf](assets/papers/Stability_condition_on_a_singular_quadric_threefold.pdf).
+   [pdf](assets/papers/stability_condition_on_a_singular_quadric_threefold.pdf).
 
