@@ -41,7 +41,6 @@ date: 2023-06-10
 
 ![](./SyIN8MiDn.png)
 
-
 ![](./BkO0rMsDh.png)
 
 ![](./BkAYZGsw3.png)

@@ -132,6 +132,7 @@ permalink: /fine-dining/
 - [La Vie by Thomas Bühner](2025-12-25-la-vie-by-thomas-buhner/)
 
 ## 2026
+
 <!-- AUTO-FINE-DINING-REVIEWS:START -->
 <!-- AUTO-FINE-DINING-REVIEWS:END -->
 

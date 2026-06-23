@@ -11,8 +11,6 @@ date: 2024-05-27
 
 ![](./By_9BiGHyg.jpg)
 
-
-
 再訪[教父](/fine-dining/2022-05-22-dannys-steakhouse/)，隔了兩年菜單有些許改動，今天主要嘗試看看一兩道新的前菜。
 
 ![](./SkOcBjMHJg.jpg)

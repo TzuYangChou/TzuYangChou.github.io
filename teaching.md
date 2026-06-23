@@ -3,7 +3,6 @@ layout: default
 title: Teaching
 ---
 
-
 2022-2023 Semester 2 Proof and Problem Solving [(MATH08059)](http://www-test.drps.ed.ac.uk/22-23/dpt/cxmath08059.htm)
 
 2022-2023 Semester 1 Honours Analysis-Skill [(MATH10068)](http://www-test.drps.ed.ac.uk/22-23/dpt/cxmath10068.htm)

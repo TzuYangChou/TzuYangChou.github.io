@@ -51,23 +51,23 @@ such as `# Heading`, `- list item`, and `[link text](url)`.
 
 ## Important Folders and Files
 
-| Path | Purpose |
-| --- | --- |
-| `_config.yml` | Main Jekyll settings. Also lists files that should be excluded from the public site. |
-| `index.md` | Homepage content. |
-| `research.md` | Research page. |
-| `teaching.md` | Teaching page. |
-| `fine-dining.md` | Fine-dining landing page and curated review list. |
-| `_reviews/` | Individual fine-dining review Markdown files. |
-| `_layouts/default.html` | Default site-wide page layout. |
-| `_layouts/review.html` | Layout for fine-dining review pages. |
-| `_includes/nav.html` | Site-wide navigation menu used by layouts. |
-| `assets/` | PDFs, images, CSS, review photos, and other static files. |
-| `assets/css/custom.css` | Site-specific styling. |
-| `.github/workflows/jekyll-gh-pages.yml` | GitHub Actions deployment workflow. |
-| `README.md` | Short repository overview for GitHub visitors. |
-| `MAINTAINING.md` | This maintainer guide. |
-| `_site/` | Generated website output. Do not edit or commit changes from here. |
+| Path                                    | Purpose                                                                              |
+| --------------------------------------- | ------------------------------------------------------------------------------------ |
+| `_config.yml`                           | Main Jekyll settings. Also lists files that should be excluded from the public site. |
+| `index.md`                              | Homepage content.                                                                    |
+| `research.md`                           | Research page.                                                                       |
+| `teaching.md`                           | Teaching page.                                                                       |
+| `fine-dining.md`                        | Fine-dining landing page and curated review list.                                    |
+| `_reviews/`                             | Individual fine-dining review Markdown files.                                        |
+| `_layouts/default.html`                 | Default site-wide page layout.                                                       |
+| `_layouts/review.html`                  | Layout for fine-dining review pages.                                                 |
+| `_includes/nav.html`                    | Site-wide navigation menu used by layouts.                                           |
+| `assets/`                               | PDFs, images, CSS, review photos, and other static files.                            |
+| `assets/css/custom.css`                 | Site-specific styling.                                                               |
+| `.github/workflows/jekyll-gh-pages.yml` | GitHub Actions deployment workflow.                                                  |
+| `README.md`                             | Short repository overview for GitHub visitors.                                       |
+| `MAINTAINING.md`                        | This maintainer guide.                                                               |
+| `_site/`                                | Generated website output. Do not edit or commit changes from here.                   |
 
 ## Branches in Plain English
 
