@@ -41,6 +41,8 @@ jobs:
         env:
           JEKYLL_ENV: production
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verify agent and workspace files are not published
+        run: ruby .github/scripts/verify_no_agent_pages.rb _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
 

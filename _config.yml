@@ -12,9 +12,19 @@ plugins:
 exclude:
   - README.md
   - MAINTAINING.md
-  - CLAUDE.md
+  # Tracked agent and workspace files must never be published.
+  - "*AGENT*.md"
+  - "CLAUDE*.md"
+  - "CODEX*.md"
+  - "GEMINI*.md"
+  - "OPENCODE*.md"
+  - opencode.json
+  - .agent-workbench.*
+  - .agents/
   - .claude/
+  - .codex/
   - .omx/
+  - .vscode/
   - vendor
 
 kramdown:

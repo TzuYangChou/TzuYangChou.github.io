@@ -8,31 +8,27 @@ The short version:
 
 1. Edit the source files in this repository.
 2. Do **not** edit `_site/`; it is generated output.
-3. Ask an agent to make small changes and run `bundle exec jekyll build`.
+3. Ask an agent to make small changes, build the site, and run the publication
+   guard.
 4. Review the changed files before committing.
 5. Push to `main`; GitHub Actions publishes the website.
 
-## Should This Guide Live on `workspace-config`?
+## Where Maintainer and Agent Files Live
 
-No, not as the only copy.
+Shared repository content lives in normal Git history with `main` as the source
+of truth. This includes website source, maintainer documentation, agent
+instructions, portable skills, and shared editor configuration. The supported
+design does not use a separate `workspace-config` branch or require a restore
+step after cloning.
 
-This guide is maintainer documentation for the repository itself, so it should
-live on the normal product branch, next to the website source. A future
-maintainer should not need to know about a special branch before they can learn
-how to maintain the site.
+Tracking a file on `main` does not mean Jekyll should publish it. `_config.yml`
+excludes maintainer-only and agent/workspace paths, including the canonical
+`.agents/skills/` tree and the generated `.claude/skills/` mirror. The Pages
+workflow runs `.github/scripts/verify_no_agent_pages.rb` after building and
+refuses to upload an artifact if any of those files leak into `_site/`.
 
-Use this rule:
-
-- Put website source, public repository documentation, and maintainer guides on
-  the normal product branch.
-- Put local agent/editor configuration files on `workspace-config`.
-
-The `workspace-config` branch is useful for restoring local AI-agent setup,
-editor settings, prompts, and generated agent instruction files. It is not the
-right place for the only copy of documentation that a normal maintainer needs.
-
-This file is listed in `_config.yml` under `exclude`, so Jekyll will not copy or
-render it into the public website.
+`MAINTAINING.md` is also listed under `exclude`, so it remains visible in the
+GitHub repository without becoming a public website page.
 
 ## What This Repository Is
 
@@ -65,6 +61,11 @@ such as `# Heading`, `- list item`, and `[link text](url)`.
 | `assets/`                               | PDFs, images, CSS, review photos, and other static files.                            |
 | `assets/css/custom.css`                 | Site-specific styling.                                                               |
 | `.github/workflows/jekyll-gh-pages.yml` | GitHub Actions deployment workflow.                                                  |
+| `.github/scripts/verify_no_agent_pages.rb` | Blocks deployment if agent or workspace files enter the generated site.            |
+| `AI_AGENT_PROJECT.md`                  | Project-specific instructions, commands, and maintenance constraints for agents.     |
+| `.agents/`                             | Canonical portable prompts and skills; tracked on `main` but never published.         |
+| `.claude/skills/`                      | Generated Claude discovery mirror; tracked on `main` but never published.            |
+| `.vscode/tasks.json`                   | Shared local Jekyll task; tracked on `main` but never published.                       |
 | `README.md`                             | Short repository overview for GitHub visitors.                                       |
 | `MAINTAINING.md`                        | This maintainer guide.                                                               |
 | `_site/`                                | Generated website output. Do not edit or commit changes from here.                   |
@@ -75,26 +76,21 @@ Branches are separate lines of work in Git.
 
 ### `main`
 
-`main` is the branch GitHub Pages builds and deploys. Changes to website content
-belong here, usually through a small feature branch and pull request if you use
-that workflow.
+`main` is the authoritative branch for website source, repository documentation,
+and shared agent/editor configuration. GitHub Pages builds from `main`, but only
+the files selected by Jekyll enter the deployed artifact.
 
-### `workspace-config`
+### Short-Lived Branches
 
-`workspace-config` is a special branch for local agent and editor setup. It may
-contain files such as:
+You may use a small feature branch and pull request when that makes review
+easier. Merge the finished change back into `main` through the normal workflow.
 
-- `AI_AGENT_GUIDE.md`
-- `AI_AGENT_PROJECT.md`
-- `AGENTS.md`
-- `CLAUDE.md`
-- `GEMINI.md`
-- `.agents/`
-- `.codex/`
-- `.claude/`
+### Retired `workspace-config` Design
 
-Do not merge `workspace-config` into `main`. It is an overlay for local tools,
-not website content.
+Do not create, restore, or update an orphan `workspace-config` branch. Historical
+remote refs may remain until an authorized cleanup, but they are not an active
+source of configuration. Shared agent files belong directly on `main` and are
+kept private from the website by Jekyll exclusions and the deployment guard.
 
 ## Golden Rules
 
@@ -103,9 +99,9 @@ not website content.
 3. **Use English for technical documentation.** Fine-dining review body content
    and `fine-dining.md` body content are intentionally written in Traditional
    Chinese.
-4. **Use `_config.yml` `exclude` for repo-only docs.** If a file is only for
-   GitHub maintainers and should not appear on the website, exclude it.
-5. **Run a build before saying the site is ready.**
+4. **Keep repo-only and agent/workspace files out of Jekyll output.** Maintain
+   the `_config.yml` exclusions and do not bypass the publication guard.
+5. **Run the build and publication guard before saying the site is ready.**
 6. **Review `git status` and `git diff` before committing.**
 7. **Do not add new dependencies unless there is a clear reason.**
 
@@ -126,7 +122,9 @@ Update the Teaching page with this new course:
 [paste course information]
 Keep the existing style.
 Do not edit _site/.
-Run bundle exec jekyll build and summarize the changed files.
+Run bundle exec jekyll build.
+Run ruby .github/scripts/verify_no_agent_pages.rb _site.
+Summarize the changed files and verification.
 ```
 
 For documentation-only changes that must not affect the public website:
@@ -135,7 +133,7 @@ For documentation-only changes that must not affect the public website:
 Add repository-only documentation for maintainers.
 Put it somewhere easy to find from README.md.
 Make sure Jekyll does not include it in the built site.
-Verify by comparing the generated output before and after.
+Run a clean build and the agent/workspace publication guard.
 ```
 
 For fine-dining reviews:
@@ -147,6 +145,7 @@ Create the Markdown file, use layout: review, and reference photos from
 assets/fine-dining/reviews/YYYY-MM-DD-slug/.
 Keep the review body in Traditional Chinese.
 Run bundle exec jekyll build.
+Run ruby .github/scripts/verify_no_agent_pages.rb _site.
 ```
 
 ## Normal Maintenance Workflow
@@ -180,10 +179,12 @@ Ask the agent to run:
 
 ```bash
 bundle exec jekyll build
+ruby .github/scripts/verify_no_agent_pages.rb _site
 ```
 
-The build should finish successfully. A warning about `faraday-retry` may appear
-in this environment; it is only an advisory if the build still succeeds.
+The build should finish successfully and the guard should print
+`AGENT_WORKSPACE_PUBLICATION_CHECK=PASS`. A warning about `faraday-retry` may
+appear in this environment; it is only an advisory if the build still succeeds.
 
 ### 4. Review the changed files
 
@@ -326,26 +327,44 @@ assets/css/custom.css
 Ask the agent to keep CSS changes small and to verify the affected pages in a
 browser when possible.
 
-## Keeping Repo-Only Documentation out of the Public Site
+## Keeping Repository-Only and Agent Files out of the Public Site
 
 Some Markdown files are for GitHub maintainers, not website visitors. Examples:
 
 - `README.md`
 - `MAINTAINING.md`
-- agent setup notes
+- agent instructions and portable skills
 - internal planning documents
 
-If such a file is in the repository but should not appear in the generated
-website, add it to `_config.yml`:
+The current `_config.yml` excludes maintainer docs, agent entrypoint patterns,
+agent-workbench metadata, `opencode.json`, and the `.agents/`, `.claude/`,
+`.codex/`, `.omx/`, and `.vscode/` trees. This keeps both canonical skills,
+generated vendor mirrors, and shared editor tasks in Git without copying them
+into the website.
+
+If another repository-only file should not appear in the generated website,
+add it to the existing `exclude` list without removing the agent/workspace
+patterns. For example:
 
 ```yaml
 exclude:
   - README.md
   - MAINTAINING.md
+  - "*AGENT*.md"
+  - .agents/
+  - .claude/
 ```
 
-After changing the exclude list, ask the agent to verify that the generated
-output is unchanged or that the excluded file is absent from `_site/`.
+After changing exclusions, use a clean build so stale files from an earlier
+configuration cannot remain in `_site/`:
+
+```bash
+bundle exec jekyll clean
+bundle exec jekyll build
+ruby .github/scripts/verify_no_agent_pages.rb _site
+```
+
+The final command must print `AGENT_WORKSPACE_PUBLICATION_CHECK=PASS`.
 
 ## What Not to Touch Unless You Mean To
 
@@ -354,15 +373,18 @@ Avoid editing these unless the task specifically requires it:
 - `_site/`
 - `Gemfile.lock`
 - `.github/workflows/jekyll-gh-pages.yml`
+- `.github/scripts/verify_no_agent_pages.rb`
 - `AI_AGENT_GUIDE.md`
 - `AI_AGENT_PROJECT.md`
 - `AGENTS.md`
 - `.agents/`
 - `.codex/`
 - `.claude/`
+- `.vscode/tasks.json`
 
-The agent-related files are part of the workspace overlay design. They are
-useful locally, but they should not become accidental website-content changes.
+The agent-related files are shared project configuration tracked on `main`.
+Edit them only when intentionally changing agent policy or tooling. Their
+presence in normal Git history is expected; their presence in `_site/` is not.
 
 ## Troubleshooting
 
@@ -374,6 +396,7 @@ Ask the agent to:
 2. Identify which file caused the error.
 3. Fix only that cause.
 4. Run `bundle exec jekyll build` again.
+5. Run `ruby .github/scripts/verify_no_agent_pages.rb _site`.
 
 Common causes:
 
@@ -381,6 +404,19 @@ Common causes:
 - Missing closing quote in a title.
 - Bad indentation in `_config.yml`.
 - A Markdown link or image path typo.
+
+### The Agent/Workspace Publication Guard Fails
+
+The guard prints every leaked path. Do not fix the failure by deleting shared
+agent files from Git or disabling the workflow step. Add or repair the matching
+`_config.yml` exclusion, run a clean build, and rerun:
+
+```bash
+ruby .github/scripts/verify_no_agent_pages.rb _site
+```
+
+Only continue to deployment after it prints
+`AGENT_WORKSPACE_PUBLICATION_CHECK=PASS`.
 
 ### An Image Does Not Show
 
@@ -409,7 +445,8 @@ If it failed, ask the agent:
 ```text
 Inspect the GitHub Pages workflow failure.
 Explain the root cause in plain English.
-Make the smallest fix and verify locally with bundle exec jekyll build.
+Make the smallest fix.
+Verify with bundle exec jekyll build and the agent/workspace publication guard.
 ```
 
 ### The Agent Changed Too Much
@@ -437,6 +474,7 @@ Update [page/file] with [content].
 Keep the existing style.
 Do not edit _site/.
 Run bundle exec jekyll build.
+Run ruby .github/scripts/verify_no_agent_pages.rb _site.
 Report changed files and verification.
 ```
 
@@ -449,6 +487,7 @@ Use the existing _reviews filename/frontmatter conventions.
 Put photos under assets/fine-dining/reviews/[date-slug]/.
 Keep the body in Traditional Chinese.
 Run bundle exec jekyll build.
+Run ruby .github/scripts/verify_no_agent_pages.rb _site.
 ```
 
 ### Add repo-only documentation
@@ -458,8 +497,8 @@ Add maintainer documentation for [topic].
 It should be visible in GitHub from README.md but must not affect the generated
 website.
 Update _config.yml exclude if needed.
-Verify the generated output is unchanged or that the new doc is absent from
-_site/.
+Run bundle exec jekyll clean, then bundle exec jekyll build.
+Run ruby .github/scripts/verify_no_agent_pages.rb _site and require PASS.
 ```
 
 ### Commit changes
@@ -480,5 +519,8 @@ Before considering a change done, confirm:
 - [ ] `_site/` was not edited by hand.
 - [ ] Repo-only docs are excluded from Jekyll output.
 - [ ] `bundle exec jekyll build` succeeds.
+- [ ] `ruby .github/scripts/verify_no_agent_pages.rb _site` passes.
+- [ ] No agent instructions, prompts, skills, or workspace metadata appear in
+      `_site/`.
 - [ ] `git status --short` shows only expected files.
 - [ ] The agent explained what changed and how it was verified.

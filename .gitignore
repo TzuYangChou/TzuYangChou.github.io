@@ -6,7 +6,8 @@ _site/
 vendor/
 
 # IDE
-.vscode/
+.vscode/*
+!.vscode/tasks.json
 *.code-workspace
 .idea/
 *.iml
@@ -49,4 +50,4 @@ $RECYCLE.BIN/
 .claude/CLAUDE.md.backup.*
 
 # Utility scripts
-scripts/
+/scripts/
