@@ -29,6 +29,8 @@
   const DEFAULT_ICONS_SPRITE_URL = resolveScriptRelativeUrl(
     "../third-party/bootstrap-icons/bootstrap-icons.svg",
   );
+  const CARTO_BASEMAP_TILE_URL =
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_298e_1_0479a06a70b06fe882cd210d";
   // The default Taipei view focuses on the central cluster. Southern New Taipei
   // outliers remain available through the "全部" control.
   const TAIPEI_AREA_BOUNDS = {
@@ -101,7 +103,7 @@
       scrollWheelZoom: true,
     });
 
-    leaflet.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    leaflet.tileLayer(CARTO_BASEMAP_TILE_URL, {
       subdomains: "abcd",
       maxZoom: 19,
       attribution:
