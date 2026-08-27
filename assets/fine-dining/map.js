@@ -21,7 +21,9 @@
    * }} Venue
    * @typedef {{ iconType: PinIconType, colorType: PinColorType }} VenuePinStyle
    * @typedef {{ venuesUrl: string, iconsSpriteUrl: string }} MapAssetConfig
-   * @typedef {any} LeafletApi
+   * @typedef {{ minLat: number, maxLat: number, minLng: number, maxLng: number }} VenueBounds
+   * @typedef {any} MapLibreApi
+   * @typedef {any} MapLibreMap
    */
 
   const CURRENT_SCRIPT_URL = getCurrentScriptUrl();
@@ -29,8 +31,16 @@
   const DEFAULT_ICONS_SPRITE_URL = resolveScriptRelativeUrl(
     "../third-party/bootstrap-icons/bootstrap-icons.svg",
   );
-  const CARTO_BASEMAP_TILE_URL =
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_298e_1_0479a06a70b06fe882cd210d";
+  const MAPLIBRE_MODULE_URL =
+    "https://unpkg.com/maplibre-gl@6.6.0/dist/maplibre-gl.mjs";
+  const CARTO_BASEMAP_STYLE_URL =
+    "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
+  const CARTO_BASEMAP_PROJECT_KEY = "cb1_298e_1_0479a06a70b06fe882cd210d";
+  const DEFAULT_MAP_CENTER = [121.5319, 25.0478];
+  const DEFAULT_MAP_ZOOM = 11;
+  const MAP_MAX_ZOOM = 19;
+  const FIT_BOUNDS_PADDING = 48;
+  const MAP_LOAD_TIMEOUT_MS = 20_000;
   // The default Taipei view focuses on the central cluster. Southern New Taipei
   // outliers remain available through the "全部" control.
   const TAIPEI_AREA_BOUNDS = {
@@ -96,28 +106,32 @@
     if (!mapElement) return;
 
     const assets = getMapAssetConfig(mapElement);
-    const leaflet = getLeaflet();
-    const map = leaflet.map(mapElement, {
-      zoomControl: true,
+    const maplibre = await loadMapLibre();
+    const map = new maplibre.Map({
+      container: mapElement,
+      style: CARTO_BASEMAP_STYLE_URL,
+      center: DEFAULT_MAP_CENTER,
+      zoom: DEFAULT_MAP_ZOOM,
+      maxZoom: MAP_MAX_ZOOM,
       attributionControl: true,
-      scrollWheelZoom: true,
+      transformRequest: transformCartoRequest,
     });
+    map.on("error", logMapResourceError);
+    map.addControl(new maplibre.NavigationControl({ showCompass: false }), "top-left");
 
-    leaflet.tileLayer(CARTO_BASEMAP_TILE_URL, {
-      subdomains: "abcd",
-      maxZoom: 19,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    }).addTo(map);
-
-    const venues = await fetchJson(assets.venuesUrl);
+    const [venues] = await Promise.all([
+      fetchJson(assets.venuesUrl),
+      waitForInitialMapLoad(map),
+    ]).catch((error) => {
+      map.remove();
+      throw error;
+    });
     if (!Array.isArray(venues)) {
       throw new Error(`Expected ${assets.venuesUrl} to contain an array of venues.`);
     }
 
-    const markers = leaflet.featureGroup();
-    const allBounds = leaflet.latLngBounds([]);
-    const taipeiBounds = leaflet.latLngBounds([]);
+    const allBounds = createEmptyBounds();
+    const taipeiBounds = createEmptyBounds();
 
     for (const venue of venues) {
       if (!isValidVenue(venue)) {
@@ -125,44 +139,123 @@
         continue;
       }
 
-      const latLng = leaflet.latLng(venue.lat, venue.lng);
       const pinStyle = getVenuePinStyle(venue);
-      const marker = leaflet.marker(latLng, {
-        icon: createPinIcon(leaflet, pinStyle, assets.iconsSpriteUrl),
-        title: venue.title,
-        zIndexOffset: getPinZIndexOffset(pinStyle),
+      const pinElement = createPinElement(pinStyle, assets.iconsSpriteUrl);
+      pinElement.title = venue.title;
+      pinElement.setAttribute("aria-label", venue.title);
+      pinElement.setAttribute("role", "button");
+      pinElement.setAttribute("aria-haspopup", "dialog");
+      pinElement.setAttribute("aria-expanded", "false");
+      pinElement.tabIndex = 0;
+      pinElement.style.zIndex = String(getPinZIndexOffset(pinStyle));
+
+      const popup = new maplibre.Popup({
+        maxWidth: "320px",
+        offset: 34,
+      }).setHTML(renderVenuePopup(venue));
+      popup.on("open", () => pinElement.setAttribute("aria-expanded", "true"));
+      popup.on("close", () => pinElement.setAttribute("aria-expanded", "false"));
+
+      const marker = new maplibre.Marker({
+        element: pinElement,
+        anchor: "bottom",
+      })
+        .setLngLat([venue.lng, venue.lat])
+        .setPopup(popup)
+        .addTo(map);
+      pinElement.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        marker.togglePopup();
       });
 
-      marker.bindPopup(renderVenuePopup(venue));
-      marker.addTo(markers);
-      allBounds.extend(latLng);
+      extendBounds(allBounds, venue.lat, venue.lng);
       if (isTaipeiAreaVenue(venue)) {
-        taipeiBounds.extend(latLng);
+        extendBounds(taipeiBounds, venue.lat, venue.lng);
       }
     }
 
-    markers.addTo(map);
-
-    if (taipeiBounds.isValid()) {
-      map.fitBounds(taipeiBounds.pad(0.18));
-    } else if (allBounds.isValid()) {
-      map.fitBounds(allBounds.pad(0.18));
+    if (isBoundsValid(taipeiBounds)) {
+      fitMapToBounds(map, taipeiBounds, false);
+    } else if (isBoundsValid(allBounds)) {
+      fitMapToBounds(map, allBounds, false);
     } else {
-      map.setView([25.0478, 121.5319], 11);
+      map.jumpTo({ center: DEFAULT_MAP_CENTER, zoom: DEFAULT_MAP_ZOOM });
     }
 
-    addBoundsControl(leaflet, map, taipeiBounds, allBounds);
-    addLegendControl(leaflet, map);
+    addBoundsControl(map, taipeiBounds, allBounds);
+    addLegendControl(map);
   }
 
-  /** @returns {LeafletApi} */
-  function getLeaflet() {
-    const leaflet = /** @type {Window & { L?: LeafletApi }} */ (window).L;
-    if (!leaflet) {
-      throw new Error("Leaflet is not loaded.");
-    }
+  /** @returns {Promise<MapLibreApi>} */
+  function loadMapLibre() {
+    return import(MAPLIBRE_MODULE_URL);
+  }
 
-    return leaflet;
+  /**
+   * @param {MapLibreMap} map
+   * @returns {Promise<void>}
+   */
+  function waitForInitialMapLoad(map) {
+    return new Promise((resolve, reject) => {
+      const handleLoad = () => {
+        window.clearTimeout(timeoutId);
+        resolve();
+      };
+      const timeoutId = window.setTimeout(() => {
+        map.off("load", handleLoad);
+        reject(
+          new Error(
+            `CARTO vector map did not load within ${MAP_LOAD_TIMEOUT_MS / 1_000} seconds.`,
+          ),
+        );
+      }, MAP_LOAD_TIMEOUT_MS);
+
+      map.once("load", handleLoad);
+    });
+  }
+
+  /**
+   * @param {{ error?: unknown }} event
+   * @returns {void}
+   */
+  function logMapResourceError(event) {
+    console.error("MapLibre reported a map resource error:", event.error || event);
+  }
+
+  /**
+   * CARTO's vector style references separate TileJSON, sprite, glyph, and tile
+   * resources. Apply the project key to every CARTO basemap request so the
+   * nested resources use the same browser-visible authorization as the style.
+   *
+   * @param {string} url
+   * @returns {{ url: string }}
+   */
+  function transformCartoRequest(url) {
+    try {
+      const requestUrl = new URL(url);
+      if (!isCartoBasemapHost(requestUrl.hostname)) {
+        return { url };
+      }
+
+      requestUrl.searchParams.set("key", CARTO_BASEMAP_PROJECT_KEY);
+      return { url: requestUrl.toString() };
+    } catch {
+      return { url };
+    }
+  }
+
+  /**
+   * @param {string} hostname
+   * @returns {boolean}
+   */
+  function isCartoBasemapHost(hostname) {
+    return (
+      hostname === "basemaps.cartocdn.com" ||
+      hostname.endsWith(".basemaps.cartocdn.com")
+    );
   }
 
   /** @returns {string} */
@@ -272,6 +365,64 @@
     );
   }
 
+  /** @returns {VenueBounds} */
+  function createEmptyBounds() {
+    return {
+      minLat: Number.POSITIVE_INFINITY,
+      maxLat: Number.NEGATIVE_INFINITY,
+      minLng: Number.POSITIVE_INFINITY,
+      maxLng: Number.NEGATIVE_INFINITY,
+    };
+  }
+
+  /**
+   * @param {VenueBounds} bounds
+   * @param {number} lat
+   * @param {number} lng
+   * @returns {void}
+   */
+  function extendBounds(bounds, lat, lng) {
+    bounds.minLat = Math.min(bounds.minLat, lat);
+    bounds.maxLat = Math.max(bounds.maxLat, lat);
+    bounds.minLng = Math.min(bounds.minLng, lng);
+    bounds.maxLng = Math.max(bounds.maxLng, lng);
+  }
+
+  /**
+   * @param {VenueBounds} bounds
+   * @returns {boolean}
+   */
+  function isBoundsValid(bounds) {
+    return (
+      Number.isFinite(bounds.minLat) &&
+      Number.isFinite(bounds.maxLat) &&
+      Number.isFinite(bounds.minLng) &&
+      Number.isFinite(bounds.maxLng)
+    );
+  }
+
+  /**
+   * @param {MapLibreMap} map
+   * @param {VenueBounds} bounds
+   * @param {boolean} animate
+   * @returns {void}
+   */
+  function fitMapToBounds(map, bounds, animate = true) {
+    if (!isBoundsValid(bounds)) return;
+
+    map.fitBounds(
+      [
+        [bounds.minLng, bounds.minLat],
+        [bounds.maxLng, bounds.maxLat],
+      ],
+      {
+        padding: FIT_BOUNDS_PADDING,
+        maxZoom: MAP_MAX_ZOOM,
+        duration: animate ? 500 : 0,
+      },
+    );
+  }
+
   /**
    * @param {Venue} venue
    * @returns {VenuePinStyle}
@@ -319,23 +470,19 @@
   }
 
   /**
-   * @param {LeafletApi} leaflet
    * @param {VenuePinStyle} pinStyle
    * @param {string} iconsSpriteUrl
-   * @returns {unknown}
+   * @returns {HTMLDivElement}
    */
-  function createPinIcon(leaflet, pinStyle, iconsSpriteUrl) {
-    return leaflet.divIcon({
-      className: [
-        "fine-dining-pin-icon",
-        `fine-dining-pin-icon-${pinStyle.iconType}`,
-        `fine-dining-pin-color-${pinStyle.colorType}`,
-      ].join(" "),
-      html: renderPinHtml(pinStyle.iconType, iconsSpriteUrl),
-      iconSize: [34, 42],
-      iconAnchor: [17, 40],
-      popupAnchor: [0, -34],
-    });
+  function createPinElement(pinStyle, iconsSpriteUrl) {
+    const element = document.createElement("div");
+    element.className = [
+      "fine-dining-pin-icon",
+      `fine-dining-pin-icon-${pinStyle.iconType}`,
+      `fine-dining-pin-color-${pinStyle.colorType}`,
+    ].join(" ");
+    element.innerHTML = renderPinHtml(pinStyle.iconType, iconsSpriteUrl);
+    return element;
   }
 
   /**
@@ -424,83 +571,115 @@
   }
 
   /**
-   * @param {LeafletApi} leaflet
-   * @param {any} map
-   * @param {any} taipeiBounds
-   * @param {any} allBounds
+   * @param {MapLibreMap} map
+   * @param {VenueBounds} taipeiBounds
+   * @param {VenueBounds} allBounds
    * @returns {void}
    */
-  function addBoundsControl(leaflet, map, taipeiBounds, allBounds) {
-    const BoundsControl = leaflet.Control.extend({
-      options: { position: "topright" },
+  function addBoundsControl(map, taipeiBounds, allBounds) {
+    let container;
+    const boundsControl = {
       onAdd() {
-        const container = leaflet.DomUtil.create("div", "fine-dining-map-control");
-        const taipeiButton = createBoundsButton(leaflet, "台北", () => {
-          if (taipeiBounds.isValid()) map.fitBounds(taipeiBounds.pad(0.18));
+        container = createMapControlContainer("fine-dining-map-control");
+        const taipeiButton = createBoundsButton("台北", () => {
+          fitMapToBounds(map, taipeiBounds);
         });
-        const allButton = createBoundsButton(leaflet, "全部", () => {
-          if (allBounds.isValid()) map.fitBounds(allBounds.pad(0.18));
+        const allButton = createBoundsButton("全部", () => {
+          fitMapToBounds(map, allBounds);
         });
 
         container.appendChild(taipeiButton);
         container.appendChild(allButton);
-        leaflet.DomEvent.disableClickPropagation(container);
-        leaflet.DomEvent.disableScrollPropagation(container);
         return container;
       },
-    });
+      onRemove() {
+        container?.remove();
+      },
+    };
 
-    map.addControl(new BoundsControl());
+    map.addControl(boundsControl, "top-right");
   }
 
   /**
-   * @param {LeafletApi} leaflet
-   * @param {any} map
+   * @param {MapLibreMap} map
    * @returns {void}
    */
-  function addLegendControl(leaflet, map) {
-    const LegendControl = leaflet.Control.extend({
-      options: { position: "bottomleft" },
+  function addLegendControl(map) {
+    let container;
+    const legendControl = {
       onAdd() {
-        const container = leaflet.DomUtil.create("div", "fine-dining-map-legend");
+        container = createMapControlContainer("fine-dining-map-legend");
         container.setAttribute("aria-label", "餐廳地圖名人堂標示");
 
-        const item = leaflet.DomUtil.create("div", "fine-dining-map-legend-item", container);
-        const swatch = leaflet.DomUtil.create(
-          "span",
-          "fine-dining-map-legend-swatch fine-dining-map-legend-swatch-purple",
-          item,
-        );
+        const item = document.createElement("div");
+        item.className = "fine-dining-map-legend-item";
+
+        const swatch = document.createElement("span");
+        swatch.className =
+          "fine-dining-map-legend-swatch fine-dining-map-legend-swatch-purple";
         swatch.setAttribute("aria-hidden", "true");
 
-        const label = leaflet.DomUtil.create("span", "fine-dining-map-legend-label", item);
+        const label = document.createElement("span");
+        label.className = "fine-dining-map-legend-label";
         label.textContent = "名人堂";
 
-        leaflet.DomEvent.disableClickPropagation(container);
-        leaflet.DomEvent.disableScrollPropagation(container);
+        item.appendChild(swatch);
+        item.appendChild(label);
+        container.appendChild(item);
         return container;
       },
-    });
+      onRemove() {
+        container?.remove();
+      },
+    };
 
-    map.addControl(new LegendControl());
+    map.addControl(legendControl, "bottom-left");
   }
 
   /**
-   * @param {LeafletApi} leaflet
+   * @param {string} className
+   * @returns {HTMLDivElement}
+   */
+  function createMapControlContainer(className) {
+    const container = document.createElement("div");
+    container.className = `maplibregl-ctrl ${className}`;
+    stopMapInteractionPropagation(container);
+    return container;
+  }
+
+  /**
+   * @param {HTMLElement} element
+   * @returns {void}
+   */
+  function stopMapInteractionPropagation(element) {
+    for (const eventName of [
+      "click",
+      "dblclick",
+      "mousedown",
+      "pointerdown",
+      "touchstart",
+      "wheel",
+    ]) {
+      element.addEventListener(eventName, (event) => event.stopPropagation(), {
+        passive: true,
+      });
+    }
+  }
+
+  /**
    * @param {string} label
    * @param {() => void} onClick
    * @returns {HTMLButtonElement}
    */
-  function createBoundsButton(leaflet, label, onClick) {
-    const button = leaflet.DomUtil.create("button", "");
+  function createBoundsButton(label, onClick) {
+    const button = document.createElement("button");
     button.type = "button";
     button.textContent = label;
-    /** @param {Event} event */
-    const handleClick = (event) => {
-      leaflet.DomEvent.stop(event);
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
       onClick();
-    };
-    leaflet.DomEvent.on(button, "click", handleClick);
+    });
     return button;
   }
 

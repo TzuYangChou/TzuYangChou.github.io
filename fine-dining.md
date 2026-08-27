@@ -160,8 +160,8 @@ permalink: /fine-dining/
   data-icons-sprite-url="{{ '/assets/third-party/bootstrap-icons/bootstrap-icons.svg' | relative_url }}"
 ></div>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="{{ '/assets/fine-dining/map.css' | relative_url }}">
+{% assign map_asset_version = site.github.build_revision | default: 'vector-v1' %}
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.6.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="{{ '/assets/fine-dining/map.css' | relative_url }}?v={{ map_asset_version | uri_escape }}">
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="{{ '/assets/fine-dining/map.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/fine-dining/map.js' | relative_url }}?v={{ map_asset_version | uri_escape }}" defer></script>
